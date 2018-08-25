@@ -1,0 +1,199 @@
+assert(getprop("ro.product.device") == "jflte" || getprop("ro.build.product") == "jflte" || getprop("ro.product.device") == "jfltexx" || getprop("ro.build.product") == "jfltexx" || getprop("ro.product.device") == "i9505" || getprop("ro.build.product") == "i9505" || getprop("ro.product.device") == "GT-I9505" || getprop("ro.build.product") == "GT-I9505" || getprop("ro.product.device") == "jgedlte" || getprop("ro.build.product") == "jgedlte" || getprop("ro.product.device") == "i9505g" || getprop("ro.build.product") == "i9505g" || getprop("ro.product.device") == "GT-I9505G" || getprop("ro.build.product") == "GT-I9505G" || getprop("ro.product.device") == "jfltevzw" || getprop("ro.build.product") == "jfltevzw" || getprop("ro.product.device") == "jfltespr" || getprop("ro.build.product") == "jfltespr" || getprop("ro.product.device") == "jflterefreshspr" || getprop("ro.build.product") == "jflterefreshspr" || getprop("ro.product.device") == "jfltetmo" || getprop("ro.build.product") == "jfltetmo" || getprop("ro.product.device") == "jfltecri" || getprop("ro.build.product") == "jfltecri" || getprop("ro.product.device") == "jfltecsp" || getprop("ro.build.product") == "jfltecsp" || getprop("ro.product.device") == "jflteatt" || getprop("ro.build.product") == "jflteatt" || getprop("ro.product.device") == "jfltecan" || getprop("ro.build.product") == "jfltecan" || getprop("ro.product.device") == "jfltetfnatt" || getprop("ro.build.product") == "jfltetfnatt" || getprop("ro.product.device") == "jfltetfntmo" || getprop("ro.build.product") == "jfltetfntmo" || getprop("ro.product.device") == "jflteusc" || getprop("ro.build.product") == "jflteusc" || getprop("ro.product.device") == "jfltezm" || getprop("ro.build.product") == "jfltezm" || abort("This package is for device: jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jfltetfnatt,jfltetfntmo,jflteusc,jfltezm; this device is " + getprop("ro.product.device") + "."););
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
+
+ui_print("########################################");
+
+#-------------------------------------------------------------------
+# MAGISK INSTALL
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.1") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing Magisk binaries...");
+ui_print("  ");
+package_extract_dir("jdc/magisk", "/tmp/magisk");
+run_program("/sbin/busybox", "unzip", "/tmp/magisk/magisk.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magisk");
+run_program("/sbin/busybox", "sh", "/tmp/magisk/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magisk/magisk.zip");
+delete_recursive("/tmp/magisk");
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("  ");
+ui_print("-- Magisk installed successfully");
+ui_print("  ");
+endif;
+
+#-------------------------------------------------------------------
+# NO ROOT CHANGES
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.1") == "2"
+then
+ui_print("  ");
+ui_print("-- Magisk Installation is being skipped");
+ui_print("  ");
+endif;
+
+ui_print("########################################");
+
+#-------------------------------------------------------------------
+# ADD GOOGLE CAMERA
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.2") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing Google Camera...");
+package_extract_dir("jdc/googlecamera", "/data/app/GoogleCamera");
+ui_print("  ");
+endif;
+
+#-------------------------------------------------------------------
+# NO ADD GOOGLE CAMERA
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.2") == "2"
+then
+ui_print("  ");
+ui_print("-- Google Camera Installation is being skipped");
+ui_print("  ");
+endif;
+
+ui_print("########################################");
+
+#-------------------------------------------------------------------
+# REMOVE SNAP CAMERA
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.3") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Snap Camera...");
+delete_recursive("/system/priv-app/Snap");
+ui_print("  ");
+endif;
+
+#-------------------------------------------------------------------
+# NO REMOVE SNAP CAMERA
+
+if
+file_getprop("/tmp/aroma/page1.prop","selected.3") == "2"
+then
+ui_print("  ");
+ui_print("-- Remove Snap Camera is being skipped");
+ui_print("  ");
+endif;
+
+ui_print("########################################");
+
+#-------------------------------------------------------------------
+# Add Viper4Arise
+
+if
+file_getprop("/tmp/aroma/page2.prop","item.1.1") == "1"
+then
+ui_print("  ");
+ui_print("-- ViPER4Arise is installing");
+package_extract_dir("jdc/arise", "/tmp/arise");
+run_program("/sbin/busybox", "unzip", "/tmp/arise/arise.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/arise");
+run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/update-binary", "null", "1", "/tmp/arise/arise.zip");
+delete_recursive("/tmp/arise");
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
+delete_recursive("/system/priv-app/AudioFX");
+ui_print("########################################");
+endif;
+
+#-------------------------------------------------------------------
+# Add Ad-Away
+
+if
+file_getprop("/tmp/aroma/page2.prop","item.1.2") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing Ad-Away...");
+ui_print("  ");
+package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
+ui_print("########################################");
+endif;
+
+#####################################################
+# Vanced Menu IF
+
+if
+file_getprop("/tmp/aroma/page2.prop","item.1.3") == "1"
+then
+
+#####################################################
+# Add Vanced Black Theme 
+
+if
+file_getprop("/tmp/aroma/vanced.prop","selected.1") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing Vanced Black Theme...");
+ui_print("  ");
+package_extract_dir("jdc/vanced/black", "/system/priv-app/VancedYT");
+delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/data/app/YouTube");
+ui_print("########################################");
+endif;
+
+#####################################################
+# Add Vanced Dark Theme 
+
+if
+file_getprop("/tmp/aroma/vanced.prop","selected.1") == "2"
+then
+ui_print("  ");
+ui_print("-- Installing Vanced Dark Theme...");
+ui_print("  ");
+package_extract_dir("jdc/vanced/dark", "/system/priv-app/VancedYT");
+delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/data/app/YouTube");
+ui_print("########################################");
+endif;
+
+#####################################################
+# Vanced Menu ENDIF
+
+endif;
+
+#####################################################
+
+
+#-------------------------------------------------------------------
+# Remove Eleven Player
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.1") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Eleven Player...");
+ui_print("  ");
+delete_recursive("/system/priv-app/Eleven");
+ui_print("########################################");
+endif;
+
+#-------------------------------------------------------------------
+# Remove Mixplorer
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.2") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Mixplorer...");
+ui_print("  ");
+delete_recursive("/system/priv-app/Mixplorer");
+ui_print("########################################");
+endif;
+
+#-------------------------------------------------------------------
+
+ui_print("  ");
+ui_print("-- Unmounting /system");
+ui_print("  ");
+ifelse(is_mounted("/system"), unmount("/system"));
+ui_print("-- Done!");
+set_progress(1.0);
