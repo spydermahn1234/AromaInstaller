@@ -1,2 +1,16 @@
 -new page where you will be able to remove ALL jdc precompiled apps (mixplorer,turbo,googlecamera,bromide)
+	example:
+	*mixplorer
+		-Let mixplorer installed
+		-Remove mixplorer
+		-No changes
+
+	also
+	*jdc submenu with those options
+		-Add jdctoolbox (magisk)
+		-Add jdctoolbox (non magisk)
+		-No changes               <----default
+		-Remove JDC toolbox,if exists
+
 -fix google camera.has to be installed as /data/app to fully work.maybe deprecate it ?
+-update the changelog
