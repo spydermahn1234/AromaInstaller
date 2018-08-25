@@ -185,7 +185,7 @@ then
 ui_print("  ");
 ui_print("-- Removing Mixplorer...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Mixplorer");
+delete_recursive("/system/app/Mixplorer");
 ui_print("########################################");
 endif;
 
