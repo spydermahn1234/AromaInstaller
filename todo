@@ -2,7 +2,10 @@ intro (Rom version author etc) : we let it as it is
 changelog: as it is
 page1: additions:
 	-Root corner (same as the current one)
-	-Add kernel adiutor
+	-Kernel adiutor
+		-Install it
+		-Do not install it 
+		-No changes "default option"
 	-Viper (same as the current one)
 	-AdAway (same as the current one)
 	-Vanced Youtube (same as the current one)
