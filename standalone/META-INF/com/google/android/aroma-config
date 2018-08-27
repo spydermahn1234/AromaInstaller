@@ -1,41 +1,37 @@
-﻿
-ini_set("force_colorspace","rgba");
+﻿ini_set("force_colorspace","rgba");
+anisplash(
+    1,
+	"splash/a0", 5,
+	"splash/a1", 5,
+	"splash/a2", 5,
+	"splash/a3", 5,
+	"splash/a4", 5,
+	"splash/a5", 5,
+	"splash/a6", 5,
+	"splash/a7", 5,
+	"splash/a8", 5,
+	"splash/a9", 5,
+	"splash/a10", 5,
+	"splash/a11", 500,
+	"splash/a12", 500,
+	"splash/a13", 5,
+	"splash/a14", 5,
+	"splash/a15", 5,
+	"splash/a16", 5,
+	"splash/a17", 5,
+	"splash/a18", 5,
+	"splash/a19", 5,
+	"splash/a20", 5,
+	"splash/a21", 5,
+	"splash/a22", 5,
+	"splash/a23", 5
+);
 
 ini_set("rom_name",             "OptLineageOS Aroma");
 ini_set("rom_version",          "Aroma v1.0");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "Samsung Galaxy S4 Snapdragons");
 ini_set("rom_date",             "August 2018");
-
-
-anisplash(
-    1,
-	"splash/a0", 10,
-	"splash/a1", 10,
-	"splash/a2", 10,
-	"splash/a3", 10,
-	"splash/a4", 10,
-	"splash/a5", 10,
-	"splash/a6", 10,
-	"splash/a7", 10,
-	"splash/a8", 10,
-	"splash/a9", 10,
-	"splash/a10", 10,
-	"splash/a11", 1000,
-	"splash/a12", 1000,
-	"splash/a13", 10,
-	"splash/a14", 10,
-	"splash/a15", 10,
-	"splash/a16", 10,
-	"splash/a17", 10,
-	"splash/a18", 10,
-	"splash/a19", 10,
-	"splash/a20", 10,
-	"splash/a21", 10,
-	"splash/a22", 10,
-	"splash/a23", 10
-);
-
 
 theme("redblack");
 loadlang("langs/en.lang");
