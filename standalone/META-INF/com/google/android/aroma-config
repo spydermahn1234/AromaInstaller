@@ -38,10 +38,21 @@ anisplash(
 
 
 theme("redblack");
+menubox(
+	"Aroma theme",
+	"Please select a menu option",
+	"@install",
+	"theme.prop",
+	"<b>Red-Black</b>","That is the current one","@install",
+	"<b>Red-Dark</b>","","@install"
+);
+
 loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
 fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
-
+if prop("theme.prop","selected")=="2" then
+	theme("reddark");
+endif;
 
 viewbox(
     "",
