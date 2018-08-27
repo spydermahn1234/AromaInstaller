@@ -70,7 +70,7 @@ viewbox(
 
 textbox(
     "CHANGELOG",
-    "Palm Project Changelog",
+    "Optimized LineageOS 15.1 Changelog-Since V5",
     "@update",
     resread("changelog.txt")
 );
