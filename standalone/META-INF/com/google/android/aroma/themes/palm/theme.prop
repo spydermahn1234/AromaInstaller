@@ -51,7 +51,7 @@ color.navbg           = #FAF4F4
 color.navbg_g         = #eeeeee
 color.border          = #666666
 color.border_g        = #666666
-color.progressglow    = #6D006E
+color.progressglow    = #61cbc1
 
 config.roundsize             = 1
 config.button_roundsize      = 1
