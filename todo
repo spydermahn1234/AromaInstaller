@@ -1,4 +1,6 @@
-theme: dark or black
+theme: JDC_dark
+       JDC_black
+	    JDC_classic
 
 intro (Rom version author etc) : we let it as it is
 changelog: as it is
