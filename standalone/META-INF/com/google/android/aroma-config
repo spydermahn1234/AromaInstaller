@@ -48,10 +48,19 @@ menubox(
 	"@install",
 	"theme.prop",
 	"<b>Red-Black</b>","That is the current one","@install",
-	"<b>Red-Dark</b>","","@install"
+	"<b>Red-Dark</b>","","@install",
+	"<b>Palm</b>","","@install",
+	"<b>Ubuntu</b>","","@install"
+
 );
 if prop("theme.prop","selected")=="2" then
 	theme("reddark");
+endif;
+if prop("theme.prop","selected")=="3" then
+	theme("palm");
+endif;
+if prop("theme.prop","selected")=="4" then
+	theme("ubuntu");
 endif;
 
 viewbox(
