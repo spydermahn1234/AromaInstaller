@@ -38,27 +38,6 @@ loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
 fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
 
-menubox(
-	"Aroma theme",
-	"Please select a menu option",
-	"@install",
-	"theme.prop",
-	"<b>Red-Black</b>","That is the current one","@install",
-	"<b>Red-Dark</b>","","@install",
-	"<b>Palm</b>","","@install",
-	"<b>Ubuntu</b>","","@install"
-
-);
-if prop("theme.prop","selected")=="2" then
-	theme("reddark");
-endif;
-if prop("theme.prop","selected")=="3" then
-	theme("palm");
-endif;
-if prop("theme.prop","selected")=="4" then
-	theme("ubuntu");
-endif;
-
 viewbox(
     "",
     "You are about to install <b>"+ini_get("rom_name")+"</b>\n\n\n"+
