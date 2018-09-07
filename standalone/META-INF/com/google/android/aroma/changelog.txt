@@ -26,6 +26,7 @@
 <*> Settings: Show version number at settings
 <*> QS Tiles reorder. Add the useful tiles on the first row
 <*> Audio edits,clean up and such
+<*> Remove 'x' sign from signal icon when no data
 
 
 
