@@ -1,5 +1,6 @@
 
-<b><u>Version 1:</u></b>
-- Initial Test Of Aroma
+<b><u>Version 1.0:</u></b>
+
+- Initial Release Of Aroma
 
 ---------------------------------------------------------

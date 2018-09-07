@@ -4,11 +4,11 @@ run_program("/sbin/busybox", "mount", "/system");
 
 ui_print("########################################");
 
-#-------------------------------------------------------------------
+#####################################################
 # MAGISK INSTALL
 
 if
-file_getprop("/tmp/aroma/page1.prop","selected.1") == "1"
+file_getprop("/tmp/aroma/add.prop","item.1.1") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing Magisk binaries...");
@@ -22,79 +22,30 @@ run_program("/sbin/busybox", "mount", "/system");
 ui_print("  ");
 ui_print("-- Magisk installed successfully");
 ui_print("  ");
-endif;
-
-#-------------------------------------------------------------------
-# NO ROOT CHANGES
-
-if
-file_getprop("/tmp/aroma/page1.prop","selected.1") == "2"
-then
-ui_print("  ");
-ui_print("-- Magisk Installation is being skipped");
-ui_print("  ");
-endif;
-
 ui_print("########################################");
-
-#-------------------------------------------------------------------
-# ADD GOOGLE CAMERA
-
-if
-file_getprop("/tmp/aroma/page1.prop","selected.2") == "1"
-then
-ui_print("  ");
-ui_print("-- Installing Google Camera...");
-package_extract_dir("jdc/googlecamera", "/data/app/GoogleCamera");
-ui_print("  ");
 endif;
 
-#-------------------------------------------------------------------
-# NO ADD GOOGLE CAMERA
+#####################################################
+# ADD KERNEL ADIUTOR
 
 if
-file_getprop("/tmp/aroma/page1.prop","selected.2") == "2"
+file_getprop("/tmp/aroma/add.prop","item.1.2") == "1"
 then
 ui_print("  ");
-ui_print("-- Google Camera Installation is being skipped");
+ui_print("-- Installing Kernel Adiutor...");
 ui_print("  ");
-endif;
-
+package_extract_dir("jdc/kerneladiutor", "/system/priv-app/KernelAdiutor");
 ui_print("########################################");
-
-#-------------------------------------------------------------------
-# REMOVE SNAP CAMERA
-
-if
-file_getprop("/tmp/aroma/page1.prop","selected.3") == "1"
-then
-ui_print("  ");
-ui_print("-- Removing Snap Camera...");
-delete_recursive("/system/priv-app/Snap");
-ui_print("  ");
 endif;
 
-#-------------------------------------------------------------------
-# NO REMOVE SNAP CAMERA
+#####################################################
+# ADD VIPER4ARISE
 
 if
-file_getprop("/tmp/aroma/page1.prop","selected.3") == "2"
+file_getprop("/tmp/aroma/add.prop","item.1.3") == "1"
 then
 ui_print("  ");
-ui_print("-- Remove Snap Camera is being skipped");
-ui_print("  ");
-endif;
-
-ui_print("########################################");
-
-#-------------------------------------------------------------------
-# Add Viper4Arise
-
-if
-file_getprop("/tmp/aroma/page2.prop","item.1.1") == "1"
-then
-ui_print("  ");
-ui_print("-- ViPER4Arise is installing");
+ui_print("-- ViPER4Arise is installing...");
 package_extract_dir("jdc/arise", "/tmp/arise");
 run_program("/sbin/busybox", "unzip", "/tmp/arise/arise.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/arise");
 run_program("/sbin/busybox", "sh", "/tmp/arise/META-INF/com/google/android/update-binary", "null", "1", "/tmp/arise/arise.zip");
@@ -102,14 +53,16 @@ delete_recursive("/tmp/arise");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
 delete_recursive("/system/priv-app/AudioFX");
+ui_print("-- VIPER4Arise installed successfully");
+ui_print("  ");
 ui_print("########################################");
 endif;
 
-#-------------------------------------------------------------------
-# Add Ad-Away
+#####################################################
+# ADD AD-AWAY
 
 if
-file_getprop("/tmp/aroma/page2.prop","item.1.2") == "1"
+file_getprop("/tmp/aroma/add.prop","item.1.4") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing Ad-Away...");
@@ -118,11 +71,12 @@ package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
 ui_print("########################################");
 endif;
 
+
 #####################################################
 # Vanced Menu IF
 
 if
-file_getprop("/tmp/aroma/page2.prop","item.1.3") == "1"
+file_getprop("/tmp/aroma/add.prop","item.1.5") == "1"
 then
 
 #####################################################
@@ -163,11 +117,113 @@ endif;
 #####################################################
 
 
-#-------------------------------------------------------------------
-# Remove Eleven Player
+#####################################################
+# ADD GOOGLE CAMERA
+
+if
+file_getprop("/tmp/aroma/add.prop","item.1.6") == "1"
+then
+ui_print("  ");
+ui_print("-- Pasting Google Camera to ");
+ui_print("       '/internal storage/GoogleCamera/'...");
+ui_print("  ");
+ui_print("---->  PLEASE INSTALL IT MANUALLY");
+ui_print("  ");
+package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
+ui_print("########################################");
+endif;
+
+#------------------------------------------------------
+# ADD JDCTOOLBOX MAGISK
+
+if
+file_getprop("/tmp/aroma/jdc.prop","selected.1") == "1"
+then
+ui_print("  ");
+ui_print("-- Installing JDCToolbox - Magisk...");
+ui_print("  ");
+delete_recursive("/system/app/Toolbox");
+package_extract_dir("jdc/toolbox/magisk", "/system/app/Toolbox");
+ui_print("########################################");
+endif;
+
+#------------------------------------------------------
+# ADD JDCTOOLBOX NONMAGISK
+
+if
+file_getprop("/tmp/aroma/jdc.prop","selected.1") == "2"
+then
+ui_print("  ");
+ui_print("-- Installing JDCToolbox - Non-Magisk...");
+ui_print("  ");
+delete_recursive("/system/app/Toolbox");
+package_extract_dir("jdc/toolbox/nonmagisk", "/system/app/Toolbox");
+ui_print("########################################");
+endif;
+
+#------------------------------------------------------
+# REMOVE JDCTOOLBOX
+
+if
+file_getprop("/tmp/aroma/jdc.prop","selected.1") == "3"
+then
+ui_print("  ");
+ui_print("-- Uninstalling JDCToolbox...");
+ui_print("  ");
+delete_recursive("/system/app/Toolbox");
+ui_print("########################################");
+endif;
+
+#------------------------------------------------------
+# NO CHANGES JDCTOOLBOX
+
+#PURPOSELY LEFT BLANK AS A PLACEHOLDER
+
+
+######################################################
+# REMOVE BROMIDE
 
 if
 file_getprop("/tmp/aroma/remove.prop","item.1.1") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Bromide...");
+ui_print("  ");
+delete_recursive("/system/app/Bromide");
+ui_print("########################################");
+endif;
+
+######################################################
+# REMOVE TURBO APP
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.2") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Turbo App...");
+ui_print("  ");
+delete_recursive("/system/app/Turbo");
+ui_print("########################################");
+endif;
+
+######################################################
+# REMOVE LIVE WALLPAPER PICKER APP
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.3") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Live Wallpaper Picker App...");
+ui_print("  ");
+delete_recursive("/system/app/LiveWallpaperPicker");
+ui_print("########################################");
+endif;
+
+######################################################
+# REMOVE ELEVEN PLAYER
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.4") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Eleven Player...");
@@ -176,11 +232,11 @@ delete_recursive("/system/priv-app/Eleven");
 ui_print("########################################");
 endif;
 
-#-------------------------------------------------------------------
-# Remove Mixplorer
+######################################################
+# REMOVE MIXPLORER
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.2") == "1"
+file_getprop("/tmp/aroma/remove.prop","item.1.5") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Mixplorer...");
@@ -189,7 +245,20 @@ delete_recursive("/system/app/Mixplorer");
 ui_print("########################################");
 endif;
 
-#-------------------------------------------------------------------
+######################################################
+# REMOVE SNAP CAMERA
+
+if
+file_getprop("/tmp/aroma/remove.prop","item.1.6") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Snap Camera...");
+delete_recursive("/system/priv-app/Snap");
+ui_print("  ");
+ui_print("########################################");
+endif;
+
+######################################################
 
 ui_print("  ");
 ui_print("-- Unmounting /system");
