@@ -1,7 +1,7 @@
 assert(getprop("ro.product.device") == "jflte" || getprop("ro.build.product") == "jflte" || getprop("ro.product.device") == "jfltexx" || getprop("ro.build.product") == "jfltexx" || getprop("ro.product.device") == "i9505" || getprop("ro.build.product") == "i9505" || getprop("ro.product.device") == "GT-I9505" || getprop("ro.build.product") == "GT-I9505" || getprop("ro.product.device") == "jgedlte" || getprop("ro.build.product") == "jgedlte" || getprop("ro.product.device") == "i9505g" || getprop("ro.build.product") == "i9505g" || getprop("ro.product.device") == "GT-I9505G" || getprop("ro.build.product") == "GT-I9505G" || getprop("ro.product.device") == "jfltevzw" || getprop("ro.build.product") == "jfltevzw" || getprop("ro.product.device") == "jfltespr" || getprop("ro.build.product") == "jfltespr" || getprop("ro.product.device") == "jflterefreshspr" || getprop("ro.build.product") == "jflterefreshspr" || getprop("ro.product.device") == "jfltetmo" || getprop("ro.build.product") == "jfltetmo" || getprop("ro.product.device") == "jfltecri" || getprop("ro.build.product") == "jfltecri" || getprop("ro.product.device") == "jfltecsp" || getprop("ro.build.product") == "jfltecsp" || getprop("ro.product.device") == "jflteatt" || getprop("ro.build.product") == "jflteatt" || getprop("ro.product.device") == "jfltecan" || getprop("ro.build.product") == "jfltecan" || getprop("ro.product.device") == "jfltetfnatt" || getprop("ro.build.product") == "jfltetfnatt" || getprop("ro.product.device") == "jfltetfntmo" || getprop("ro.build.product") == "jfltetfntmo" || getprop("ro.product.device") == "jflteusc" || getprop("ro.build.product") == "jflteusc" || getprop("ro.product.device") == "jfltezm" || getprop("ro.build.product") == "jfltezm" || abort("This package is for device: jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jfltetfnatt,jfltetfntmo,jflteusc,jfltezm; this device is " + getprop("ro.product.device") + "."););
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
-
+set_progress(0.1);
 ui_print("########################################");
 
 #####################################################
@@ -25,6 +25,7 @@ ui_print("  ");
 ui_print("########################################");
 endif;
 
+set_progress(0.2);
 #####################################################
 # ADD KERNEL ADIUTOR
 
@@ -37,7 +38,7 @@ ui_print("  ");
 package_extract_dir("jdc/kerneladiutor", "/system/priv-app/KernelAdiutor");
 ui_print("########################################");
 endif;
-
+set_progress(0.3);
 #####################################################
 # ADD VIPER4ARISE
 
@@ -57,7 +58,7 @@ ui_print("-- VIPER4Arise installed successfully");
 ui_print("  ");
 ui_print("########################################");
 endif;
-
+set_progress(0.5);
 #####################################################
 # ADD AD-AWAY
 
@@ -71,7 +72,7 @@ package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
 ui_print("########################################");
 endif;
 
-
+set_progress(0.6);
 #####################################################
 # Vanced Menu IF
 
@@ -116,7 +117,7 @@ endif;
 
 #####################################################
 
-
+set_progress(0.7);
 #####################################################
 # ADD GOOGLE CAMERA
 
@@ -179,7 +180,7 @@ endif;
 
 #PURPOSELY LEFT BLANK AS A PLACEHOLDER
 
-
+set_progress(0.8);
 ######################################################
 # REMOVE BROMIDE
 
@@ -257,7 +258,7 @@ delete_recursive("/system/priv-app/Snap");
 ui_print("  ");
 ui_print("########################################");
 endif;
-
+set_progress(0.9);
 ######################################################
 
 ui_print("  ");
