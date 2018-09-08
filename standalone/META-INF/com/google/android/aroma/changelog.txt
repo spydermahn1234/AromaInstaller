@@ -28,6 +28,7 @@
 <*> Audio edits,clean up and such
 <*> Remove 'x' sign from signal icon when no data
 <*> Update the 'over the horizon' Crapsung ringtones
+<*> Custom kernel adiutor comes prebuilt for buffcore.
 
 
 
