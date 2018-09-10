@@ -4,7 +4,7 @@ ini_set("force_colorspace","rgba");
 ini_set("rom_name",             "OptLineageOS Aroma");
 ini_set("rom_version",          "Aroma v1.0");
 ini_set("rom_author",           "JDCTeam");
-ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon variants");
+ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon Variants");
 ini_set("rom_date",             "September 2018");
 
 
@@ -56,9 +56,9 @@ viewbox(
     "@welcome"
 );
 
+
 exec("/sbin/mount", "-t", "auto", "/system");
 if read("/system/file.txt")=="optcmrr" then
-	alert("Thanks","Thanks for respecting me and my work.");
 	exec("/sbin/umount", "-t", "auto", "/system");
 else
 	alert("ERROR","This AROMA installer can only work with Optimized LineageOS 15.1 and Buffs RR series.Exiting...");
@@ -80,69 +80,82 @@ fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
 fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
 
 
-checkbox(
+selectbox(
       "ADD ITEMS",
       "Please select:\n",
       "@default",
       "add.prop",
 
-    "SELECT ITEMS TO ADD",                         ""                                                                                  ,2,    #-- Group 1. key = "selected.1"
+    "",                                            ""                                                                                  ,2,    #--
     "Add Magisk",                                  "v16.0"                                                                             ,0,    #-- selected.1 = 1
-    "Add Kernel Adiutor",                          "v0.9.11.1"                                                                         ,0,    #-- selected.1 = 2
-    "Add Viper4Android",                           "ViperFX v2.5.0.5"                                                                  ,0,    #-- selected.1 = 3
-    "Add Ad-Away",                                 "v3.3"                                                                              ,0,    #-- selected.1 = 4
-    "Add Vanced YouTube",                          "v13.32.52 Build 01.25.00"                                                          ,0,    #-- selected.1 = 5
-    "Add Google Camera",                           "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0     #-- selected.1 = 6
+    "Remove Magisk, if previously added",          "Will Restore built-in superuser"                                                   ,0,    #-- selected.1 = 2
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Viper4Android",                           "ViperFX v2.5.0.5"                                                                  ,0,    #-- selected.2 = 1
+    "Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.2 = 2
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Ad-Away",                                 "v3.3"                                                                              ,0,    #-- selected.3 = 1
+    "Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.3 = 2
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3	
+ 
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Vanced YouTube - BLACK",                  "White theme is Default in app"                                                     ,0,    #-- selected.4 = 1
+    "Add Vanced YouTube - DARK",                   "White theme is Default in app"                                                     ,0,    #-- selected.4 = 2
+    "Remove Vanced, if previously added",          "v13.32.52 Build 01.25.00"                                                          ,0,    #-- selected.4 = 3
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 4
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Google Camera",                           "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.5 = 1
+    "Remove Google Camera",                        "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.5 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                                                ,0,    #-- selected.6 = 1
+    "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.6 = 2
+    "Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.6 = 3
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 4
 	
 );
-
-
-#IF INSTALLATION OF VANCED YOUTUBE IS SELECTED
-if prop("add.prop","item.1.5")=="1" then
-
-    selectbox(
-        "ADD VANCED YOUTUBE OPTIONS",
-        "Please select:\n",
-        "@default",
-        "vanced.prop",
-
-    "Vanced YouTube Corner",                       ""                                                    ,2,	 #-- Group 1. key = "selected.1"
-    "Install Vanced + Black Theme Option",         "White theme is Default in app"                       ,1,   #-- selected.1 = 1
-    "Install Vanced + Dark Theme Option",          "White theme is Default in app"                       ,0    #-- selected.1 = 2
-
-	);
-
-endif;
 
 
 selectbox(
-      "JDCToolbox Selction",
-      "Please select:\n",
-      "@default",
-      "jdc.prop",
-
-    "JDCTOOLBOX SELECTION",                        ""                                                    ,2,   #-- Group 1. key = "selected.1"
-    "Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                  ,0,   #-- selected.1 = 1
-    "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"           ,0,   #-- selected.1 = 2
-    "Remove JDCToolbox, if exist",                 ""                                                    ,0,   #-- selected.1 = 3
-	"No Changes",                                  ""                                                    ,1    #-- selected.1 = 4
-	
-);
-
-
-checkbox(
       "REMOVE ITEMS - DEBLOAT ROM",
       "Please select:\n",
       "@default",
       "remove.prop",
 
-    "SELECT ITEMS TO REMOVE",                      ""                                                    ,2,    #-- Group 1. key = "selected.1"
-	"Remove Bromide App",                          "Security-Enchanced Chromium with Adblock Embedded"   ,0,    #-- selected.1 = 1
-    "Remove Turbo App",                            "Collection of Wallpapers from Pixel Phones"          ,0,    #-- selected.1 = 2
-	"Remove Live Wallpaper Picker App",            "Collection of Live Wallpapers"                       ,0,    #-- selected.1 = 3
-    "Remove Mixplorer App",                        "Root File Explorer"                                  ,0,    #-- selected.1 = 4
-    "Remove Eleven Player App",                    "Default Lineage Music Player"                        ,0,    #-- selected.1 = 5
-    "Remove Snap Camera App",                      "Default Camera App"                                  ,0     #-- selected.1 = 6
+    "",                                            ""                                                                                  ,2,    #--
+	"Remove Bromide App",                          "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.1 = 1
+	"Restore Bromide App",                         "if previously removed"                                                             ,0,    #-- selected.1 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
+	
+    "",                                            ""                                                                                  ,2,    #--
+	"Remove Live Wallpaper Picker App",            "Collection of Live Wallpapers"                                                     ,0,    #-- selected.3 = 1
+	"Restore Live Wallpaper Picker App",           "if previously removed"                                                             ,0,    #-- selected.3 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+	
+    "",                                            ""                                                                                  ,2,    #--
+    "Remove Mixplorer App",                        "Root File Explorer"                                                                ,0,    #-- selected.4 = 1
+	"Restore Mixplorer App",                       "if previously removed"                                                             ,0,    #-- selected.4 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3	
+	
+    "",                                            ""                                                                                  ,2,    #--
+    "Remove Eleven Music Player App",              "Default Lineage Music Player"                                                      ,0,    #-- selected.5 = 1
+	"Restore Eleven Music Player App",             "if previously removed"                                                             ,0,    #-- selected.5 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
+	
+    "",                                            ""                                                                                  ,2,    #--
+    "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.6 = 1
+	"Restore Snap Camera",                         "if previously removed"                                                             ,0,    #-- selected.6 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3	
+	
+    "",                                            ""                                                                                  ,2,    #--
+    "Remove Buffcore Kernel Adiutor",              "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.7 = 1
+	"Restore Buffcore Kernel Adiutor",             "if previously removed"                                                             ,0,    #-- selected.7 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
 
 );
 

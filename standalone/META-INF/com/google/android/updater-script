@@ -1,14 +1,14 @@
 assert(getprop("ro.product.device") == "jflte" || getprop("ro.build.product") == "jflte" || getprop("ro.product.device") == "jfltexx" || getprop("ro.build.product") == "jfltexx" || getprop("ro.product.device") == "i9505" || getprop("ro.build.product") == "i9505" || getprop("ro.product.device") == "GT-I9505" || getprop("ro.build.product") == "GT-I9505" || getprop("ro.product.device") == "jgedlte" || getprop("ro.build.product") == "jgedlte" || getprop("ro.product.device") == "i9505g" || getprop("ro.build.product") == "i9505g" || getprop("ro.product.device") == "GT-I9505G" || getprop("ro.build.product") == "GT-I9505G" || getprop("ro.product.device") == "jfltevzw" || getprop("ro.build.product") == "jfltevzw" || getprop("ro.product.device") == "jfltespr" || getprop("ro.build.product") == "jfltespr" || getprop("ro.product.device") == "jflterefreshspr" || getprop("ro.build.product") == "jflterefreshspr" || getprop("ro.product.device") == "jfltetmo" || getprop("ro.build.product") == "jfltetmo" || getprop("ro.product.device") == "jfltecri" || getprop("ro.build.product") == "jfltecri" || getprop("ro.product.device") == "jfltecsp" || getprop("ro.build.product") == "jfltecsp" || getprop("ro.product.device") == "jflteatt" || getprop("ro.build.product") == "jflteatt" || getprop("ro.product.device") == "jfltecan" || getprop("ro.build.product") == "jfltecan" || getprop("ro.product.device") == "jfltetfnatt" || getprop("ro.build.product") == "jfltetfnatt" || getprop("ro.product.device") == "jfltetfntmo" || getprop("ro.build.product") == "jfltetfntmo" || getprop("ro.product.device") == "jflteusc" || getprop("ro.build.product") == "jflteusc" || getprop("ro.product.device") == "jfltezm" || getprop("ro.build.product") == "jfltezm" || abort("This package is for device: jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jfltetfnatt,jfltetfntmo,jflteusc,jfltezm; this device is " + getprop("ro.product.device") + "."););
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
-set_progress(0.1);
+set_progress(0.05);
 ui_print("########################################");
 
-#####################################################
-# MAGISK INSTALL
+######################################################
+# ADD MAGISK
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.1") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing Magisk binaries...");
@@ -25,25 +25,39 @@ ui_print("  ");
 ui_print("########################################");
 endif;
 
-set_progress(0.2);
-#####################################################
-# ADD KERNEL ADIUTOR
+######################################################
+# REMOVE MAGISK
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.2") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.1") == "2"
 then
 ui_print("  ");
-ui_print("-- Installing Kernel Adiutor...");
+ui_print("-- Uninstalling Magisk binaries...");
 ui_print("  ");
-package_extract_dir("jdc/kerneladiutor", "/system/priv-app/KernelAdiutor");
+package_extract_dir("jdc/magiskuninstaller", "/tmp/magiskuninstaller");
+run_program("/sbin/busybox", "unzip", "/tmp/magiskuninstaller/magiskuninstaller.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magiskuninstaller");
+run_program("/sbin/busybox", "sh", "/tmp/magiskuninstaller/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magiskuninstaller/magiskuninstaller.zip");
+delete_recursive("/tmp/magiskuninstaller");
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("  ");
+ui_print("-- Magisk Uninstalled successfully");
+ui_print("  ");
+ui_print("-- Restoring Built-In ROM Super User...");
+ui_print("  ");
 ui_print("########################################");
 endif;
-set_progress(0.3);
-#####################################################
+
+######################################################
+# NO CHANGES MAGISK
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.13);
+
+######################################################
 # ADD VIPER4ARISE
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.3") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("-- ViPER4Arise is installing...");
@@ -58,12 +72,33 @@ ui_print("-- VIPER4Arise installed successfully");
 ui_print("  ");
 ui_print("########################################");
 endif;
-set_progress(0.5);
-#####################################################
+
+######################################################
+# REMOVE VIPER4ARISE
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.2") == "2"
+then
+ui_print("  ");
+ui_print("-- Uninstalling ViPER4Arise...");
+ui_print("  ");
+delete_recursive("/system/priv-app/ViPER4AndroidFX");
+ui_print("-- Restoring AudioFX...");
+ui_print("  ");
+package_extract_dir("jdc/audiofx", "/system/priv-app/AudioFX");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES VIPER4ARISE
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.21);
+
+######################################################
 # ADD AD-AWAY
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.4") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing Ad-Away...");
@@ -72,57 +107,79 @@ package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
 ui_print("########################################");
 endif;
 
-set_progress(0.6);
-#####################################################
-# Vanced Menu IF
+######################################################
+# REMOVE AD-AWAY
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.5") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
 then
+ui_print("  ");
+ui_print("-- Uninstalling Ad-Away...");
+ui_print("  ");
+delete_recursive("/system/priv-app/AdAway");
+ui_print("########################################");
+endif;
 
-#####################################################
-# Add Vanced Black Theme 
+######################################################
+# NO CHANGES AD-AWAY
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.30);
+
+######################################################
+# ADD VANCED BLACK
 
 if
-file_getprop("/tmp/aroma/vanced.prop","selected.1") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing Vanced Black Theme...");
 ui_print("  ");
-package_extract_dir("jdc/vanced/black", "/system/priv-app/VancedYT");
 delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
+delete_recursive("/system/priv-app/VancedYT");
+package_extract_dir("jdc/vanced/black", "/system/priv-app/VancedYT");
 ui_print("########################################");
 endif;
 
-#####################################################
-# Add Vanced Dark Theme 
+######################################################
+# ADD VANCED DARK
 
 if
-file_getprop("/tmp/aroma/vanced.prop","selected.1") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("-- Installing Vanced Dark Theme...");
 ui_print("  ");
-package_extract_dir("jdc/vanced/dark", "/system/priv-app/VancedYT");
 delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
+delete_recursive("/system/priv-app/VancedYT");
+package_extract_dir("jdc/vanced/dark", "/system/priv-app/VancedYT");
 ui_print("########################################");
 endif;
 
-#####################################################
-# Vanced Menu ENDIF
+######################################################
+# REMOVE VANCED
 
+if
+file_getprop("/tmp/aroma/add.prop","selected.4") == "3"
+then
+ui_print("  ");
+ui_print("-- Uninstalling Vanced...");
+ui_print("  ");
+delete_recursive("/system/priv-app/VancedYT");
+ui_print("########################################");
 endif;
 
-#####################################################
+######################################################
+# NO CHANGES VANCED
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.38);
 
-set_progress(0.7);
-#####################################################
+######################################################
 # ADD GOOGLE CAMERA
 
 if
-file_getprop("/tmp/aroma/add.prop","item.1.6") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("-- Pasting Google Camera to ");
@@ -134,11 +191,32 @@ package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
 ui_print("########################################");
 endif;
 
-#------------------------------------------------------
+######################################################
+# REMOVE GOOGLE CAMERA
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
+then
+ui_print("  ");
+ui_print("-- Removing Google Camera Paste Folder...");
+ui_print("  ");
+ui_print("---->  PLEASE UNINSTALL IT MANUALLY");
+ui_print("---->  Settings > Apps > Camera > Uninstall");
+ui_print("  ");
+delete_recursive("/sdcard/GoogleCamera");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES GOOGLE CAMERA
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.46);
+
+######################################################
 # ADD JDCTOOLBOX MAGISK
 
 if
-file_getprop("/tmp/aroma/jdc.prop","selected.1") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("-- Installing JDCToolbox - Magisk...");
@@ -148,11 +226,11 @@ package_extract_dir("jdc/toolbox/magisk", "/system/app/Toolbox");
 ui_print("########################################");
 endif;
 
-#------------------------------------------------------
+######################################################
 # ADD JDCTOOLBOX NONMAGISK
 
 if
-file_getprop("/tmp/aroma/jdc.prop","selected.1") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
 then
 ui_print("  ");
 ui_print("-- Installing JDCToolbox - Non-Magisk...");
@@ -162,11 +240,11 @@ package_extract_dir("jdc/toolbox/nonmagisk", "/system/app/Toolbox");
 ui_print("########################################");
 endif;
 
-#------------------------------------------------------
+######################################################
 # REMOVE JDCTOOLBOX
 
 if
-file_getprop("/tmp/aroma/jdc.prop","selected.1") == "3"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "3"
 then
 ui_print("  ");
 ui_print("-- Uninstalling JDCToolbox...");
@@ -175,17 +253,16 @@ delete_recursive("/system/app/Toolbox");
 ui_print("########################################");
 endif;
 
-#------------------------------------------------------
+######################################################
 # NO CHANGES JDCTOOLBOX
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.54);
 
-#PURPOSELY LEFT BLANK AS A PLACEHOLDER
-
-set_progress(0.8);
 ######################################################
 # REMOVE BROMIDE
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.1") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Bromide...");
@@ -195,23 +272,29 @@ ui_print("########################################");
 endif;
 
 ######################################################
-# REMOVE TURBO APP
+# RESTORE BROMIDE
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.2") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
 then
 ui_print("  ");
-ui_print("-- Removing Turbo App...");
+ui_print("-- Restoring Bromide...");
 ui_print("  ");
-delete_recursive("/system/app/Turbo");
+delete_recursive("/system/app/Bromide");
+package_extract_dir("jdc/bromide", "/system/app/Bromide");
 ui_print("########################################");
 endif;
+
+######################################################
+# NO CHANGES BROMIDE
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.62);
 
 ######################################################
 # REMOVE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.3") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Live Wallpaper Picker App...");
@@ -221,23 +304,29 @@ ui_print("########################################");
 endif;
 
 ######################################################
-# REMOVE ELEVEN PLAYER
+# RESTORE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.4") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.2") == "2"
 then
 ui_print("  ");
-ui_print("-- Removing Eleven Player...");
+ui_print("-- Restoring Live Wallpaper Picker App...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Eleven");
+delete_recursive("/system/app/LiveWallpaperPicker");
+package_extract_dir("jdc/wallpaperpicker", "/system/app/LiveWallpaperPicker");
 ui_print("########################################");
 endif;
+
+######################################################
+# NO CHANGES LIVE WALLPAPER PICKER APP
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.70);
 
 ######################################################
 # REMOVE MIXPLORER
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.5") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Mixplorer...");
@@ -247,18 +336,120 @@ ui_print("########################################");
 endif;
 
 ######################################################
+# RESTORE MIXPLORER
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.3") == "2"
+then
+ui_print("  ");
+ui_print("-- Restoring Mixplorer...");
+ui_print("  ");
+delete_recursive("/system/app/Mixplorer");
+package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES MIXPLORER
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.76);
+
+######################################################
+# REMOVE ELEVEN PLAYER
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.4") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Eleven Player...");
+ui_print("  ");
+delete_recursive("/system/priv-app/Eleven");
+ui_print("########################################");
+endif;
+
+######################################################
+# RESTORE ELEVEN PLAYER
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.4") == "2"
+then
+ui_print("  ");
+ui_print("-- Restoring Eleven Player...");
+ui_print("  ");
+delete_recursive("/system/priv-app/Eleven");
+package_extract_dir("jdc/eleven", "/system/priv-app/Eleven");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES ELEVEN PLAYER
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.84);
+
+######################################################
 # REMOVE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","item.1.6") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("-- Removing Snap Camera...");
-delete_recursive("/system/priv-app/Snap");
 ui_print("  ");
+delete_recursive("/system/priv-app/Snap");
 ui_print("########################################");
 endif;
-set_progress(0.9);
+
+######################################################
+# RESTORE SNAP CAMERA
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.5") == "2"
+then
+ui_print("  ");
+ui_print("-- Restoring Snap Camera...");
+ui_print("  ");
+delete_recursive("/system/priv-app/Snap");
+package_extract_dir("jdc/snap", "/system/priv-app/Snap");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES SNAP CAMERA
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.92);
+
+######################################################
+# REMOVE BUFFCORE ADIUTOR
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.6") == "1"
+then
+ui_print("  ");
+ui_print("-- Removing Buffcore Adiutor...");
+ui_print("  ");
+delete_recursive("/system/app/Buffcore");
+ui_print("########################################");
+endif;
+
+######################################################
+# RESTORE BUFFCORD ADIUTOR
+
+if
+file_getprop("/tmp/aroma/remove.prop","selected.6") == "2"
+then
+ui_print("  ");
+ui_print("-- Restoring Buffcore Adiutor...");
+ui_print("  ");
+delete_recursive("/system/app/Buffcore");
+package_extract_dir("jdc/buffcore", "/system/app/Buffcore");
+ui_print("########################################");
+endif;
+
+######################################################
+# NO CHANGES BUFFCORD ADIUTOR
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+
+set_progress(0.95);
 ######################################################
 
 ui_print("  ");
