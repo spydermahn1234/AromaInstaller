@@ -4,32 +4,32 @@
 - Changes since Optimized LineageOS - Version 5
 
 ---------------------------------------------------------
-<*> kernel: Set CONFIG_HZ to 300
-<*> kernel: Add intelliplug
-<*> kernel: Tweak our touch boost, after new hotplug
-<*> kernel: Add Color control tweak
-<*> kernel: Stop lowclocks from defconfig
-<*> kernel: Build with GZIP
-<*> QS: Add "silent-vibrate-loud" tile
-<*> wifi: More edits again
-<*> BT: and again...
-<*> post-fs: Add permissions to trace_marker
-<*> Fixed flickering white fonts on black background
-<*> a2dp: Improve the driver
-<*> Upstream merge since: 
-<*> Update our wallpaper
-<*> New bootanimation
-<*> Ledify: Match the color with the bootanimation
-<*> GPS: Edits again side
-<*> Fix the "unknown calls" issue for some providers
-<*> kernel: Add 'State notifier' for better sleep situation
-<*> Settings: Show version number at settings
-<*> QS Tiles reorder. Add the useful tiles on the first row
-<*> Audio edits,clean up and such
-<*> Remove 'x' sign from signal icon when no data
-<*> Update the 'over the horizon' Crapsung ringtones
-<*> Custom kernel adiutor comes prebuilt for buffcore
-<*> Septembers security patches.
-<*> Update to revision 46 of Oreo
-<*> Upstream merged until 11-September 2018
+<*> kernel: Set CONFIG_HZ to 300 </*>
+<*> kernel: Add intelliplug </*>
+<*> kernel: Tweak our touch boost, after new hotplug </*>
+<*> kernel: Add Color control tweak </*>
+<*> kernel: Stop lowclocks from defconfig </*>
+<*> kernel: Build with GZIP </*>
+<*> QS: Add "silent-vibrate-loud" tile </*>
+<*> wifi: More edits again </*>
+<*> BT: and again... </*>
+<*> post-fs: Add permissions to trace_marker </*>
+<*> Fixed flickering white fonts on black background </*>
+<*> a2dp: Improve the driver </*>
+<*> Upstream merge since:  </*>
+<*> Update our wallpaper </*>
+<*> New bootanimation </*>
+<*> Ledify: Match the color with the bootanimation </*>
+<*> GPS: Edits again side </*>
+<*> Fix the "unknown calls" issue for some providers </*>
+<*> kernel: Add 'State notifier' for better sleep situation </*>
+<*> Settings: Show version number at settings </*>
+<*> QS Tiles reorder. Add the useful tiles on the first row </*>
+<*> Audio edits,clean up and such </*>
+<*> Remove 'x' sign from signal icon when no data </*>
+<*> Update the 'over the horizon' Crapsung ringtones </*>
+<*> Custom kernel adiutor comes prebuilt for buffcore </*>
+<*> Septembers security patches. </*>
+<*> Update to revision 46 of Oreo </*>
+<*> Upstream merged until 11-September 2018 </*>
 
