@@ -1,5 +1,5 @@
 
-<b><u>Version 1.0:</u></b>
+<b><u>Aroma Version 1.0:</u></b>
 
 - Changes since Optimized LineageOS - Version 5
 
@@ -30,5 +30,6 @@
 <*> Update the 'over the horizon' Crapsung ringtones
 <*> Custom kernel adiutor comes prebuilt for buffcore
 <*> Septembers security patches.
-<*> Update to r46
+<*> Update to revision 46 of Oreo
+<*> Upstream merged until 11-September 2018
 
