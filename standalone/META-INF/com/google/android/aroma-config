@@ -61,7 +61,7 @@ exec("/sbin/mount", "-t", "auto", "/system");
 if read("/system/file.txt")=="optcmrr" then
 	exec("/sbin/umount", "-t", "auto", "/system");
 else
-	alert("ERROR","This AROMA installer can only work with Optimized LineageOS 15.1 and Buffs RR series.Exiting...");
+	alert("ERROR","Sorry, this AROMA installer can only work with JDCTeam roms.Exiting...");
 	exec("/sbin/umount", "-t", "auto", "/system");
 	exit("");
 endif;
