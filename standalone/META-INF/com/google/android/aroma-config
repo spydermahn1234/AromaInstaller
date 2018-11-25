@@ -87,7 +87,7 @@ selectbox(
       "add.prop",
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Magisk",                                  "v16.0"                                                                             ,0,    #-- selected.1 = 1
+    "Add Magisk",                                  "v17.3"                                                                             ,0,    #-- selected.1 = 1
     "Remove Magisk, if previously added",          "Will Restore built-in superuser"                                                   ,0,    #-- selected.1 = 2
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
@@ -97,14 +97,14 @@ selectbox(
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Ad-Away",                                 "v3.3"                                                                              ,0,    #-- selected.3 = 1
+    "Add Ad-Away",                                 "v4.0.9-180926"                                                                     ,0,    #-- selected.3 = 1
     "Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.3 = 2
-    "No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3	
- 
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+
     "",                                            ""                                                                                  ,2,    #--
     "Add Vanced YouTube - BLACK",                  "White theme is Default in app"                                                     ,0,    #-- selected.4 = 1
     "Add Vanced YouTube - DARK",                   "White theme is Default in app"                                                     ,0,    #-- selected.4 = 2
-    "Remove Vanced, if previously added",          "v13.32.52 Build 01.25.00"                                                          ,0,    #-- selected.4 = 3
+    "Remove Vanced, if previously added",          "v13.43.50"                                                                         ,0,    #-- selected.4 = 3
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 4
 
     "",                                            ""                                                                                  ,2,    #--
@@ -117,7 +117,7 @@ selectbox(
     "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.6 = 2
     "Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.6 = 3
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 4
-	
+
 );
 
 
@@ -131,27 +131,27 @@ selectbox(
 	"Remove Bromide App",                          "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.1 = 1
 	"Restore Bromide App",                         "if previously removed"                                                             ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
-	
+
     "",                                            ""                                                                                  ,2,    #--
 	"Remove Live Wallpaper Picker App",            "Collection of Live Wallpapers"                                                     ,0,    #-- selected.3 = 1
 	"Restore Live Wallpaper Picker App",           "if previously removed"                                                             ,0,    #-- selected.3 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
-	
+
     "",                                            ""                                                                                  ,2,    #--
     "Remove Mixplorer App",                        "Root File Explorer"                                                                ,0,    #-- selected.4 = 1
 	"Restore Mixplorer App",                       "if previously removed"                                                             ,0,    #-- selected.4 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3	
-	
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
+
     "",                                            ""                                                                                  ,2,    #--
     "Remove Eleven Music Player App",              "Default Lineage Music Player"                                                      ,0,    #-- selected.5 = 1
 	"Restore Eleven Music Player App",             "if previously removed"                                                             ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
-	
+
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.6 = 1
 	"Restore Snap Camera",                         "if previously removed"                                                             ,0,    #-- selected.6 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3	
-	
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
+
     "",                                            ""                                                                                  ,2,    #--
     "Remove Buffcore Kernel Adiutor",              "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.7 = 1
 	"Restore Buffcore Kernel Adiutor",             "if previously removed"                                                             ,0,    #-- selected.7 = 2
