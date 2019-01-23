@@ -79,6 +79,17 @@ loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
 fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
 
+selectbox(
+      "CHANGE YOUR BOOTANIMATION",
+      "Please select:\n",
+      "@default",
+      "boot.prop",
+
+    "",                                            ""                                                                                  ,2,    #--
+    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 1
+
+
+);
 
 selectbox(
       "ADD ITEMS",
