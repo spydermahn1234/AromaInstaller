@@ -86,7 +86,8 @@ selectbox(
       "boot.prop",
 
     "",                                            ""                                                                                  ,2,    #--
-    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 1
+    "Bios",                                        "by Creeper36 and SeriosBrad (Updated By SalimPS"                                   ,0,    #-- selected.1 = 1
+    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 2
 
 
 );
