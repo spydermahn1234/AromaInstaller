@@ -116,8 +116,13 @@ selectbox(
     "Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                                                ,0,    #-- selected.6 = 1
     "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.6 = 2
     "Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.6 = 3
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 4
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 4
 
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Xperia Keyboard",                         ""                                                                                  ,0,    #-- selected.7 = 1
+    "Remove Xperia Keyboard, if previously added", ""                                                                                  ,0,    #-- selected.7 = 2
+    "No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
+	
 );
 
 
