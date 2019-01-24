@@ -236,12 +236,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
 then
 ui_print("  ");
-ui_print("-- Pasting Google Camera to ");
-ui_print("       '/internal storage/GoogleCamera/'...");
+ui_print("-- Installing Google Camera...");
 ui_print("  ");
-ui_print("---->  PLEASE INSTALL IT MANUALLY");
 ui_print("  ");
-package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
+package_extract_dir("jdc/googlecamera", "/system/app/GoogleCamera");
 ui_print("########################################");
 endif;
 
@@ -252,12 +250,9 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
 then
 ui_print("  ");
-ui_print("-- Removing Google Camera Paste Folder...");
+ui_print("-- Uninstalling Google Camera...");
 ui_print("  ");
-ui_print("---->  PLEASE UNINSTALL IT MANUALLY");
-ui_print("---->  Settings > Apps > Camera > Uninstall");
-ui_print("  ");
-delete_recursive("/sdcard/GoogleCamera");
+delete_recursive("/system/app/GoogleCamera");
 ui_print("########################################");
 endif;
 
