@@ -420,6 +420,43 @@ set_progress(0.21);
 
 ######################################################
 
+# ADD BUFFCORD ADIUTOR
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
+then
+ui_print("  ");
+ui_print("Buffcore Adiutor is Installing...");
+ui_print("  ");
+delete_recursive("/system/app/Buffcore");
+package_extract_dir("jdc/buffcore", "/system/app/Buffcore");
+ui_print("Buffcore Adiutor Installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE BUFFCORE ADIUTOR
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling Buffcore Adiutor...");
+ui_print("  ");
+delete_recursive("/system/app/Buffcore");
+ui_print("Buffcore Adiutor Unintalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# NO CHANGES BUFFCORD ADIUTOR
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.95);
+
+######################################################
+
 delete_recursive("/tmp/aroma/add.prop");
 
 ui_print("########################################");
@@ -610,43 +647,6 @@ endif;
 # NO CHANGES SNAP CAMERA
 # [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.92);
-
-######################################################
-
-# REMOVE BUFFCORE ADIUTOR
-
-if
-file_getprop("/tmp/aroma/remove.prop","selected.6") == "1"
-then
-ui_print("  ");
-ui_print("Removing Buffcore Adiutor...");
-ui_print("  ");
-delete_recursive("/system/app/Buffcore");
-ui_print("Buffcore Adiutor removed successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# RESTORE BUFFCORD ADIUTOR
-
-if
-file_getprop("/tmp/aroma/remove.prop","selected.6") == "2"
-then
-ui_print("  ");
-ui_print("-- Restoring Buffcore Adiutor...");
-ui_print("  ");
-delete_recursive("/system/app/Buffcore");
-package_extract_dir("jdc/buffcore", "/system/app/Buffcore");
-ui_print("Buffcore Adiutor rerestored successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# NO CHANGES BUFFCORD ADIUTOR
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
-set_progress(0.95);
 
 ######################################################
 

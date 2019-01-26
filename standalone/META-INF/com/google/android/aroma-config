@@ -138,7 +138,12 @@ selectbox(
     "",                                            ""                                                                                  ,2,    #--
     "Add Xperia Keyboard",                         ""                                                                                  ,0,    #-- selected.7 = 1
     "Remove Xperia Keyboard, if previously added", ""                                                                                  ,0,    #-- selected.7 = 2
-    "No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
+	
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Buffcore Kernel Adiutor",                 "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.8 = 1
+	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.8 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.8 = 3
 	
 );
 
@@ -172,12 +177,7 @@ selectbox(
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.6 = 1
 	"Restore Snap Camera",                         "if previously removed"                                                             ,0,    #-- selected.6 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
-
-    "",                                            ""                                                                                  ,2,    #--
-    "Remove Buffcore Kernel Adiutor",              "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.7 = 1
-	"Restore Buffcore Kernel Adiutor",             "if previously removed"                                                             ,0,    #-- selected.7 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 3
 
 );
 
