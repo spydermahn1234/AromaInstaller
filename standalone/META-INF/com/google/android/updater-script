@@ -398,38 +398,38 @@ ui_print("########################################");
 
 ######################################################
 
-# REMOVE BROMIDE
+# REMOVE BRAVE
 
 if
 file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
 then
 ui_print("  ");
-ui_print("Removing Bromide...");
+ui_print("Removing Brave Browser...");
 ui_print("  ");
-delete_recursive("/system/app/Bromide");
-ui_print("Bromide removed successfully");
+delete_recursive("/system/app/Brave");
+ui_print("Brave removed successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# RESTORE BROMIDE
+# RESTORE BRAVE
 
 if
 file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Bromide...");
+ui_print("Restoring Brave Browser...");
 ui_print("  ");
-delete_recursive("/system/app/Bromide");
-package_extract_dir("jdc/bromide", "/system/app/Bromide");
-ui_print("Bromide rerestored successfully");
+delete_recursive("/system/app/Brave");
+package_extract_dir("jdc/Brave", "/system/app/Brave");
+ui_print("Brave rerestored successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# NO CHANGES BROMIDE
+# NO CHANGES BRAVE
 # [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.62);
 

@@ -148,8 +148,8 @@ selectbox(
       "remove.prop",
 
     "",                                            ""                                                                                  ,2,    #--
-	"Remove Bromide App",                          "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.1 = 1
-	"Restore Bromide App",                         "if previously removed"                                                             ,0,    #-- selected.1 = 2
+	"Remove Brave App",                            "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.1 = 1
+	"Restore Brave App",                           "if previously removed"                                                             ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
     "",                                            ""                                                                                  ,2,    #--
