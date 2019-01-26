@@ -90,8 +90,9 @@ selectbox(
     "Bios",                                        "by Creeper36 and SeriosBrad (Updated By SalimPS)"                                  ,0,    #-- selected.1 = 1
     "Optimized LineageOS",                         "by LineageOS"                                                                      ,0,    #-- selected.1 = 2
     "Optimized LineageOS (red)",                   "by SalimPS"                                                                        ,0,    #-- selected.1 = 3
-    "Pixel lack",                                  "by Google"                                                                         ,0,    #-- selected.1 = 4
-    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 5
+    "Pixel Black",                                 "by Google"                                                                         ,0,    #-- selected.1 = 4
+    "Pixel White",                                 "by Google"                                                                         ,0,    #-- selected.1 = 5
+    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 6
 
 
 );

@@ -71,10 +71,25 @@ endif;
 
 ####################################################
 
-# Boot Animation No Change
+# PIXEL WHITE ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "5"
+then
+ui_print("  ");
+ui_print("Pixel White Boot Animation is installing");
+ui_print("  ");
+package_extract_dir("boot/pixelwhite/system/media", "/system/media");
+ui_print("Pixel White Boot Animation installed successfully");
+ui_print("  ");
+endif;
+
+####################################################
+
+# Boot Animation No Change
+
+if
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "6"
 then
 ui_print("  ");
 ui_print("Boot Animation is being skipped");
