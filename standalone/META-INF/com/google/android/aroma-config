@@ -58,7 +58,7 @@ viewbox(
 
 
 exec("/sbin/mount", "-t", "auto", "/system");
-if read("/system/file.txt")=="optcmrr" then
+if read("/system/file.txt")=="jdcteam" then
 	exec("/sbin/umount", "-t", "auto", "/system");
 else
 	alert("ERROR","Sorry, this AROMA installer can only work with JDCTeam roms.Exiting...");
