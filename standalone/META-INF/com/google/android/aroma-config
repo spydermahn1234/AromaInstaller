@@ -63,22 +63,6 @@ else
 	exit("");
 endif;
 
-exec("/sbin/mount", "-t", "auto", "/system");
-if file_getprop("/system/build.prop","persist.vendor.romname") == "optlosjdc" then
-	# Show menu with optlos bootanimations
-endif;
-if file_getprop("/system/build.prop","persist.vendor.romname") == "buffromsjdc" then
-	# Show menu with buffs rom bootanimations
-endif;
-exec("/sbin/umount", "-t", "auto", "/system");
-
-textbox(
-    "CHANGELOG",
-    "Optimized LineageOS Changelog",
-    "@update",
-    resread("changelog.txt")
-);
-
 
 loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
