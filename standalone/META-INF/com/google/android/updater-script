@@ -472,6 +472,42 @@ set_progress(0.95);
 
 ######################################################
 
+# ADD OXYGEN OS FONTS
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.9") == "1"
+then
+ui_print("  ");
+ui_print("Oxygen OS fonts are Installing...");
+ui_print("  ");
+package_extract_dir("jdc/fonts/oosfonts", "/system/fonts");
+ui_print("Oxygen OS fonts Installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE OXYGEN OS FONTS
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.9") == "2"
+then
+ui_print("  ");
+ui_print("Restoring OPTLOS fonts...");
+ui_print("  ");
+package_extract_dir("jdc/fonts/optlosfonts", "/system/fonts");
+ui_print("OPTLOS fonts Restored successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# NO CHANGES OXYGEN OS FONTS
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.95);
+
+######################################################
+
 delete_recursive("/tmp/aroma/add.prop");
 
 ui_print("########################################");

@@ -133,7 +133,12 @@ selectbox(
 	"",                                            ""                                                                                  ,2,    #--
     "Add Buffcore Kernel Adiutor",                 "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.8 = 1
 	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.8 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.8 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
+		
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Oxygen OS Fonts",                         "System fonts from Oneplus's Oxygen OS"                                             ,0,    #-- selected.9 = 1
+	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.9 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.9 = 3
 	
 );
 
