@@ -121,10 +121,10 @@ selectbox(
 
 
 selectbox(
-      "ADD ITEMS",
+      "ADD ROOT RELATED ITEMS",
       "Please select:\n",
       "@default",
-      "add.prop",
+      "addroot.prop",
 
     "",                                            ""                                                                                  ,2,    #--
     "Add Magisk",                                  "v18.0"                                                                             ,0,    #-- selected.1 = 1
@@ -132,64 +132,71 @@ selectbox(
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Viper4Android",                           "ViperFX v2.5.0.5"                                                                  ,0,    #-- selected.2 = 1
-    "Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.2 = 2
+    "Add Ad-Away",                                 "v4.1.0-181213"                                                                     ,0,    #-- selected.2 = 1
+    "Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.2 = 2
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Ad-Away",                                 "v4.1.0-181213"                                                                     ,0,    #-- selected.3 = 1
-    "Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.3 = 2
-    "No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+    "Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                                                ,0,    #-- selected.3 = 1
+    "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.3 = 2
+    "Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.3 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 4
 
-    "",                                            ""                                                                                  ,2,    #--
-    "Add Vanced YouTube - BLACK",                  "White theme is Default in app"                                                     ,0,    #-- selected.4 = 1
-    "Add Vanced YouTube - DARK",                   "White theme is Default in app"                                                     ,0,    #-- selected.4 = 2
-    "Remove Vanced, if previously added",          "v13.43.50"                                                                         ,0,    #-- selected.4 = 3
-    "No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 4
-
-    "",                                            ""                                                                                  ,2,    #--
-    "Add Google Camera",                           "2.7.0008"                                                                          ,0,    #-- selected.5 = 1
-    "Remove Google Camera, if previously added",   ""                                                                                  ,0,    #-- selected.5 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
-
-    "",                                            ""                                                                                  ,2,    #--
-    "Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                                                ,0,    #-- selected.6 = 1
-    "Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.6 = 2
-    "Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.6 = 3
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 4
-
-    "",                                            ""                                                                                  ,2,    #--
-    "Add Xperia Keyboard",                         ""                                                                                  ,0,    #-- selected.7 = 1
-    "Remove Xperia Keyboard, if previously added", ""                                                                                  ,0,    #-- selected.7 = 2
-    "No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
-	
 	"",                                            ""                                                                                  ,2,    #--
-    "Add Buffcore Kernel Adiutor",                 "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.8 = 1
-	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.8 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
+    "Add Buffcore Kernel Adiutor",                 "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.4 = 1
+	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.4 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
 		
 	"",                                            ""                                                                                  ,2,    #--
-    "Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.9 = 1
-	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.9 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.9 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-    "Add Brave Browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.10 = 1
-	"Remove Brave Browser",						   ""                                                                                  ,0,    #-- selected.10 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.10 = 3
-	
-	"",                                            ""                                                                                  ,2,    #--
-    "Add Mixplorer App",                           "Root File Explorer"                                                                ,0,    #-- selected.11 = 1
-	"Remove Mixplorer App",						   ""                                                                                  ,0,    #-- selected.11 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.11 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-    "Add Recorder App",                            "Default Recorder App"                                                              ,0,    #-- selected.12 = 1
-	"Restore Recorder App",                        "If previously removed"                                                             ,0,    #-- selected.12 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.12 = 3
+    "Add Mixplorer App",                           "Root File Explorer"                                                                ,0,    #-- selected.5 = 1
+	"Remove Mixplorer App",						   ""                                                                                  ,0,    #-- selected.5 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
 );
 
+selectbox(
+      "ADD ITEMS",
+      "Please select:\n",
+      "@default",
+      "add.prop",
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Viper4Android",                           "ViperFX v2.5.0.5"                                                                  ,0,    #-- selected.1 = 1
+    "Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Vanced YouTube - BLACK",                  "White theme is Default in app"                                                     ,0,    #-- selected.2 = 1
+    "Add Vanced YouTube - DARK",                   "White theme is Default in app"                                                     ,0,    #-- selected.2 = 2
+    "Remove Vanced, if previously added",          "v13.43.50"                                                                         ,0,    #-- selected.2 = 3
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 4
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Google Camera",                           "2.7.0008"                                                                          ,0,    #-- selected.3 = 1
+    "Remove Google Camera, if previously added",   ""                                                                                  ,0,    #-- selected.3 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Add Xperia Keyboard",                         ""                                                                                  ,0,    #-- selected.4 = 1
+    "Remove Xperia Keyboard, if previously added", ""                                                                                  ,0,    #-- selected.4 = 2
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Recorder App",                            "Default Recorder App"                                                              ,0,    #-- selected.5 = 1
+	"Remove Recorder App",                         ""                                                                                  ,0,    #-- selected.5 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Brave Browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.6 = 1
+	"Remove Brave Browser",						   ""                                                                                  ,0,    #-- selected.6 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.7 = 1
+	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.7 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
+
+);
 
 selectbox(
       "REMOVE ITEMS - DEBLOAT ROM",
