@@ -1,10 +1,11 @@
 ﻿
 ini_set("force_colorspace","rgba");
 
-ini_set("aroma_name",             "JDCTeam Aroma package");
-ini_set("aroma_version",          "Aroma v2.0 - Pie enabled");
-ini_set("aroma_author",           "JDCTeam");
-ini_set("aroma_date",             "February 2018");
+ini_set("rom_name",             "OptLineageOS Aroma");
+ini_set("rom_version",          "Aroma v1.01");
+ini_set("rom_author",           "JDCTeam");
+ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon Variants");
+ini_set("rom_date",             "November 2018");
 
 
 anisplash(
@@ -44,11 +45,13 @@ fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
 
 viewbox(
     "",
-    "You are about to install <b>"+ini_get("aroma_name")+"</b>\n\n\n"+
+    "You are about to install <b>"+ini_get("rom_name")+"</b>\n\n\n"+
     "Rom Information:\n\n"+
-      "  Version\t:  <b><#selectbg_g>"+ini_get("aroma_version")+"</#></b>\n"+
-      "  Author\t:  <b><#selectbg_g>"+ini_get("aroma_author")+"</#></b>\n"+
-      "  Date\t:  <b><#selectbg_g>"+ini_get("aroma_date")+"</#></b>\n\n\n\n"+
+      "  Rom\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
+      "  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
+      "  Author\t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
+      "  Device\t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
+      "  Date\t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n"+
     "Press Next to Continue ...",
     "@welcome"
 );
@@ -200,7 +203,7 @@ restotmp("exec_demo/sleep","sleep");
 setvar("retstatus",
   install(
       "INSTALLING",
-      "<b>"+ini_get("aroma_name")+"</b> is being installed.\n\n"+
+      "<b>"+ini_get("rom_name")+"</b> is being installed.\n\n"+
       "<b>Please wait... This may take several minutes.</b>",
       "@install",
       "The installation has completed.\n\n"+
@@ -215,7 +218,7 @@ ini_set("text_next", "Finish");
 viewbox(
     "INSTALL COMPLETED",
     "<#selectbg_g><b>Congratulations...</b></#>\n\n"+
-    "<b>"+ini_get("aroma_name")+"</b> has been installed.\n\n"+
+    "<b>"+ini_get("rom_name")+"</b> has been installed.\n\n"+
     "Installer Status: "+getvar("retstatus")+"\n\n\n\n\n\n"+
     "Press <b>Finish</b> to Continue ...",
     "@welcome"
