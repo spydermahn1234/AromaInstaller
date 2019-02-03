@@ -205,7 +205,12 @@ selectbox(
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.6 = 1
 	"Restore Snap Camera",                         "if previously removed"                                                             ,0,    #-- selected.6 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+    "Remove Recorder App",                         "Default Recorder App"                                                              ,0,    #-- selected.7 = 1
+	"Restore Recorder App",                        "if previously removed"                                                             ,0,    #-- selected.7 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
 
 );
 
