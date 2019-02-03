@@ -508,33 +508,10 @@ set_progress(0.95);
 
 ######################################################
 
-delete_recursive("/tmp/aroma/add.prop");
-
-ui_print("########################################");
-
-# DEBLOATER SECTION
-
-######################################################
-
-# REMOVE BRAVE
+# ADD BRAVE
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
-then
-ui_print("  ");
-ui_print("Removing Brave Browser...");
-ui_print("  ");
-delete_recursive("/system/app/Brave");
-ui_print("Brave removed successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# RESTORE BRAVE
-
-if
-file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.10") == "1"
 then
 ui_print("  ");
 ui_print("Restoring Brave Browser...");
@@ -547,16 +524,75 @@ endif;
 
 ######################################################
 
+# RESTORE BRAVE
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.10") == "2"
+then
+ui_print("  ");
+ui_print("Removing Brave Browser...");
+ui_print("  ");
+delete_recursive("/system/app/Brave");
+ui_print("Brave removed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
 # NO CHANGES BRAVE
 # [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.62);
 
 ######################################################
 
+# ADD MIXPLORER
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.11") == "1"
+then
+ui_print("  ");
+ui_print("Restoring Mixplorer...");
+ui_print("  ");
+delete_recursive("/system/app/Mixplorer");
+package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
+ui_print("Mixplorer rerestored successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# RESTORE MIXPLORER
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.11") == "2"
+then
+ui_print("  ");
+ui_print("Removing Mixplorer...");
+ui_print("  ");
+delete_recursive("/system/app/Mixplorer");
+ui_print("Mixplorer removed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# NO CHANGES MIXPLORER
+# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
+set_progress(0.76);
+
+delete_recursive("/tmp/aroma/add.prop");
+
+ui_print("########################################");
+
+# DEBLOATER SECTION
+
+######################################################
+
+
 # REMOVE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.2") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("Removing Live Wallpaper Picker App...");
@@ -571,7 +607,7 @@ endif;
 # RESTORE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.2") == "2"
+file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Live Wallpaper Picker App...");
@@ -590,47 +626,10 @@ set_progress(0.70);
 
 ######################################################
 
-# REMOVE MIXPLORER
-
-if
-file_getprop("/tmp/aroma/remove.prop","selected.3") == "1"
-then
-ui_print("  ");
-ui_print("Removing Mixplorer...");
-ui_print("  ");
-delete_recursive("/system/app/Mixplorer");
-ui_print("Mixplorer removed successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# RESTORE MIXPLORER
-
-if
-file_getprop("/tmp/aroma/remove.prop","selected.3") == "2"
-then
-ui_print("  ");
-ui_print("Restoring Mixplorer...");
-ui_print("  ");
-delete_recursive("/system/app/Mixplorer");
-package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
-ui_print("Mixplorer rerestored successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# NO CHANGES MIXPLORER
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
-set_progress(0.76);
-
-######################################################
-
 # REMOVE ELEVEN PLAYER
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.4") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("Removing Eleven Player...");
@@ -645,7 +644,7 @@ endif;
 # RESTORE ELEVEN PLAYER
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.4") == "2"
+file_getprop("/tmp/aroma/remove.prop","selected.2") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Eleven Player...");
@@ -667,7 +666,7 @@ set_progress(0.84);
 # REMOVE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.6") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("Removing Snap Camera...");
@@ -682,7 +681,7 @@ endif;
 # RESTORE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.6") == "2"
+file_getprop("/tmp/aroma/remove.prop","selected.3") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Snap Camera...");
@@ -704,7 +703,7 @@ set_progress(0.92);
 # REMOVE RECORDER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.7") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Removing Recorder app...");
@@ -719,7 +718,7 @@ endif;
 # RESTORE RECORDER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.7") == "2"
+file_getprop("/tmp/aroma/remove.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Recorder app...");
