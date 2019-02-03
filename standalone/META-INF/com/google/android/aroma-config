@@ -181,7 +181,13 @@ selectbox(
 	"",                                            ""                                                                                  ,2,    #--
     "Add Mixplorer App",                           "Root File Explorer"                                                                ,0,    #-- selected.11 = 1
 	"Remove Mixplorer App",						   ""                                                                                  ,0,    #-- selected.11 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.11 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.11 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+    "Add Recorder App",                            "Default Recorder App"                                                              ,0,    #-- selected.12 = 1
+	"Restore Recorder App",                        "If previously removed"                                                             ,0,    #-- selected.12 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.12 = 3
+
 );
 
 
@@ -204,12 +210,7 @@ selectbox(
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.3 = 1
 	"Restore Snap Camera",                         "If previously removed"                                                             ,0,    #-- selected.3 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-    "Remove Recorder App",                         "Default Recorder App"                                                              ,0,    #-- selected.4 = 1
-	"Restore Recorder App",                        "If previously removed"                                                             ,0,    #-- selected.4 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.4 = 3
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.3 = 3
 
 );
 
