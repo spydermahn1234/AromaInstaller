@@ -162,11 +162,7 @@ ui_print("  ");
 endif;
 
 ####################################################
-
-# NO CHANGES MAGISK
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.10);
-
 ####################################################
 
 # ADD AD-AWAY
@@ -198,11 +194,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES AD-AWAY
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.15);
-
 ######################################################
 
 # ADD JDCTOOLBOX MAGISK
@@ -251,11 +243,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES JDCTOOLBOX
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.20);
-
 ######################################################
 
 # ADD BUFFCORE ADIUTOR
@@ -288,11 +276,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES BUFFCORE ADIUTOR
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.25);
-
 ######################################################
 
 # ADD MIXPLORER
@@ -325,11 +309,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES MIXPLORER
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.30);
-
 ######################################################
 
 # ADD VIPER4ARISE
@@ -370,11 +350,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES VIPER4ARISE
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.35);
-
 ######################################################
 
 # ADD VANCED BLACK
@@ -427,11 +403,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES VANCED
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.40);
-
 ######################################################
 
 # ADD GOOGLE CAMERA
@@ -463,11 +435,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES GOOGLE CAMERA
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.45);
-
 ######################################################
 
 
@@ -503,11 +471,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES XPERIA KEYBOARD
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.50);
-
 ######################################################
 
 # ADD RECORDER APP
@@ -540,13 +504,8 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES RECORDER APP
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.55);
-
 ######################################################
-
 
 # ADD BRAVE
 
@@ -578,11 +537,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES BRAVE
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.60);
-
 ######################################################
 
 # ADD OXYGEN OS FONTS
@@ -614,11 +569,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES OXYGEN OS FONTS
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.65);
-
 ######################################################
 delete_recursive("/tmp/aroma/add.prop");
 
@@ -659,11 +610,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES LIVE WALLPAPER PICKER APP
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.70);
-
 ######################################################
 
 # REMOVE ELEVEN PLAYER
@@ -696,11 +643,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES ELEVEN PLAYER
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.75);
-
 ######################################################
 
 # REMOVE SNAP CAMERA
@@ -733,11 +676,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-
-# NO CHANGES SNAP CAMERA
-# [PURPOSELY LEFT BLANK AS A PLACEHOLDER]
 set_progress(0.80);
-
 ######################################################
 
 ui_print("########################################");
