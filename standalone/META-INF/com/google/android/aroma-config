@@ -1,11 +1,11 @@
 ﻿
 ini_set("force_colorspace","rgba");
 
-ini_set("rom_name",             "OptLineageOS Aroma");
-ini_set("rom_version",          "Aroma v1.01");
+ini_set("rom_name",             "JDCTeam Aroma Package");
+ini_set("rom_version",          "Aroma v2.0, Pie enabled");
 ini_set("rom_author",           "JDCTeam");
-ini_set("rom_device",           "Samsung Galaxy S4 Snapdragon Variants");
-ini_set("rom_date",             "November 2018");
+ini_set("rom_device",           "JDCTeam's jflte");
+ini_set("rom_date",             "February 2019");
 
 
 anisplash(
