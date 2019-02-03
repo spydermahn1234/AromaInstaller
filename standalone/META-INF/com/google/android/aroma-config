@@ -169,7 +169,7 @@ selectbox(
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
 		
 	"",                                            ""                                                                                  ,2,    #--
-    "Add Oxygen OS Fonts",                         "System fonts from Oneplus's Oxygen OS"                                             ,0,    #-- selected.9 = 1
+    "Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                             ,0,    #-- selected.9 = 1
 	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.9 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.9 = 3
 	
