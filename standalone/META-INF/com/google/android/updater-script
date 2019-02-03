@@ -667,7 +667,7 @@ set_progress(0.84);
 # REMOVE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.5") == "1"
+file_getprop("/tmp/aroma/remove.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("Removing Snap Camera...");
@@ -682,7 +682,7 @@ endif;
 # RESTORE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.5") == "2"
+file_getprop("/tmp/aroma/remove.prop","selected.6") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Snap Camera...");
