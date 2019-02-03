@@ -518,7 +518,7 @@ ui_print("Restoring Brave Browser...");
 ui_print("  ");
 delete_recursive("/system/app/Brave");
 package_extract_dir("jdc/Brave", "/system/app/Brave");
-ui_print("Brave rerestored successfully");
+ui_print("Brave restored successfully");
 ui_print("  ");
 endif;
 
