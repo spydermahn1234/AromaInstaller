@@ -184,32 +184,32 @@ selectbox(
 
     "",                                            ""                                                                                  ,2,    #--
 	"Remove Brave App",                            "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.1 = 1
-	"Restore Brave App",                           "if previously removed"                                                             ,0,    #-- selected.1 = 2
+	"Restore Brave App",                           "If previously removed"                                                             ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
     "",                                            ""                                                                                  ,2,    #--
 	"Remove Live Wallpaper Picker App",            "Collection of Live Wallpapers"                                                     ,0,    #-- selected.3 = 1
-	"Restore Live Wallpaper Picker App",           "if previously removed"                                                             ,0,    #-- selected.3 = 2
+	"Restore Live Wallpaper Picker App",           "If previously removed"                                                             ,0,    #-- selected.3 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
 
     "",                                            ""                                                                                  ,2,    #--
     "Remove Mixplorer App",                        "Root File Explorer"                                                                ,0,    #-- selected.4 = 1
-	"Restore Mixplorer App",                       "if previously removed"                                                             ,0,    #-- selected.4 = 2
+	"Restore Mixplorer App",                       "If previously removed"                                                             ,0,    #-- selected.4 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
 
     "",                                            ""                                                                                  ,2,    #--
     "Remove Eleven Music Player App",              "Default Lineage Music Player"                                                      ,0,    #-- selected.5 = 1
-	"Restore Eleven Music Player App",             "if previously removed"                                                             ,0,    #-- selected.5 = 2
+	"Restore Eleven Music Player App",             "If previously removed"                                                             ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
 
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.6 = 1
-	"Restore Snap Camera",                         "if previously removed"                                                             ,0,    #-- selected.6 = 2
+	"Restore Snap Camera",                         "If previously removed"                                                             ,0,    #-- selected.6 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
     "Remove Recorder App",                         "Default Recorder App"                                                              ,0,    #-- selected.7 = 1
-	"Restore Recorder App",                        "if previously removed"                                                             ,0,    #-- selected.7 = 2
+	"Restore Recorder App",                        "If previously removed"                                                             ,0,    #-- selected.7 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
 
 );
