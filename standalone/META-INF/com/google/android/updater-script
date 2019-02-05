@@ -605,7 +605,7 @@ ui_print("Restoring Live Wallpaper Picker App...");
 ui_print("  ");
 delete_recursive("/system/app/LiveWallpaperPicker");
 package_extract_dir("jdc/wallpaperpicker", "/system/app/LiveWallpaperPicker");
-ui_print("Live Wallpaper Picker App rerestored successfully");
+ui_print("Live Wallpaper Picker App restored successfully");
 ui_print("  ");
 endif;
 
@@ -638,7 +638,7 @@ ui_print("Restoring Eleven Player...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Eleven");
 package_extract_dir("jdc/eleven", "/system/priv-app/Eleven");
-ui_print("Eleven Player rerestored successfully");
+ui_print("Eleven Player restored successfully");
 ui_print("  ");
 endif;
 
@@ -671,7 +671,7 @@ ui_print("Restoring Snap Camera...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Snap");
 package_extract_dir("jdc/snap", "/system/priv-app/Snap");
-ui_print("Snap Camera rerestored successfully");
+ui_print("Snap Camera restored successfully");
 ui_print("  ");
 endif;
 
