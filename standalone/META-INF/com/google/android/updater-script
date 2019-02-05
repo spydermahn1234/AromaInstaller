@@ -484,7 +484,7 @@ ui_print("Restoring Recorder app...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Recorder");
 package_extract_dir("jdc/Recorder", "/system/priv-app/Recorder");
-ui_print("Recorder app rerestored successfully");
+ui_print("Recorder app restored successfully");
 ui_print("  ");
 endif;
 
