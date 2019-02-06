@@ -581,6 +581,7 @@ ui_print("  ");
 ui_print("Removing Live Wallpaper Picker App...");
 ui_print("  ");
 delete_recursive("/system/app/LiveWallpaperPicker");
+delete_recursive("/system/app/LiveWallpapersPicker");
 ui_print("Live Wallpaper Picker App removed successfully");
 ui_print("  ");
 endif;
@@ -595,8 +596,8 @@ then
 ui_print("  ");
 ui_print("Restoring Live Wallpaper Picker App...");
 ui_print("  ");
-delete_recursive("/system/app/LiveWallpaperPicker");
-package_extract_dir("jdc/LiveWallpaperPicker", "/system/app/LiveWallpaperPicker");
+delete_recursive("/system/app/LiveWallpapersPicker");
+package_extract_dir("jdc/LiveWallpapersPicker", "/system/app/LiveWallpapersPicker");
 ui_print("Live Wallpaper Picker App restored successfully");
 ui_print("  ");
 endif;
