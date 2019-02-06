@@ -337,11 +337,11 @@ ui_print("  ");
 ui_print("Uninstalling ViPER4AndroidFX...");
 ui_print("  ");
 delete_recursive("/system/priv-app/ViPER4AndroidFX");
-ui_print("VIPER4Arise uninstalled successfully");
+ui_print("VIPER4Arise Uninstalled successfully");
 ui_print("  ");
 ui_print("Restoring AudioFX...");
 package_extract_dir("jdc/audiofx", "/system/priv-app/AudioFX");
-ui_print("AudioFX restored successfully");
+ui_print("AudioFX Restored successfully");
 ui_print("  ");
 endif;
 
@@ -361,7 +361,7 @@ delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
 delete_recursive("/system/priv-app/VancedYT");
 package_extract_dir("jdc/vanced/black", "/system/priv-app/VancedYT");
-ui_print("Vanced Black Theme installed successfully");
+ui_print("Vanced Black Theme Installed successfully");
 ui_print("  ");
 endif;
 
@@ -379,7 +379,7 @@ delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
 delete_recursive("/system/priv-app/VancedYT");
 package_extract_dir("jdc/vanced/dark", "/system/priv-app/VancedYT");
-ui_print("Vanced Dark Theme installed successfully");
+ui_print("Vanced Dark Theme Installed successfully");
 ui_print("  ");
 endif;
 
@@ -394,7 +394,7 @@ ui_print("  ");
 ui_print("Uninstalling Vanced...");
 ui_print("  ");
 delete_recursive("/system/priv-app/VancedYT");
-ui_print("Vanced uninstalled successfully");
+ui_print("Vanced Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -411,7 +411,7 @@ ui_print("  ");
 ui_print("Installing Google Camera...");
 ui_print("  ");
 package_extract_dir("jdc/googlecamera", "/system/app/GoogleCamera");
-ui_print("Google Camera installed successfully");
+ui_print("Google Camera Installed successfully");
 ui_print("  ");
 endif;
 
@@ -426,7 +426,7 @@ ui_print("  ");
 ui_print("Uninstalling Google Camera...");
 ui_print("  ");
 delete_recursive("/system/app/GoogleCamera");
-ui_print("Google Camera uninstalled successfully");
+ui_print("Google Camera Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -441,9 +441,9 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
 then
 ui_print("  ");
-ui_print("XPERIA KEYBOARD is installing...");
-package_extract_dir("jdc/xperiakeyboard", "/system");
-ui_print("XPERIA KEYBOARD installed successfully");
+ui_print("Installing XPERIA KEYBOARD...");
+package_extract_dir("jdc/xperiakeyboard/system", "/system");
+ui_print("XPERIA KEYBOARD Installed successfully");
 ui_print("  ");
 endif;
 
@@ -458,7 +458,7 @@ ui_print("  ");
 ui_print("Uninstalling XPERIA KEYBOARD...");
 ui_print("  ");
 delete_recursive("/system/app/textinput-tng");
-ui_print("XPERIA KEYBOARD uninstalled successfully");
+ui_print("XPERIA KEYBOARD Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -472,11 +472,11 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
 then
 ui_print("  ");
-ui_print("Restoring Recorder app...");
+ui_print("Installing Recorder app...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Recorder");
 package_extract_dir("jdc/Recorder", "/system/priv-app/Recorder");
-ui_print("Recorder app restored successfully");
+ui_print("Recorder app Installed successfully");
 ui_print("  ");
 endif;
 
@@ -488,10 +488,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
 then
 ui_print("  ");
-ui_print("Removing Recorder app...");
+ui_print("Uninstalling Recorder app...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Recorder");
-ui_print("Recorder app removed successfully");
+ui_print("Recorder app Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -505,26 +505,26 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
 then
 ui_print("  ");
-ui_print("Restoring Brave Browser...");
+ui_print("Installing Brave Browser...");
 ui_print("  ");
 delete_recursive("/system/app/Brave");
 package_extract_dir("jdc/Brave", "/system/app/Brave");
-ui_print("Brave restored successfully");
+ui_print("Brave Installed successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# RESTORE BRAVE
+# REMOVE BRAVE
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
 then
 ui_print("  ");
-ui_print("Removing Brave Browser...");
+ui_print("Uninstalling Brave Browser...");
 ui_print("  ");
 delete_recursive("/system/app/Brave");
-ui_print("Brave removed successfully");
+ui_print("Brave Uninstalled successfully");
 ui_print("  ");
 endif;
 
