@@ -442,11 +442,7 @@ file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("XPERIA KEYBOARD is installing...");
-package_extract_dir("jdc/xperiakeyboard", "/tmp/xperiakeyboard");
-run_program("/sbin/busybox", "unzip", "/tmp/xperiakeyboard/xperiakeyboard.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/xperiakeyboard");
-run_program("/sbin/busybox", "sh", "/tmp/xperiakeyboard/META-INF/com/google/android/update-binary", "null", "1", "/tmp/xperiakeyboard/xperiakeyboard.zip");
-delete_recursive("/tmp/xperiakeyboard");
-ifelse(is_mounted("/system"), unmount("/system"));
+package_extract_dir("jdc/xperiakeyboard", "/system");
 ui_print("XPERIA KEYBOARD installed successfully");
 ui_print("  ");
 endif;
