@@ -161,7 +161,7 @@ selectbox(
       "add.prop",
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Viper4Android",                           "ViperFX v2.5.0.5"                                                                  ,0,    #-- selected.1 = 1
+    "Add Viper4Android",                           "ViPER4Android FX 2.7 - Install the drivers by opening the app"                     ,0,    #-- selected.1 = 1
     "Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
