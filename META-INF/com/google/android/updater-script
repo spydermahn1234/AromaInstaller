@@ -136,7 +136,7 @@ delete_recursive("/tmp/magisk");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
 ui_print("Installing Magisk manager...");
-package_extract_dir("jdc/magiskmanager", "/system/priv-app/magskmanager");
+package_extract_dir("jdc/magiskmanager", "/system/priv-app/magiskmanager");
 ui_print("  ");
 ui_print("Magisk installed successfully");
 ui_print("  ");
