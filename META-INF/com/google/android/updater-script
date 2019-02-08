@@ -285,26 +285,26 @@ if
 file_getprop("/tmp/aroma/addroot.prop","selected.5") == "1"
 then
 ui_print("  ");
-ui_print("Restoring Mixplorer...");
+ui_print("Installing Mixplorer...");
 ui_print("  ");
 delete_recursive("/system/app/Mixplorer");
 package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
-ui_print("Mixplorer rerestored successfully");
+ui_print("Mixplorer Installed successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# RESTORE MIXPLORER
+# REMOVE MIXPLORER
 
 if
 file_getprop("/tmp/aroma/addroot.prop","selected.5") == "2"
 then
 ui_print("  ");
-ui_print("Removing Mixplorer...");
+ui_print("Uninstalling Mixplorer...");
 ui_print("  ");
 delete_recursive("/system/app/Mixplorer");
-ui_print("Mixplorer removed successfully");
+ui_print("Mixplorer Uninstalled successfully");
 ui_print("  ");
 endif;
 
