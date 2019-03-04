@@ -114,7 +114,8 @@ selectbox(
     "Pixel Black",                                 "by Google"                                                                         ,0,    #-- selected.1 = 4
     "Pixel White",                                 "by Google"                                                                         ,0,    #-- selected.1 = 5
     "Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 6
-    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 7
+    "Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 7
+    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 8
 
 
 );
