@@ -37,7 +37,7 @@ anisplash(
 );
 
 
-theme("jdc");
+theme("redblack");
 loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
 fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
@@ -48,25 +48,25 @@ menubox(
 	"Please select a menu option",
 	"@install",
 	"theme.prop",
-	"<b>Default-JDCTeam</b>","","@install",
-	"<b>Ubuntu theme</b>","","@install",
-	"<b>Red-Black theme</b>","","@install",
+	"<b>Red-Black them</b>","","@install",
 	"<b>Red-Dark theme</b>","","@install",
+	"<b>Red-White theme</b>","","@install",
+	"<b>Ubuntu theme</b>","","@install",
 	"<b>Palm theme</b>","","@install"
 );
 
 #IF INSTALLATION OF ROM IS SELECTED
 if prop("theme.prop","selected")=="1" then
-	theme("jdc");
-endif;
-if prop("theme.prop","selected")=="2" then
-	theme("ubuntu");
-endif;
-if prop("theme.prop","selected")=="3" then
 	theme("redblack");
 endif;
-if prop("theme.prop","selected")=="4" then
+if prop("theme.prop","selected")=="2" then
 	theme("reddark");
+endif;
+if prop("theme.prop","selected")=="3" then
+	theme("jdc");
+endif;
+if prop("theme.prop","selected")=="4" then
+	theme("ubuntu");
 endif;
 if prop("theme.prop","selected")=="5" then
 	theme("palm");
