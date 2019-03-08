@@ -146,10 +146,25 @@ endif;
 
 ####################################################
 
-# Boot Animation No Change
+# AOSP EXTENDED ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "10"
+then
+ui_print("  ");
+ui_print("AOSP Extended Boot Animation is installing");
+ui_print("  ");
+package_extract_dir("boot/aex/system/media", "/system/media");
+ui_print("AOSP Extended Boot Animation installed successfully");
+ui_print("  ");
+endif;
+
+####################################################
+
+# Boot Animation No Change
+
+if
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "11"
 then
 ui_print("  ");
 ui_print("Boot Animation is being skipped");
