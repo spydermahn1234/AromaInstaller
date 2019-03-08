@@ -113,10 +113,11 @@ selectbox(
     "Optimized LineageOS (red)",                   "by SalimPS"                                                                        ,0,    #-- selected.1 = 3
     "Pixel Black",                                 "by Google"                                                                         ,0,    #-- selected.1 = 4
     "Pixel White",                                 "by Google"                                                                         ,0,    #-- selected.1 = 5
-    "Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 6
-    "Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 7
-    "Resurrection Remix",                          "by Resurrection Remix team"                                                        ,0,    #-- selected.1 = 8
-    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 9
+    "Pixel Experience",                            "by Google"                                                                         ,0,    #-- selected.1 = 6
+    "Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 7
+    "Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 8
+    "Resurrection Remix",                          "by Resurrection Remix team"                                                        ,0,    #-- selected.1 = 9
+    "No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 10
 
 
 );
