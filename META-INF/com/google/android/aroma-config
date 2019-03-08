@@ -152,7 +152,7 @@ selectbox(
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
 		
 	"",                                            ""                                                                                  ,2,    #--
-    "Add Mixplorer App",                           "Root File Explorer"                                                                ,0,    #-- selected.5 = 1
+    "Add Mixplorer App",                           "Root File Explorer v6.33.10_B19030240"                                             ,0,    #-- selected.5 = 1
 	"Remove Mixplorer App",						   ""                                                                                  ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
