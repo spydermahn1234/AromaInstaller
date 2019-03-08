@@ -412,52 +412,36 @@ endif;
 set_progress(0.35);
 ######################################################
 
-# ADD VANCED BLACK
+# ADD NEWPIPE
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.2") == "1"
 then
 ui_print("  ");
-ui_print("Installing Vanced Black Theme...");
+ui_print("Installing Newpipe YouTube Client...");
 ui_print("  ");
 delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
 delete_recursive("/system/priv-app/VancedYT");
-package_extract_dir("jdc/vanced/black", "/system/priv-app/VancedYT");
-ui_print("Vanced Black Theme Installed successfully");
+delete_recursive("/system/priv-app/newpipe");
+package_extract_dir("jdc/newpipe", "/system/priv-app/newpipe");
+ui_print("Newpipe YouTube Client Installed successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# ADD VANCED DARK
+# REMOVE NEWPIPE
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.2") == "2"
 then
 ui_print("  ");
-ui_print("Installing Vanced Dark Theme...");
-ui_print("  ");
-delete_recursive("/system/priv-app/YouTube");
-delete_recursive("/data/app/YouTube");
-delete_recursive("/system/priv-app/VancedYT");
-package_extract_dir("jdc/vanced/dark", "/system/priv-app/VancedYT");
-ui_print("Vanced Dark Theme Installed successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# REMOVE VANCED
-
-if
-file_getprop("/tmp/aroma/add.prop","selected.2") == "3"
-then
-ui_print("  ");
-ui_print("Uninstalling Vanced...");
+ui_print("Uninstalling Newpipe YouTube Client...");
 ui_print("  ");
 delete_recursive("/system/priv-app/VancedYT");
-ui_print("Vanced Uninstalled successfully");
+delete_recursive("/system/priv-app/newpipe");
+ui_print("Newpipe YouTube Client Uninstalled successfully");
 ui_print("  ");
 endif;
 
