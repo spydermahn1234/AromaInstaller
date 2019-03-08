@@ -136,7 +136,7 @@ selectbox(
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Ad-Away",                                 "4.2.1-190203"                                                                      ,0,    #-- selected.2 = 1
+    "Add Ad-Away",                                 "4.2.3"                                                                             ,0,    #-- selected.2 = 1
     "Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.2 = 2
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
