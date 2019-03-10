@@ -97,7 +97,7 @@ endif;
 
 textbox(
     "CHANGELOG",
-    "Optimized LineageOS Changelog",
+    "JDCTeam Aroma Installer Changelog",
     "@update",
     resread("changelog.txt")
 );
