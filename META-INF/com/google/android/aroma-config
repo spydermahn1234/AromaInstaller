@@ -2,10 +2,10 @@
 ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDCTeam Aroma Package");
-ini_set("rom_version",          "Aroma v1.0, Pie enabled");
+ini_set("rom_version",          "Aroma v2.0, Pie enabled");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JDCTeam's jflte");
-ini_set("rom_date",             "February 2019");
+ini_set("rom_date",             "March 2019");
 
 
 anisplash(
@@ -95,6 +95,12 @@ else
 	exit("");
 endif;
 
+textbox(
+    "CHANGELOG",
+    "Optimized LineageOS Changelog",
+    "@update",
+    resread("changelog.txt")
+);
 
 loadlang("langs/en.lang");
 fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
