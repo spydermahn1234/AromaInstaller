@@ -48,7 +48,7 @@ menubox(
 	"Please select a menu option",
 	"@install",
 	"theme.prop",
-	"<b>Red-Black them</b>","","@install",
+	"<b>Red-Black theme</b>","","@install",
 	"<b>Red-Dark theme</b>","","@install",
 	"<b>Red-White theme</b>","","@install",
 	"<b>Ubuntu theme</b>","","@install",
@@ -176,7 +176,7 @@ selectbox(
     "No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
     "",                                            ""                                                                                  ,2,    #--
-    "Add Google Camera",                           "2.7.0008"                                                                          ,0,    #-- selected.3 = 1
+    "Add Google Camera",                           "v2.7.0008"                                                                         ,0,    #-- selected.3 = 1
     "Remove Google Camera, if previously added",   ""                                                                                  ,0,    #-- selected.3 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
 
