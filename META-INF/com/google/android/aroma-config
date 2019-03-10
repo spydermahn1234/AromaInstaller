@@ -220,7 +220,12 @@ selectbox(
     "",                                            ""                                                                                  ,2,    #--
     "Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.3 = 1
 	"Restore Snap Camera",                         "If previously removed"                                                             ,0,    #-- selected.3 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.3 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+
+    "",                                            ""                                                                                  ,2,    #--
+    "Remove Email App",                            "Default Stock Email App"                                                           ,0,    #-- selected.4 = 1
+	"Restore Email",                               "If previously removed"                                                             ,0,    #-- selected.4 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.4 = 3
 
 );
 
