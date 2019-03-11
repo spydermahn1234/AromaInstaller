@@ -161,7 +161,12 @@ selectbox(
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Mixplorer App",                           "Root File Explorer v6.33.10_B19030240"                                             ,0,    #-- selected.5 = 1
 	"Remove Mixplorer App",                        ""                                                                                  ,0,    #-- selected.5 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
+	
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Substratum Key for Liquid Remix",         "Only install in Liquid Remix to fix Substratum"                                    ,0,    #-- selected.6 = 1
+	"Remove Substratum Key",                       ""                                                                                  ,0,    #-- selected.6 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.6 = 3
 
 );
 

@@ -14,7 +14,8 @@
 <*> VancedYT Dark/Black Removed </*>
 <*> Newpipe YouTube Client Added </*>
 <*> Added option to remove Email App </*>
-<*> Add Changelog section in Aroma </*>
+<*> Added Changelog section in Aroma </*>
+<*> Added Substratum Key for Liquid Remix </*>
 
 <b><u>Aroma Version 1.0:</u></b>
 ---------------------------------------------------------
