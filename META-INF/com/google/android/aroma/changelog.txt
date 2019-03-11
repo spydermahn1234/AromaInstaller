@@ -3,19 +3,19 @@
 ---------------------------------------------------------
 
 <*> Prioritize our Red-Black JDC theme </*>
-<*> OPTLOS Pie bootaimation added </*>
-<*> Liquid Remix bootaimation added </*>
-<*> Resurrection Remix bootaimation added </*>
-<*> Pixel Experience bootaimation added </*>
-<*> AOSP Extended bootaimation added </*>
-<*> AdAway Updateed to v4.2.3 </*>
-<*> MiXplorer Updateed to v6.33.10 </*>
-<*> Brave Updated to v1.0.84 </*>
-<*> VancedYT Dark/Black Removed </*>
-<*> Newpipe YouTube Client Added </*>
+<*> Added OPTLOS Pie bootaimation </*>
+<*> Added Liquid Remix bootaimation </*>
+<*> Added Resurrection Remix bootaimation </*>
+<*> Added Pixel Experience bootaimation </*>
+<*> Added AOSP Extended bootaimation </*>
+<*> Added Newpipe YouTube Client </*>
 <*> Added option to remove Email App </*>
 <*> Added Changelog section in Aroma </*>
 <*> Added Substratum Key for Liquid Remix </*>
+<*> Removed VancedYT Dark/Black </*>
+<*> Updated AdAway to v4.2.3 </*>
+<*> Updated MiXplorer to v6.33.10 </*>
+<*> Updated Brave to v1.0.84 </*>
 
 <b><u>Aroma Version 1.0:</u></b>
 ---------------------------------------------------------
