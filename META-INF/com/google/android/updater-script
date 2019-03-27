@@ -385,37 +385,6 @@ ui_print("Mixplorer Uninstalled successfully");
 ui_print("  ");
 endif;
 
-######################################################
-
-# ADD SUBSTRATUM KEY
-
-if
-file_getprop("/tmp/aroma/addroot.prop","selected.6") == "1"
-then
-ui_print("  ");
-ui_print("Installing Substratum Key...");
-ui_print("  ");
-delete_recursive("/system/app/substratumkey");
-package_extract_dir("jdc/substratumkey", "/system/app/substratumkey");
-ui_print("Substratum Key Installed successfully");
-ui_print("  ");
-endif;
-
-######################################################
-
-# REMOVE SUBSTRATUM KEY
-
-if
-file_getprop("/tmp/aroma/addroot.prop","selected.6") == "2"
-then
-ui_print("  ");
-ui_print("Uninstalling Substratum Key...");
-ui_print("  ");
-delete_recursive("/system/app/substratumkey");
-ui_print("Substratum Key Uninstalled successfully");
-ui_print("  ");
-endif;
-
 ####################################################
 
 delete_recursive("/tmp/aroma/addroot.prop");

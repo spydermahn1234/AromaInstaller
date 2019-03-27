@@ -1,6 +1,7 @@
 <b><u>Aroma Version 3.0:</u></b>
 ---------------------------------------------------------
 
+<*> Removed Substratum Key </*>
 <*> Updated MiXplorer to v6.35.2 </*>
 <*> Updated Brave to v1.0.88 </*>
 <*> Updated NewPipe to v0.16.1 </*>
