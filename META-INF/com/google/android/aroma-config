@@ -204,7 +204,12 @@ selectbox(
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.7 = 1
 	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.7 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.7 = 3
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Remove Camera Shutter Sounds",                ""                                                                                  ,0,    #-- selected.8 = 1
+	"Restore Camera Shutter Sounds",               "Will Restore stock Sounds"                                                         ,0,    #-- selected.8 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.8 = 3
 
 );
 

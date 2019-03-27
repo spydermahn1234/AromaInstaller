@@ -632,6 +632,36 @@ ui_print("  ");
 endif;
 
 ######################################################
+
+# REMOVE CAMERA SHUTTER SOUNDS
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
+then
+ui_print("  ");
+ui_print("Removing Camera shutter sounds...");
+ui_print("  ");
+package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/media/audio/ui");
+ui_print("Camera shutter sounds removed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# RESTORE CAMERA SHUTTER SOUNDS
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
+then
+ui_print("  ");
+ui_print("Restoring Camera shutter sounds...");
+ui_print("  ");
+package_extract_dir("jdc/camerasounds/optlos/system/media/audio/ui", "/system/media/audio/ui");
+ui_print("Camera shutter sounds Restored successfully");
+ui_print("  ");
+endif;
+
+######################################################
 set_progress(0.65);
 ######################################################
 
