@@ -183,7 +183,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Newpipe",                                 "A free YouTube Client"                                                             ,0,    #-- selected.2 = 1
-	"Remove Newpipe, if previously added",         "v0.16.0"                                                                           ,0,    #-- selected.2 = 2
+	"Remove Newpipe, if previously added",         "v0.16.1"                                                                           ,0,    #-- selected.2 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--

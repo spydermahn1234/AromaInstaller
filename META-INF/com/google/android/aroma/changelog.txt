@@ -3,6 +3,7 @@
 
 <*> Updated MiXplorer to v6.35.2 </*>
 <*> Updated Brave to v1.0.88 </*>
+<*> Updated NewPipe to v0.16.1 </*>
 
 <b><u>Aroma Version 2.0:</u></b>
 ---------------------------------------------------------
