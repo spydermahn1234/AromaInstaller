@@ -3,6 +3,7 @@
 
 <*> Added option to remove Camera shutter sounds </*>
 <*> Removed Substratum Key </*>
+<*> Updated Magisk to v19.1 </*>
 <*> Updated MiXplorer to v6.35.2 </*>
 <*> Updated Brave to v1.0.88 </*>
 <*> Updated NewPipe to v0.16.1 </*>
