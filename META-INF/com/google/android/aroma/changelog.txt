@@ -5,6 +5,7 @@
 <*> Removed Substratum Key </*>
 <*> Updated Magisk to v19.1 </*>
 <*> Updated Magisk Manager to v7.1.2 </*>
+<*> Updated Magisk Uninstaller to latest version </*>
 <*> Updated MiXplorer to v6.35.2 </*>
 <*> Updated Brave to v1.0.88 </*>
 <*> Updated NewPipe to v0.16.1 </*>
