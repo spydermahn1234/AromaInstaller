@@ -138,7 +138,7 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "v19.1/v7.0.0"                                                                      ,0,    #-- selected.1 = 1
+	"Add Magisk and Magisk manager",               "v19.1/v7.1.2"                                                                      ,0,    #-- selected.1 = 1
 	"Remove Magisk, if previously added",          "Will Restore built-in superuser"                                                   ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
