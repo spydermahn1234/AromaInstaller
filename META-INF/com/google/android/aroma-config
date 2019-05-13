@@ -85,16 +85,6 @@ viewbox(
 	"@welcome"
 );
 
-exec("/sbin/umount", "/system");
-exec("/sbin/mount", "/system");
-if read("/system/file.txt")=="jdcteam" then
-	exec("/sbin/umount", "/system");
-else
-	alert("ERROR","Sorry, this AROMA installer can only work with JDCTeam roms.Exiting...");
-	exec("/sbin/umount","/system");
-	exit("");
-endif;
-
 textbox(
 		"CHANGELOG",
 		"JDCTeam Aroma Installer Changelog",
