@@ -16,10 +16,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "1"
 then
 ui_print("  ");
-ui_print("Bios Boot Animation is installing");
+ui_print("Bios boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/bios/system/media", "/system/media");
-ui_print("Bios Boot Animation installed successfully");
+ui_print("Bios boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -31,10 +31,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "2"
 then
 ui_print("  ");
-ui_print("Optimized LineageOS Boot Animation is installing");
+ui_print("Optimized LineageOS boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/optlos/system/media", "/system/media");
-ui_print("Optimized LineageOS Boot Animation installed successfully");
+ui_print("Optimized LineageOS boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -46,10 +46,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "3"
 then
 ui_print("  ");
-ui_print("Optimized LineageOS (RED) Boot Animation is installing");
+ui_print("Optimized LineageOS (RED) boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/optlosred/system/media", "/system/media");
-ui_print("Optimized LineageOS (RED) Boot Animation installed successfully");
+ui_print("Optimized LineageOS (RED) boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -61,10 +61,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "4"
 then
 ui_print("  ");
-ui_print("Optimized LineageOS Pie Boot Animation is installing");
+ui_print("Optimized LineageOS Pie boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/optlosP/system/media", "/system/media");
-ui_print("Optimized LineageOS Pie Boot Animation installed successfully");
+ui_print("Optimized LineageOS Pie boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -76,10 +76,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "5"
 then
 ui_print("  ");
-ui_print("Pixel Black Boot Animation is installing");
+ui_print("Pixel Black boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/pixelblack/system/media", "/system/media");
-ui_print("Pixel Black Boot Animation installed successfully");
+ui_print("Pixel Black boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -91,10 +91,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "6"
 then
 ui_print("  ");
-ui_print("Pixel White Boot Animation is installing");
+ui_print("Pixel White boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/pixelwhite/system/media", "/system/media");
-ui_print("Pixel White Boot Animation installed successfully");
+ui_print("Pixel White boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -106,10 +106,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "7"
 then
 ui_print("  ");
-ui_print("Pixel Experience Boot Animation is installing");
+ui_print("Pixel Experience boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/pixelexp/system/media", "/system/media");
-ui_print("Pixel Experience Boot Animation installed successfully");
+ui_print("Pixel Experience boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -121,10 +121,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "8"
 then
 ui_print("  ");
-ui_print("Oxygen OS Boot Animation is installing");
+ui_print("Oxygen OS boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/oxygen/system/media", "/system/media");
-ui_print("Oxygen OS Boot Animation installed successfully");
+ui_print("Oxygen OS boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -136,10 +136,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "9"
 then
 ui_print("  ");
-ui_print("Liquid Remix Boot Animation is installing");
+ui_print("Liquid Remix boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/liquidremix/system/media", "/system/media");
-ui_print("Liquid Remix Boot Animation installed successfully");
+ui_print("Liquid Remix boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -151,10 +151,10 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "10"
 then
 ui_print("  ");
-ui_print("Resurrection Remix Boot Animation is installing");
+ui_print("Resurrection Remix boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/rr/system/media", "/system/media");
-ui_print("Resurrection Remix Boot Animation installed successfully");
+ui_print("Resurrection Remix boot animation installed successfully");
 ui_print("  ");
 endif;
 
@@ -166,22 +166,22 @@ if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "11"
 then
 ui_print("  ");
-ui_print("AOSP Extended Boot Animation is installing");
+ui_print("AOSP Extended boot animation is installing");
 ui_print("  ");
 package_extract_dir("boot/aex/system/media", "/system/media");
-ui_print("AOSP Extended Boot Animation installed successfully");
+ui_print("AOSP Extended boot animation installed successfully");
 ui_print("  ");
 endif;
 
 ####################################################
 
-# Boot Animation No Change
+# boot animation No Change
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "12"
 then
 ui_print("  ");
-ui_print("Boot Animation is being skipped");
+ui_print("Boot animation is being skipped");
 ui_print("  ");
 endif;
 
@@ -189,7 +189,7 @@ endif;
 
 delete_recursive("/tmp/aroma/boot.prop");
 
-ui_print("########################################");
+ui_print("##############end boot##################");
 
 # APPS ROOT SECTION
 
@@ -234,7 +234,7 @@ delete_recursive("/system/priv-app/magiskmanager");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
 ui_print("  ");
-ui_print("Magisk Uninstalled successfully");
+ui_print("Magisk uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -242,31 +242,31 @@ endif;
 set_progress(0.10);
 ####################################################
 
-# ADD AD-AWAY
+# ADD ADAWAY
 
 if
 file_getprop("/tmp/aroma/addroot.prop","selected.2") == "1"
 then
 ui_print("  ");
-ui_print("Installing Ad-Away...");
+ui_print("Installing AdAway...");
 ui_print("  ");
 package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
-ui_print("AD-AWAY installed successfully");
+ui_print("AdAway installed successfully");
 ui_print("  ");
 endif;
 
 ######################################################
 
-# REMOVE AD-AWAY
+# REMOVE ADAWAY
 
 if
 file_getprop("/tmp/aroma/addroot.prop","selected.2") == "2"
 then
 ui_print("  ");
-ui_print("Uninstalling Ad-Away...");
+ui_print("Uninstalling AdAway...");
 ui_print("  ");
 delete_recursive("/system/priv-app/AdAway");
-ui_print("AD-AWAY uninstalled successfully");
+ui_print("AdAway uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -329,11 +329,11 @@ if
 file_getprop("/tmp/aroma/addroot.prop","selected.4") == "1"
 then
 ui_print("  ");
-ui_print("Buffcore Adiutor is Installing...");
+ui_print("Buffcore Adiutor is installing...");
 ui_print("  ");
 delete_recursive("/system/app/Buffcore");
 package_extract_dir("jdc/buffcore", "/system/app/Buffcore");
-ui_print("Buffcore Adiutor Installed successfully");
+ui_print("Buffcore Adiutor installed successfully");
 ui_print("  ");
 endif;
 
@@ -348,7 +348,7 @@ ui_print("  ");
 ui_print("Uninstalling Buffcore Adiutor...");
 ui_print("  ");
 delete_recursive("/system/app/Buffcore");
-ui_print("Buffcore Adiutor Unintalled successfully");
+ui_print("Buffcore Adiutor uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -366,7 +366,7 @@ ui_print("Installing Mixplorer...");
 ui_print("  ");
 delete_recursive("/system/app/Mixplorer");
 package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
-ui_print("Mixplorer Installed successfully");
+ui_print("Mixplorer installed successfully");
 ui_print("  ");
 endif;
 
@@ -381,7 +381,7 @@ ui_print("  ");
 ui_print("Uninstalling Mixplorer...");
 ui_print("  ");
 delete_recursive("/system/app/Mixplorer");
-ui_print("Mixplorer Uninstalled successfully");
+ui_print("Mixplorer uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -389,7 +389,7 @@ endif;
 
 delete_recursive("/tmp/aroma/addroot.prop");
 
-ui_print("########################################");
+ui_print("#############end addroot#################");
 
 set_progress(0.30);
 
@@ -409,7 +409,7 @@ ui_print("Installing ViPER4AndroidFX...");
 ui_print("  ");
 package_extract_dir("jdc/ViPER4AndroidFX", "/system/priv-app/ViPER4AndroidFX");
 delete_recursive("/system/priv-app/AudioFX");
-ui_print("ViPER4AndroidFX Installed successfully");
+ui_print("ViPER4AndroidFX installed successfully");
 ui_print("  ");
 endif;
 
@@ -424,7 +424,7 @@ ui_print("  ");
 ui_print("Uninstalling ViPER4AndroidFX...");
 ui_print("  ");
 delete_recursive("/system/priv-app/ViPER4AndroidFX");
-ui_print("VIPER4Arise Uninstalled successfully");
+ui_print("VIPER4AndroidFX Uninstalled successfully");
 ui_print("  ");
 ui_print("Restoring AudioFX...");
 package_extract_dir("jdc/audiofx", "/system/priv-app/AudioFX");
@@ -442,14 +442,14 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.2") == "1"
 then
 ui_print("  ");
-ui_print("Installing Newpipe YouTube Client...");
+ui_print("Installing Newpipe YouTube client...");
 ui_print("  ");
 delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
 delete_recursive("/system/priv-app/VancedYT");
 delete_recursive("/system/priv-app/newpipe");
 package_extract_dir("jdc/newpipe", "/system/priv-app/newpipe");
-ui_print("Newpipe YouTube Client Installed successfully");
+ui_print("Newpipe YouTube client installed successfully");
 ui_print("  ");
 endif;
 
@@ -461,11 +461,11 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.2") == "2"
 then
 ui_print("  ");
-ui_print("Uninstalling Newpipe YouTube Client...");
+ui_print("Uninstalling Newpipe YouTube client...");
 ui_print("  ");
 delete_recursive("/system/priv-app/VancedYT");
 delete_recursive("/system/priv-app/newpipe");
-ui_print("Newpipe YouTube Client Uninstalled successfully");
+ui_print("Newpipe YouTube client uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -479,10 +479,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
 then
 ui_print("  ");
-ui_print("Installing Google Camera...");
+ui_print("Installing Google camera...");
 ui_print("  ");
 package_extract_dir("jdc/googlecamera", "/system/app/GoogleCamera");
-ui_print("Google Camera Installed successfully");
+ui_print("Google camera installed successfully");
 ui_print("  ");
 endif;
 
@@ -494,10 +494,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
 then
 ui_print("  ");
-ui_print("Uninstalling Google Camera...");
+ui_print("Uninstalling Google camera...");
 ui_print("  ");
 delete_recursive("/system/app/GoogleCamera");
-ui_print("Google Camera Uninstalled successfully");
+ui_print("Google camera uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -512,9 +512,9 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
 then
 ui_print("  ");
-ui_print("Installing XPERIA KEYBOARD...");
+ui_print("Installing Xperia keyboard...");
 package_extract_dir("jdc/xperiakeyboard/system", "/system");
-ui_print("XPERIA KEYBOARD Installed successfully");
+ui_print("Xperia keyboard installed successfully");
 ui_print("  ");
 endif;
 
@@ -526,10 +526,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.4") == "2"
 then
 ui_print("  ");
-ui_print("Uninstalling XPERIA KEYBOARD...");
+ui_print("Uninstalling Xperia keyboard...");
 ui_print("  ");
 delete_recursive("/system/app/textinput-tng");
-ui_print("XPERIA KEYBOARD Uninstalled successfully");
+ui_print("Xperia keyboard uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -547,7 +547,7 @@ ui_print("Installing Recorder app...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Recorder");
 package_extract_dir("jdc/Recorder", "/system/priv-app/Recorder");
-ui_print("Recorder app Installed successfully");
+ui_print("Recorder app installed successfully");
 ui_print("  ");
 endif;
 
@@ -562,7 +562,7 @@ ui_print("  ");
 ui_print("Uninstalling Recorder app...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Recorder");
-ui_print("Recorder app Uninstalled successfully");
+ui_print("Recorder app uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -576,11 +576,11 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
 then
 ui_print("  ");
-ui_print("Installing Brave Browser...");
+ui_print("Installing Brave browser...");
 ui_print("  ");
 delete_recursive("/system/app/Brave");
 package_extract_dir("jdc/Brave", "/system/app/Brave");
-ui_print("Brave Installed successfully");
+ui_print("Brave installed successfully");
 ui_print("  ");
 endif;
 
@@ -592,7 +592,7 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
 then
 ui_print("  ");
-ui_print("Uninstalling Brave Browser...");
+ui_print("Uninstalling Brave browser...");
 ui_print("  ");
 delete_recursive("/system/app/Brave");
 ui_print("Brave Uninstalled successfully");
@@ -609,10 +609,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
 then
 ui_print("  ");
-ui_print("Oxygen OS fonts are Installing...");
+ui_print("Oxygen OS fonts are installing...");
 ui_print("  ");
 package_extract_dir("jdc/fonts/oosfonts", "/system/fonts");
-ui_print("Oxygen OS fonts Installed successfully");
+ui_print("Oxygen OS fonts installed successfully");
 ui_print("  ");
 endif;
 
@@ -627,7 +627,7 @@ ui_print("  ");
 ui_print("Restoring OPTLOS fonts...");
 ui_print("  ");
 package_extract_dir("jdc/fonts/optlosfonts", "/system/fonts");
-ui_print("OPTLOS fonts Restored successfully");
+ui_print("OPTLOS fonts restored successfully");
 ui_print("  ");
 endif;
 
@@ -639,7 +639,7 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
 then
 ui_print("  ");
-ui_print("Removing Camera shutter sounds...");
+ui_print("Removing camera shutter sounds...");
 ui_print("  ");
 package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/media/audio/ui");
 ui_print("Camera shutter sounds removed successfully");
@@ -654,10 +654,10 @@ if
 file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Camera shutter sounds...");
+ui_print("Restoring camera shutter sounds...");
 ui_print("  ");
 package_extract_dir("jdc/camerasounds/optlos/system/media/audio/ui", "/system/media/audio/ui");
-ui_print("Camera shutter sounds Restored successfully");
+ui_print("Camera shutter sounds restored successfully");
 ui_print("  ");
 endif;
 
@@ -667,7 +667,7 @@ set_progress(0.65);
 
 delete_recursive("/tmp/aroma/add.prop");
 
-ui_print("########################################");
+ui_print("###############end add##################");
 
 # DEBLOATER SECTION
 
@@ -680,7 +680,7 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
 then
 ui_print("  ");
-ui_print("Removing Live Wallpaper Picker App...");
+ui_print("Removing Live Wallpaper Picker app...");
 ui_print("  ");
 delete_recursive("/system/app/LiveWallpaperPicker");
 delete_recursive("/system/app/LiveWallpapersPicker");
@@ -696,12 +696,12 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Live Wallpaper Picker App...");
+ui_print("Restoring Live Wallpaper Picker app...");
 ui_print("  ");
 delete_recursive("/system/app/LiveWallpaperPicker");
 delete_recursive("/system/app/LiveWallpapersPicker");
 package_extract_dir("jdc/LiveWallpapersPicker", "/system/app/LiveWallpapersPicker");
-ui_print("Live Wallpaper Picker App restored successfully");
+ui_print("Live Wallpaper Picker app restored successfully");
 ui_print("  ");
 endif;
 
@@ -715,10 +715,10 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.2") == "1"
 then
 ui_print("  ");
-ui_print("Removing Eleven Player...");
+ui_print("Removing Eleven player...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Eleven");
-ui_print("Eleven Player removed successfully");
+ui_print("Eleven player removed successfully");
 ui_print("  ");
 endif;
 
@@ -730,11 +730,11 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.2") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Eleven Player...");
+ui_print("Restoring Eleven player...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Eleven");
 package_extract_dir("jdc/eleven", "/system/priv-app/Eleven");
-ui_print("Eleven Player restored successfully");
+ui_print("Eleven player restored successfully");
 ui_print("  ");
 endif;
 
@@ -748,10 +748,10 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.3") == "1"
 then
 ui_print("  ");
-ui_print("Removing Snap Camera...");
+ui_print("Removing Snap camera...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Snap");
-ui_print("Snap Camera removed successfully");
+ui_print("Snap camera removed successfully");
 ui_print("  ");
 endif;
 
@@ -763,11 +763,11 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.3") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Snap Camera...");
+ui_print("Restoring Snap camera...");
 ui_print("  ");
 delete_recursive("/system/priv-app/Snap");
 package_extract_dir("jdc/snap", "/system/priv-app/Snap");
-ui_print("Snap Camera restored successfully");
+ui_print("Snap camera restored successfully");
 ui_print("  ");
 endif;
 
@@ -780,10 +780,10 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.4") == "1"
 then
 ui_print("  ");
-ui_print("Removing Email App...");
+ui_print("Removing Email app...");
 ui_print("  ");
 delete_recursive("/system/app/Email");
-ui_print("Email App removed successfully");
+ui_print("Email app removed successfully");
 ui_print("  ");
 endif;
 
@@ -795,11 +795,11 @@ if
 file_getprop("/tmp/aroma/remove.prop","selected.4") == "2"
 then
 ui_print("  ");
-ui_print("Restoring Email App...");
+ui_print("Restoring Email app...");
 ui_print("  ");
 delete_recursive("/system/app/Email");
 package_extract_dir("jdc/Email", "/system/app/Email");
-ui_print("Email App restored successfully");
+ui_print("Email app restored successfully");
 ui_print("  ");
 endif;
 
@@ -807,11 +807,107 @@ endif;
 set_progress(0.85);
 ######################################################
 
-ui_print("########################################");
+delete_recursive("/tmp/aroma/remove.prop");
+
+ui_print("##############end remove################");
+
+######################################################
+
+# DEBUG TOOLS SECTION
+
+######################################################
+
+# ADD BETTERYBATTERYSTATS
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.1") == "1"
+then
+ui_print("  ");
+ui_print("Installing BetterBatteryStats app...");
+ui_print("  ");
+package_extract_dir("jdc/BetterBatteryStats", "/system/priv-app/BetterBatteryStats");
+ui_print("BetterBatteryStats installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.87);
+######################################################
+
+# ADD DEVCHECK
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.2") == "1"
+then
+ui_print("  ");
+ui_print("Installing DevCheck app...");
+ui_print("  ");
+package_extract_dir("jdc/devcheck", "/system/app/DevCheck");
+ui_print("DevCheck installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.89);
+######################################################
+
+# ADD DRMINFO
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.3") == "1"
+then
+ui_print("  ");
+ui_print("Installing DrmInfo app...");
+ui_print("  ");
+package_extract_dir("jdc/drminfo", "/system/app/DrmInfo");
+ui_print("DrmInfo installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.91);
+######################################################
+
+# ADD PROFILER
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.4") == "1"
+then
+ui_print("  ");
+ui_print("Installing Profiler app...");
+package_extract_dir("jdc/profiler", "/system/app/Profiler");
+ui_print("Profiler installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.93);
+######################################################
+
+# ADD SYSLOG
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.5") == "1"
+then
+ui_print("  ");
+ui_print("Installing Syslog app...");
+ui_print("  ");
+package_extract_dir("jdc/syslog", "/system/app/Syslog");
+ui_print("Syslog app installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.99);
+######################################################
+
+delete_recursive("/tmp/aroma/dbg.prop");
+
+ui_print("###############end dbg##################");
 ui_print("  ");
 ui_print("- Unmounting  /system");
 ui_print("  ");
 set_progress(0.90);
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("- Done!");
+ui_print("  ");
 set_progress(1.0);

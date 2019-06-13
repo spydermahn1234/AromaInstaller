@@ -2,10 +2,10 @@
 ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDCTeam Aroma Package");
-ini_set("rom_version",          "Aroma v2.0, Pie enabled");
+ini_set("rom_version",          "Aroma v4.0");
 ini_set("rom_author",           "JDCTeam");
-ini_set("rom_device",           "JDCTeam's jflte");
-ini_set("rom_date",             "March 2019");
+ini_set("rom_device",           "JFLTE");
+ini_set("rom_date",             "June 2019");
 
 
 anisplash(
@@ -114,8 +114,8 @@ selectbox(
 	"Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 8
 	"Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 9
 	"Resurrection Remix",                          "by Resurrection Remix team"                                                        ,0,    #-- selected.1 = 10
-	"AOSP Extended",                               "by AEX team"                                                                       ,0,    #-- selected.1 = 11
-	"No Changes",                                  "Keep current Bootanimation"                                                        ,1     #-- selected.1 = 12
+	"AOSP Extended",                               "by AOSP Extended team"                                                             ,0,    #-- selected.1 = 11
+	"No Changes",                                  "Keep current bootanimation"                                                        ,1     #-- selected.1 = 12
 
 
 );
@@ -128,29 +128,29 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "v19.1/v7.1.2"                                                                      ,0,    #-- selected.1 = 1
-	"Remove Magisk, if previously added",          "Will Restore built-in superuser"                                                   ,0,    #-- selected.1 = 2
+	"Add Magisk and Magisk manager",               "v19.3 / v7.2"                                                                        ,0,    #-- selected.1 = 1
+	"Remove Magisk, if previously added",          "Will Restore built-in superuser."                                                  ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Ad-Away",                                 "v4.2.3"                                                                            ,0,    #-- selected.2 = 1
-	"Remove Ad-Away, if previously added",         ""                                                                                  ,0,    #-- selected.2 = 2
+	"Add AdAway",                                  "Host filtering to filter adverts and protect your security."                       ,0,    #-- selected.2 = 1
+	"Remove AdAway, if previously added",          "v4.2.5"                                                                            ,0,    #-- selected.2 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add JDCToolbox - Magisk ONLY Version",        "JDC-related LEDify and IRDA Tweaks"                                                ,0,    #-- selected.3 = 1
-	"Add JDCToolbox - Non-Magisk Version",         "Works with SuperSU and LineageOS SU Addon"                                         ,0,    #-- selected.3 = 2
+	"Add JDCToolbox - Magisk ONLY version",        "JDC-related LEDify and IRDA tweaks."                                               ,0,    #-- selected.3 = 1
+	"Add JDCToolbox - Non-Magisk version",         "Works with SuperSU and LineageOS SU addon."                                        ,0,    #-- selected.3 = 2
 	"Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.3 = 3
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 4
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Buffcore Kernel Adiutor",                 "A custom-baked kernel adiutor specially designed for Buffcore kernel"              ,0,    #-- selected.4 = 1
+	"Add Buffcore Kernel Adiutor",                 "A custom-baked Kernel Adiutor specially designed for Buffcore kernel."             ,0,    #-- selected.4 = 1
 	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.4 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
-	
+
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Mixplorer App",                           "Root File Explorer"                                                                ,0,    #-- selected.5 = 1
-	"Remove Mixplorer App",                        "v6.35.2"                                                                           ,0,    #-- selected.5 = 2
+	"Add Mixplorer app",                           "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
+	"Remove Mixplorer app",                        "v6.36.6"                                                                           ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
 );
@@ -162,72 +162,100 @@ selectbox(
 		"add.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Viper4Android",                           "ViPER4Android FX 2.7 - Install the drivers by opening the app"                     ,0,    #-- selected.1 = 1
+	"Add Viper4Android",                           "ViPER4Android FX 2.7.1 - Install the drivers by opening the app"                   ,0,    #-- selected.1 = 1
 	"Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Newpipe",                                 "A free YouTube Client"                                                             ,0,    #-- selected.2 = 1
-	"Remove Newpipe, if previously added",         "v0.16.1"                                                                           ,0,    #-- selected.2 = 2
+	"Add Newpipe",                                 "A free YouTube client"                                                             ,0,    #-- selected.2 = 1
+	"Remove Newpipe, if previously added",         "v0.16.2"                                                                           ,0,    #-- selected.2 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Google Camera",                           "v2.7.0008"                                                                         ,0,    #-- selected.3 = 1
-	"Remove Google Camera, if previously added",   ""                                                                                  ,0,    #-- selected.3 = 2
+	"Add Google camera",                           "v2.7.0008"                                                                         ,0,    #-- selected.3 = 1
+	"Remove Google camera, if previously added",   ""                                                                                  ,0,    #-- selected.3 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Xperia Keyboard",                         ""                                                                                  ,0,    #-- selected.4 = 1
-	"Remove Xperia Keyboard, if previously added", ""                                                                                  ,0,    #-- selected.4 = 2
+	"Add Xperia keyboard",                         ""                                                                                  ,0,    #-- selected.4 = 1
+	"Remove Xperia keyboard, if previously added", ""                                                                                  ,0,    #-- selected.4 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Recorder App",                            "Default Recorder App"                                                              ,0,    #-- selected.5 = 1
-	"Remove Recorder App",                         ""                                                                                  ,0,    #-- selected.5 = 2
+	"Add Recorder app",                            "Default Recorder app"                                                              ,0,    #-- selected.5 = 1
+	"Remove Recorder app",                         ""                                                                                  ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Brave Browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.6 = 1
-	"Remove Brave Browser",						   "v1.0.88"                                                                           ,0,    #-- selected.6 = 2
+	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.6 = 1
+	"Remove Brave browser",						   "v1.0.97"                                                                           ,0,    #-- selected.6 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.7 = 1
-	"Remove Oxygen OS Fonts, if previously added", "Will Restore stock fonts"                                                          ,0,    #-- selected.7 = 2
+	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.7 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove Camera Shutter Sounds",                ""                                                                                  ,0,    #-- selected.8 = 1
-	"Restore Camera Shutter Sounds",               "Will Restore stock Sounds"                                                         ,0,    #-- selected.8 = 2
+	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.8 = 1
+	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.8 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.8 = 3
 
 );
 
 selectbox(
-      "REMOVE ITEMS - DEBLOAT ROM",
-      "Please select:\n",
-      "@default",
-      "remove.prop",
+		"REMOVE ITEMS - DEBLOAT ROM",
+		"Please select:\n",
+		"@default",
+		"remove.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove Live Wallpaper Picker App",            "Collection of Live Wallpapers"                                                     ,0,    #-- selected.1 = 1
-	"Restore Live Wallpaper Picker App",           "If previously removed"                                                             ,0,    #-- selected.1 = 2
+	"Remove Live Wallpaper Picker app",            "Collection of live wallpapers"                                                     ,0,    #-- selected.1 = 1
+	"Restore Live Wallpaper Picker app",           "If previously removed"                                                             ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove Eleven Music Player App",              "Default Lineage Music Player"                                                      ,0,    #-- selected.2 = 1
-	"Restore Eleven Music Player App",             "If previously removed"                                                             ,0,    #-- selected.2 = 2
+	"Remove Eleven music player app",              "Default Lineage music player"                                                      ,0,    #-- selected.2 = 1
+	"Restore Eleven music player app",             "If previously removed"                                                             ,0,    #-- selected.2 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove Snap Camera App",                      "Default Camera App"                                                                ,0,    #-- selected.3 = 1
-	"Restore Snap Camera",                         "If previously removed"                                                             ,0,    #-- selected.3 = 2
+	"Remove Snap camera app",                      "Default camera app"                                                                ,0,    #-- selected.3 = 1
+	"Restore Snap camera",                         "If previously removed"                                                             ,0,    #-- selected.3 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove Email App",                            "Default Stock Email App"                                                           ,0,    #-- selected.4 = 1
+	"Remove Email app",                            "Stock Email app"                                                                   ,0,    #-- selected.4 = 1
 	"Restore Email",                               "If previously removed"                                                             ,0,    #-- selected.4 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.4 = 3
+
+);
+
+selectbox(
+		"ADD DEBUG TOOLS",
+		"Please select:\n",
+		"@default",
+		"dbg.prop",
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add BetterBatteryStats",                      "Use to monitor battery useage and send logs with battery related bugs."            ,0,    #-- selected.1 = 1
+	"No Changes",                                  "v2.5-330"                                                                          ,1,    #-- selected.1 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add DevCheck",                                "Displays lots of helpful debug information including sensors."                     ,0,    #-- selected.2 = 1
+	"No Changes",                                  "v2.35-235"                                                                         ,1,    #-- selected.2 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add DrmInfo",                                 "Displays information on the installed crypto systems."                             ,0,    #-- selected.3 = 1
+	"No Changes",                                  "v1.1.1.190510-169"                                                                 ,1,    #-- selected.3 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Profiler",                                "Overlay cpu and other information on screen for real-time monitoring."             ,0,    #-- selected.4 = 1
+	"No Changes",                                  "v1.5.5"                                                                            ,1,    #-- selected.4 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Syslog",                                  "Tool to grab and package all system logs to include with error reports."           ,0,    #-- selected.5 = 1
+	"No Changes",                                  "v2.2.0-31"                                                                         ,1     #-- selected.5 = 3
 
 );
 

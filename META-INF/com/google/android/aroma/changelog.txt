@@ -1,3 +1,19 @@
+<b><u>Aroma Version 4.0:</u></b>
+---------------------------------------------------------
+<*> Updated Magisk to v19.3 </*>
+<*> Updated Magisk Manager to v7.2 </*>
+<*> Updated Magisk Uninstaller to latest version </*>
+<*> Updated MiXplorer to v6.36.6 </*>
+<*> Updated Brave to v1.0.97 </*>
+<*> Updated NewPipe to v0.16.2 </*>
+<*> Updated AdAway - v4.2.5-190606 </*>
+<*> Added debug tools: </*>
+<*> Added DrmInfo - v1.1.1.190510-169 </*>
+<*> Added DevCheck - v2.35-235 </*>
+<*> Added Profiler - v1.5.5 </*>
+<*> Added Syslog - v2.2.0-31 </*>
+<*> Added BetterBatteryStats - v2.5-330 </*>
+
 <b><u>Aroma Version 3.0:</u></b>
 ---------------------------------------------------------
 
