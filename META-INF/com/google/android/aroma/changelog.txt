@@ -1,6 +1,6 @@
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
-<*> Updated MiXplorer to v6.37.1 </*>
+<*> Updated MiXplorer to v6.39.0 beta </*>
 <*> Updated Magisk Manager to v7.3.2 </*>
 <*> Updated AdAway - v4.2.6-190623 </*>
 

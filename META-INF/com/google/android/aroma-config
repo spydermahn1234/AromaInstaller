@@ -150,7 +150,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Mixplorer app",                           "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
-	"Remove Mixplorer app",                        "v6.37.1 beta"                                                                           ,0,    #-- selected.5 = 2
+	"Remove Mixplorer app",                        "v6.39.0 beta"                                                                           ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
 );
