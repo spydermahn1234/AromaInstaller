@@ -3,6 +3,7 @@
 <*> Updated MiXplorer to v6.39.0 beta </*>
 <*> Updated Magisk Manager to v7.3.2 </*>
 <*> Updated AdAway - v4.2.6-190623 </*>
+<*> Updated Brave to v1.0.99 </*>
 
 
 <b><u>Aroma Version 4.0:</u></b>
