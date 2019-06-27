@@ -1,7 +1,7 @@
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
 <*> Updated MiXplorer to v6.37.1 </*>
-
+<*> Updated Magisk Manager to v7.3.2 </*>
 
 
 
