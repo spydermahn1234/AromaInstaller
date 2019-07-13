@@ -4,6 +4,7 @@
 <*> Added New OxygenOS bootanimation </*>
 <*> Updated MiXplorer to v6.39.1-Beta </*>
 <*> Updated Brave browser to v1.1.0 </*>
+<*> Updated DRMInfo to v1.1.2.190630-177 </*>
 
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
@@ -22,7 +23,7 @@
 <*> Updated NewPipe to v0.16.2 </*>
 <*> Updated AdAway - v4.2.5-190606 </*>
 <*> Added debug tools: </*>
-<*> Added DrmInfo - v1.1.1.190510-169 </*>
+<*> Added DRMInfo - v1.1.1.190510-169 </*>
 <*> Added DevCheck - v2.35-235 </*>
 <*> Added Profiler - v1.5.5 </*>
 <*> Added Syslog - v2.2.0-31 </*>
