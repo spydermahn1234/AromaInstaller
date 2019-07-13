@@ -129,13 +129,13 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "v19.3 / v7.3.2"                                                                        ,0,    #-- selected.1 = 1
+	"Add Magisk and Magisk manager",               "v19.3 / v7.3.2"                                                                    ,0,    #-- selected.1 = 1
 	"Remove Magisk, if previously added",          "Will Restore built-in superuser."                                                  ,0,    #-- selected.1 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add AdAway",                                  "Host filtering to filter adverts and protect your security."                       ,0,    #-- selected.2 = 1
-	"Remove AdAway, if previously added",          "v4.2.6-190623."                                                                            ,0,    #-- selected.2 = 2
+	"Remove AdAway, if previously added",          "v4.2.6-190623."                                                                    ,0,    #-- selected.2 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -151,7 +151,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Mixplorer app",                           "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
-	"Remove Mixplorer app",                        "v6.39.0 beta"                                                                           ,0,    #-- selected.5 = 2
+	"Remove Mixplorer app",                        "6.39.1-Beta"                                                                       ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
 );
