@@ -2,6 +2,8 @@
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
 <*> Added New OxygenOS bootanimation </*>
+<*> Updated MiXplorer to v6.39.1-Beta </*>
+<*> Updated Brave browser to v1.1.0 </*>
 
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
