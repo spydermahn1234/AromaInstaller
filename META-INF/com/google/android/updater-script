@@ -130,10 +130,25 @@ endif;
 
 ####################################################
 
-# LIQUID REMIX ANIMATION
+# NEW OXYGEN OS ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "9"
+then
+ui_print("  ");
+ui_print("New Oxygen OS boot animation is installing");
+ui_print("  ");
+package_extract_dir("boot/oxygennew/system/media", "/system/media");
+ui_print("New Oxygen OS boot animation installed successfully");
+ui_print("  ");
+endif;
+
+####################################################
+
+# LIQUID REMIX ANIMATION
+
+if
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "10"
 then
 ui_print("  ");
 ui_print("Liquid Remix boot animation is installing");
@@ -148,7 +163,7 @@ endif;
 # RESURRECTION REMIX ANIMATION
 
 if
-file_getprop("/tmp/aroma/boot.prop","selected.1") == "10"
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "11"
 then
 ui_print("  ");
 ui_print("Resurrection Remix boot animation is installing");
@@ -163,7 +178,7 @@ endif;
 # AOSP EXTENDED ANIMATION
 
 if
-file_getprop("/tmp/aroma/boot.prop","selected.1") == "11"
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "12"
 then
 ui_print("  ");
 ui_print("AOSP Extended boot animation is installing");
@@ -178,7 +193,7 @@ endif;
 # boot animation No Change
 
 if
-file_getprop("/tmp/aroma/boot.prop","selected.1") == "12"
+file_getprop("/tmp/aroma/boot.prop","selected.1") == "13"
 then
 ui_print("  ");
 ui_print("Boot animation is being skipped");

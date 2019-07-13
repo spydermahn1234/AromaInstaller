@@ -112,10 +112,11 @@ selectbox(
 	"Pixel White",                                 "by Google"                                                                         ,0,    #-- selected.1 = 6
 	"Pixel Experience",                            "by Google"                                                                         ,0,    #-- selected.1 = 7
 	"Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 8
-	"Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 9
-	"Resurrection Remix",                          "by Resurrection Remix team"                                                        ,0,    #-- selected.1 = 10
-	"AOSP Extended",                               "by AOSP Extended team"                                                             ,0,    #-- selected.1 = 11
-	"No Changes",                                  "Keep current bootanimation"                                                        ,1     #-- selected.1 = 12
+	"New Oxygen OS",                               "by Oneplus"                                                                        ,0,    #-- selected.1 = 9
+	"Liqud Remix",                                 "by Liquid Remix team"                                                              ,0,    #-- selected.1 = 10
+	"Resurrection Remix",                          "by Resurrection Remix team"                                                        ,0,    #-- selected.1 = 11
+	"AOSP Extended",                               "by AOSP Extended team"                                                             ,0,    #-- selected.1 = 12
+	"No Changes",                                  "Keep current bootanimation"                                                        ,1     #-- selected.1 = 13
 
 
 );

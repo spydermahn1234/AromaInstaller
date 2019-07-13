@@ -1,6 +1,7 @@
 <b><u>Aroma Version 5.0:</u></b>
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
+<*> Added New OxygenOS bootanimation </*>
 
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
