@@ -2,6 +2,7 @@
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
 <*> Added New OxygenOS bootanimation </*>
+<*> Added OxygenOS McLaren edition bootanimation </*>
 <*> Added Enhanced AOSP Keyboard - v8.1 </*>
 <*> Updated MiXplorer to v6.39.1-Beta </*>
 <*> Updated Brave browser to v1.1.0 </*>
