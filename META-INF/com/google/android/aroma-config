@@ -2,10 +2,10 @@
 ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDCTeam Aroma Package");
-ini_set("rom_version",          "Aroma v4.0");
+ini_set("rom_version",          "Aroma v5.0");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE");
-ini_set("rom_date",             "June 2019");
+ini_set("rom_date",             "July 2019");
 
 
 anisplash(

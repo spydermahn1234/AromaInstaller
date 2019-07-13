@@ -1,10 +1,13 @@
+<b><u>Aroma Version 5.0:</u></b>
+---------------------------------------------------------
+<*> Added Option to Uninstall debug tools </*>
+
 <b><u>Aroma Version 4.1:</u></b>
 ---------------------------------------------------------
 <*> Updated MiXplorer to v6.39.0 beta </*>
 <*> Updated Magisk Manager to v7.3.2 </*>
 <*> Updated AdAway - v4.2.6-190623 </*>
 <*> Updated Brave to v1.0.99 </*>
-
 
 <b><u>Aroma Version 4.0:</u></b>
 ---------------------------------------------------------
