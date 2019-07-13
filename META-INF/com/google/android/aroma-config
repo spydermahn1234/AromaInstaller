@@ -183,24 +183,29 @@ selectbox(
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Recorder app",                            "Default Recorder app"                                                              ,0,    #-- selected.5 = 1
-	"Remove Recorder app",                         ""                                                                                  ,0,    #-- selected.5 = 2
+	"Add Enhanced AOSP Keyboard",                  "v8.1"                                                                              ,0,    #-- selected.5 = 1
+	"Remove Enhanced AOSP Keyboard, if previously added", ""                                                                           ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.6 = 1
-	"Remove Brave browser",						   "v1.1.0"                                                                            ,0,    #-- selected.6 = 2
+	"Add Recorder app",                            "Default Recorder app"                                                              ,0,    #-- selected.6 = 1
+	"Remove Recorder app",                         ""                                                                                  ,0,    #-- selected.6 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.7 = 1
-	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.7 = 2
+	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.7 = 1
+	"Remove Brave browser",						   "v1.1.0"                                                                            ,0,    #-- selected.7 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.8 = 1
-	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.8 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.8 = 3
+	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.8 = 1
+	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.8 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.9 = 1
+	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.9 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.9 = 3
 
 );
 

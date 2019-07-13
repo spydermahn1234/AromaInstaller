@@ -2,6 +2,7 @@
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
 <*> Added New OxygenOS bootanimation </*>
+<*> Added Enhanced AOSP Keyboard - v8.1 </*>
 <*> Updated MiXplorer to v6.39.1-Beta </*>
 <*> Updated Brave browser to v1.1.0 </*>
 <*> Updated DRMInfo to v1.1.2.190630-177 </*>

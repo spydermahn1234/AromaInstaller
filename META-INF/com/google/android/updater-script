@@ -520,7 +520,6 @@ endif;
 set_progress(0.45);
 ######################################################
 
-
 # ADD XPERIA KEYBOARD
 
 if
@@ -552,10 +551,42 @@ endif;
 set_progress(0.50);
 ######################################################
 
-# ADD RECORDER APP
+# ADD ENHANCED AOSP KEYBOARD
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
+then
+ui_print("  ");
+ui_print("Installing Enhanced AOSP keyboard...");
+package_extract_dir("jdc/EnhancedIME", "/system/app/EnhancedIME");
+package_extract_dir("jdc/EnhancedIME/lib", "/system/lib");
+ui_print("Enhanced AOSP installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE ENHANCED AOSP KEYBOARD
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling Enhanced AOSP keyboard...");
+ui_print("  ");
+delete_recursive("/system/app/EnhancedIME");
+ui_print("Enhanced AOSP keyboard uninstalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
+set_progress(0.50);
+######################################################
+
+# ADD RECORDER APP
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("Installing Recorder app...");
@@ -571,7 +602,7 @@ endif;
 # REMOVE RECORDER APP
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Recorder app...");
@@ -588,7 +619,7 @@ set_progress(0.55);
 # ADD BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
 then
 ui_print("  ");
 ui_print("Installing Brave browser...");
@@ -604,7 +635,7 @@ endif;
 # REMOVE BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.7") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Brave browser...");
@@ -621,7 +652,7 @@ set_progress(0.60);
 # ADD OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
 then
 ui_print("  ");
 ui_print("Oxygen OS fonts are installing...");
@@ -636,7 +667,7 @@ endif;
 # REMOVE OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
 then
 ui_print("  ");
 ui_print("Restoring OPTLOS fonts...");
@@ -651,7 +682,7 @@ endif;
 # REMOVE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.9") == "1"
 then
 ui_print("  ");
 ui_print("Removing camera shutter sounds...");
@@ -666,7 +697,7 @@ endif;
 # RESTORE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.9") == "2"
 then
 ui_print("  ");
 ui_print("Restoring camera shutter sounds...");
