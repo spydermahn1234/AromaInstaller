@@ -831,6 +831,21 @@ ui_print("  ");
 endif;
 
 ######################################################
+
+# REMOVE BETTERYBATTERYSTATS
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.1") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling BetterBatteryStats app...");
+ui_print("  ");
+delete_recursive("/system/priv-app/BetterBatteryStats");
+ui_print("BetterBatteryStats Uninstalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
 set_progress(0.87);
 ######################################################
 
@@ -844,6 +859,21 @@ ui_print("Installing DevCheck app...");
 ui_print("  ");
 package_extract_dir("jdc/devcheck", "/system/app/DevCheck");
 ui_print("DevCheck installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE DEVCHECK
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.2") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling DevCheck app...");
+ui_print("  ");
+delete_recursive("/system/app/DevCheck");
+ui_print("DevCheck Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -864,6 +894,21 @@ ui_print("  ");
 endif;
 
 ######################################################
+
+# REMOVE DRMINFO
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.3") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling DrmInfo app...");
+ui_print("  ");
+delete_recursive("/system/app/DrmInfo");
+ui_print("DrmInfo Uninstalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
 set_progress(0.91);
 ######################################################
 
@@ -876,6 +921,21 @@ ui_print("  ");
 ui_print("Installing Profiler app...");
 package_extract_dir("jdc/profiler", "/system/app/Profiler");
 ui_print("Profiler installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE PROFILER
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.4") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling Profiler app...");
+ui_print("  ");
+delete_recursive("/system/app/Profiler");
+ui_print("Profiler Uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -893,6 +953,21 @@ ui_print("Installing Syslog app...");
 ui_print("  ");
 package_extract_dir("jdc/syslog", "/system/app/Syslog");
 ui_print("Syslog app installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE SYSLOG
+
+if
+file_getprop("/tmp/aroma/dbg.prop","selected.5") == "2"
+then
+ui_print("  ");
+ui_print("Uninstalling Syslog app...");
+ui_print("  ");
+delete_recursive("/system/app/Syslog");
+ui_print("Syslog Uninstalled successfully");
 ui_print("  ");
 endif;
 
