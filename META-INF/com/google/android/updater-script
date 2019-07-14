@@ -503,7 +503,7 @@ endif;
 set_progress(0.40);
 ######################################################
 
-# ADD GOOGLE CAMERA
+# ADD GOOGLE CAMERA SYSTEM
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
@@ -518,7 +518,7 @@ endif;
 
 ######################################################
 
-# REMOVE GOOGLE CAMERA
+# REMOVE GOOGLE CAMERA SYSTEM
 
 if
 file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
@@ -528,6 +528,40 @@ ui_print("Uninstalling Google camera...");
 ui_print("  ");
 delete_recursive("/system/app/GoogleCamera");
 ui_print("Google camera uninstalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# ADD GOOGLE CAMERA MANUAL
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.3") == "3"
+then
+ui_print("  ");
+ui_print("-- Pasting Google Camera to ");
+ui_print("       '/internal storage/GoogleCamera/'...");
+ui_print("  ");
+ui_print("---->  PLEASE INSTALL IT MANUALLY");
+ui_print("  ");
+package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
+ui_print("  ");
+endif;
+
+######################################################
+
+# REMOVE GOOGLE CAMERA MANUAL
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.3") == "4"
+then
+ui_print("  ");
+ui_print("-- Removing Google Camera Paste Folder...");
+ui_print("  ");
+ui_print("---->  PLEASE UNINSTALL IT MANUALLY");
+ui_print("---->  Settings > Apps > Camera > Uninstall");
+ui_print("  ");
+delete_recursive("/sdcard/GoogleCamera");
 ui_print("  ");
 endif;
 

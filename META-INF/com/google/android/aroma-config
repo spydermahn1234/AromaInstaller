@@ -174,9 +174,11 @@ selectbox(
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Google camera",                           "v2.7.0008"                                                                         ,0,    #-- selected.3 = 1
-	"Remove Google camera, if previously added",   ""                                                                                  ,0,    #-- selected.3 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 3
+	"Add Google camera as a system app",           "Panorama features will not work"                                                   ,0,    #-- selected.3 = 1
+	"Remove Google camera from system",            "will uninstall it from system"                                                     ,0,    #-- selected.3 = 2
+	"Add Google camera as Manual Instalation",     "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.3 = 3
+	"Remove Google camera, if previously added",   "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.3 = 4
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 5
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Xperia keyboard",                         ""                                                                                  ,0,    #-- selected.4 = 1
