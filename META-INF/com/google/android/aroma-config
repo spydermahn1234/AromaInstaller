@@ -203,7 +203,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.8 = 1
-	"Remove Brave browser",						   "v1.1.0"                                                                            ,0,    #-- selected.8 = 2
+	"Remove Brave browser",						   "v1.1.2"                                                                            ,0,    #-- selected.8 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
 
 	"",                                            ""                                                                                  ,2,    #--

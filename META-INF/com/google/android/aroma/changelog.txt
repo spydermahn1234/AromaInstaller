@@ -7,7 +7,7 @@
 <*> Added Enhanced AOSP Keyboard - v8.1 </*>
 <*> Added Vanced Youtube Dark/Black back - v14.21.54 </*>
 <*> Updated MiXplorer to v6.39.2 </*>
-<*> Updated Brave browser to v1.1.0 </*>
+<*> Updated Brave browser to v1.1.2 </*>
 <*> Updated DRMInfo to v1.1.2.190630-177 </*>
 
 <b><u>Aroma Version 4.1:</u></b>
