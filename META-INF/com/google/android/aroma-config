@@ -174,41 +174,47 @@ selectbox(
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Google camera as a system app",           "Panorama features will not work"                                                   ,0,    #-- selected.3 = 1
-	"Remove Google camera from system",            "will uninstall it from system"                                                     ,0,    #-- selected.3 = 2
-	"Add Google camera as Manual Instalation",     "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.3 = 3
-	"Remove Google camera, if previously added",   "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.3 = 4
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 5
+    "Add Vanced YouTube - BLACK",                  "White theme is Default in app"                                                     ,0,    #-- selected.3 = 1
+    "Add Vanced YouTube - DARK",                   "White theme is Default in app"                                                     ,0,    #-- selected.3 = 2
+    "Remove Vanced, if previously added",          "v14.21.54"                                                                         ,0,    #-- selected.3 = 3
+    "No Changes",                                  ""                                                                                  ,1,    #-- selected.3 = 4
+	
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Google camera as a system app",           "Panorama features will not work"                                                   ,0,    #-- selected.4 = 1
+	"Remove Google camera from system",            "will uninstall it from system"                                                     ,0,    #-- selected.4 = 2
+	"Add Google camera as Manual Instalation",     "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.4 = 3
+	"Remove Google camera, if previously added",   "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.4 = 4
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 5
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Xperia keyboard",                         ""                                                                                  ,0,    #-- selected.4 = 1
-	"Remove Xperia keyboard, if previously added", ""                                                                                  ,0,    #-- selected.4 = 2
-	"No Changes",                                  ""                                                                                  ,1,    #-- selected.4 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Add Enhanced AOSP Keyboard",                  "v8.1"                                                                              ,0,    #-- selected.5 = 1
-	"Remove Enhanced AOSP Keyboard, if previously added", ""                                                                           ,0,    #-- selected.5 = 2
+	"Add Xperia keyboard",                         ""                                                                                  ,0,    #-- selected.5 = 1
+	"Remove Xperia keyboard, if previously added", ""                                                                                  ,0,    #-- selected.5 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.5 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Recorder app",                            "Default Recorder app"                                                              ,0,    #-- selected.6 = 1
-	"Remove Recorder app",                         ""                                                                                  ,0,    #-- selected.6 = 2
+	"Add Enhanced AOSP Keyboard",                  "v8.1"                                                                              ,0,    #-- selected.6 = 1
+	"Remove Enhanced AOSP Keyboard, if previously added", ""                                                                           ,0,    #-- selected.6 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.7 = 1
-	"Remove Brave browser",						   "v1.1.0"                                                                            ,0,    #-- selected.7 = 2
+	"Add Recorder app",                            "Default Recorder app"                                                              ,0,    #-- selected.7 = 1
+	"Remove Recorder app",                         ""                                                                                  ,0,    #-- selected.7 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.7 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.8 = 1
-	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.8 = 2
+	"Add Brave browser",                           "Security-Enchanced Chromium with Adblock Embedded"                                 ,0,    #-- selected.8 = 1
+	"Remove Brave browser",						   "v1.1.0"                                                                            ,0,    #-- selected.8 = 2
 	"No Changes",                                  ""                                                                                  ,1,    #-- selected.8 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.9 = 1
-	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.9 = 2
-	"No Changes",                                  ""                                                                                  ,1     #-- selected.9 = 3
+	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.9 = 1
+	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.9 = 2
+	"No Changes",                                  ""                                                                                  ,1,    #-- selected.9 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.10 = 1
+	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.20 = 2
+	"No Changes",                                  ""                                                                                  ,1     #-- selected.10 = 3
 
 );
 

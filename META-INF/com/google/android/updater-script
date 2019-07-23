@@ -476,8 +476,6 @@ ui_print("Installing Newpipe YouTube client...");
 ui_print("  ");
 delete_recursive("/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
-delete_recursive("/system/priv-app/VancedYT");
-delete_recursive("/system/priv-app/newpipe");
 package_extract_dir("jdc/newpipe", "/system/priv-app/newpipe");
 ui_print("Newpipe YouTube client installed successfully");
 ui_print("  ");
@@ -493,9 +491,56 @@ then
 ui_print("  ");
 ui_print("Uninstalling Newpipe YouTube client...");
 ui_print("  ");
-delete_recursive("/system/priv-app/VancedYT");
 delete_recursive("/system/priv-app/newpipe");
 ui_print("Newpipe YouTube client uninstalled successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# ADD VANCED BLACK
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
+then
+ui_print("  ");
+ui_print("Installing Vanced Youtube Black Theme...");
+ui_print("  ");
+delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/data/app/YouTube");
+package_extract_dir("jdc/VancedYT/black", "/system/priv-app/VancedYT");
+ui_print("Vanced Youtube installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+
+# ADD VANCED DARK
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
+then
+ui_print("  ");
+ui_print("Installing Vanced Youtube Dark Theme...");
+ui_print("  ");
+delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/data/app/YouTube");
+package_extract_dir("jdc/VancedYT/dark", "/system/priv-app/VancedYT");
+ui_print("Vanced Youtube installed successfully");
+ui_print("  ");
+endif;
+
+######################################################
+# REMOVE VANCED
+
+if
+file_getprop("/tmp/aroma/add.prop","selected.3") == "3"
+then
+ui_print("  ");
+ui_print("Uninstalling Vanced Youtube...");
+ui_print("  ");
+delete_recursive("/system/priv-app/VancedYT");
+ui_print("Vanced Youtube uninstalled successfully");
 ui_print("  ");
 endif;
 
@@ -506,7 +551,7 @@ set_progress(0.40);
 # ADD GOOGLE CAMERA SYSTEM
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Installing Google camera...");
@@ -521,7 +566,7 @@ endif;
 # REMOVE GOOGLE CAMERA SYSTEM
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Google camera...");
@@ -536,7 +581,7 @@ endif;
 # ADD GOOGLE CAMERA MANUAL
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "3"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "3"
 then
 ui_print("  ");
 ui_print("-- Pasting Google Camera to ");
@@ -553,7 +598,7 @@ endif;
 # REMOVE GOOGLE CAMERA MANUAL
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "4"
+file_getprop("/tmp/aroma/add.prop","selected.4") == "4"
 then
 ui_print("  ");
 ui_print("-- Removing Google Camera Paste Folder...");
@@ -572,7 +617,7 @@ set_progress(0.45);
 # ADD XPERIA KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("Installing Xperia keyboard...");
@@ -586,7 +631,7 @@ endif;
 # REMOVE XPERIA KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Xperia keyboard...");
@@ -603,7 +648,7 @@ set_progress(0.50);
 # ADD ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("Installing Enhanced AOSP keyboard...");
@@ -618,7 +663,7 @@ endif;
 # REMOVE ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Enhanced AOSP keyboard...");
@@ -635,7 +680,7 @@ set_progress(0.50);
 # ADD RECORDER APP
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
 then
 ui_print("  ");
 ui_print("Installing Recorder app...");
@@ -651,7 +696,7 @@ endif;
 # REMOVE RECORDER APP
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.7") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Recorder app...");
@@ -668,7 +713,7 @@ set_progress(0.55);
 # ADD BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
 then
 ui_print("  ");
 ui_print("Installing Brave browser...");
@@ -684,7 +729,7 @@ endif;
 # REMOVE BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Brave browser...");
@@ -701,7 +746,7 @@ set_progress(0.60);
 # ADD OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.9") == "1"
 then
 ui_print("  ");
 ui_print("Oxygen OS fonts are installing...");
@@ -716,7 +761,7 @@ endif;
 # REMOVE OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.9") == "2"
 then
 ui_print("  ");
 ui_print("Restoring OPTLOS fonts...");
@@ -731,7 +776,7 @@ endif;
 # REMOVE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.9") == "1"
+file_getprop("/tmp/aroma/add.prop","selected.10") == "1"
 then
 ui_print("  ");
 ui_print("Removing camera shutter sounds...");
@@ -746,7 +791,7 @@ endif;
 # RESTORE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.9") == "2"
+file_getprop("/tmp/aroma/add.prop","selected.10") == "2"
 then
 ui_print("  ");
 ui_print("Restoring camera shutter sounds...");
