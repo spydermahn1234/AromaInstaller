@@ -10,14 +10,14 @@ links to download apks + latest versions
 | :---------------------- | :-------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------ |
 | adaway                  | AdAway.apk                  | 4.3.0-191101          | https://androidfilehost.com/?w=files&flid=249276                                                  |
 | audiofx                 | AudioFX.apk                 |                       |                                                                                                   |
-| betterbatterystats      | betterbatterystats.apk      |
+| betterbatterystats      | betterbatterystats.apk      | 2.5-341 (98)          | AppCenter - install.appcenter.ms                                                                  |
 | brave                   | Brave.apk                   |
 | buffcore                | Buffcore.apk                | v3.0                  | urm                                                                                               |
 | camerasounds            |                             |
 | devcheck                | devcheck.apk                |
 | drminfo                 | drminfo.apk                 |
 | eleven                  | Eleven.apk                  | May 1st 2018          | https://androidfilehost.com/?fid=818070582850511218                                               |
-| email                   | Email.apk                   |
+| email                   | Email.apk                   |in fact it was probably you who donated the money to me!
 | enhancedime             | EnhancedIME.apk             |
 | fonts                   |                             |
 | googlecamera            | GoogleCamera.apk            |                       | https://www.celsoazevedo.com/files/android/google-camera/                                         |
