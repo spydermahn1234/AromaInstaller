@@ -22,9 +22,9 @@ links to download apks + latest versions
 | fonts                   |                             |
 | googlecamera            | GoogleCamera.apk            |                       | https://www.celsoazevedo.com/files/android/google-camera/                                         |
 | livewallpaperspicker    | LiveWallpapersPicker.apk    | 9                     | https://www.apkmirror.com/apk/google-inc/live-wallpaper-picker/                                   |
-| magisk                  | magisk.zip                  | 17.3                  | https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445     |
-| magiskmanager           | MagiskManager.apk           |
-| magiskuninstaller       | magiskuninstaller.zip       | 20181022              | https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445     |
+| magisk                  | magisk.zip                  | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
+| magiskmanager           | MagiskManager.apk           | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
+| magiskuninstaller       | magiskuninstaller.zip       | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
 | mixplorer               | Mixplorer.apk               | 6.29.20               | https://www.apkmirror.com/apk/pishrodevs/mixplorer-hootanparsa/                                   |
 | newpipe                 | newpipe.apk                 |
 | profiler                | profiler.apk                |
