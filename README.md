@@ -17,7 +17,7 @@ links to download apks + latest versions
 | devcheck                | devcheck.apk                |
 | drminfo                 | drminfo.apk                 |
 | eleven                  | Eleven.apk                  | May 1st 2018          | https://androidfilehost.com/?fid=818070582850511218                                               |
-| email                   | Email.apk                   |in fact it was probably you who donated the money to me!
+| email                   | Email.apk                   |
 | enhancedime             | EnhancedIME.apk             |
 | fonts                   |                             |
 | googlecamera            | GoogleCamera.apk            |                       | https://www.celsoazevedo.com/files/android/google-camera/                                         |
