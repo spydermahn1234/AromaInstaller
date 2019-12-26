@@ -15,7 +15,7 @@ links to download apks + latest versions
 | buffcore                | Buffcore.apk                | v3.0                  |                                                                                                   |
 | camerasounds            |                             |                       |                                                                                                   |
 | devcheck                | devcheck.apk                | 2.41-241              | https://www.apkmirror.com/apk/flar2/devcheck-system-info/                                         |
-| drminfo                 | drminfo.apk                 |                       | https://www.apkmirror.com/apk/android-fung/drm-info-2/                                            |
+| drminfo                 | drminfo.apk                 | 1.1.2.191021          | https://www.apkmirror.com/apk/android-fung/drm-info-2/                                            |
 | eleven                  | Eleven.apk                  | May 1st 2018          | https://androidfilehost.com/?fid=818070582850511218                                               |
 | email                   | Email.apk                   |                       |                                                                                                   |
 | enhancedime             | EnhancedIME.apk             |                       |                                                                                                   |
