@@ -26,7 +26,7 @@ links to download apks + latest versions
 | magiskmanager           | MagiskManager.apk           | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
 | magiskuninstaller       | magiskuninstaller.zip       | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
 | mixplorer               | Mixplorer.apk               | 6.42.3-19121310       | https://www.apkmirror.com/apk/pishrodevs/mixplorer-hootanparsa/                                   |
-| newpipe                 | newpipe.apk                 |                       | https://www.apkmirror.com/apk/thescrabi/newpipe-github/                                           |
+| newpipe                 | newpipe.apk                 | 0.17.4-790            | https://www.apkmirror.com/apk/thescrabi/newpipe-github/                                           |
 | profiler                | profiler.apk                | 2.0_xda               | https://forum.xda-developers.com/android/apps-games/app-profiler-cpu-gpu-ram-monitoring-t3759672  |
 | recorder                | Recorder.apk                |                       |                                                                                                   |
 | snap                    | Snap.apk                    |                       |                                                                                                   |
