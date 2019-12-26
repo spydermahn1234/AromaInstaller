@@ -30,7 +30,7 @@ links to download apks + latest versions
 | profiler                | profiler.apk                | 2.0_xda               | https://forum.xda-developers.com/android/apps-games/app-profiler-cpu-gpu-ram-monitoring-t3759672  |
 | recorder                | Recorder.apk                |                       |                                                                                                   |
 | snap                    | Snap.apk                    |                       |                                                                                                   |
-| syslog                  | syslog.apk                  |                       | https://www.apkmirror.com/apk/scott-warner/syslog/                                                |
+| syslog                  | syslog.apk                  | 2.2.1-32              | https://www.apkmirror.com/apk/scott-warner/syslog/                                                |
 | toolbox                 | Toolbox.apk                 |                       |                                                                                                   |
 | vanced  yt              | VancedYT.apk                | 13.43.50              | https://vanced.app/APKs?type=ROOT                                                                 |
 | viper4androidfx         | ViPER4AndroidFX.apk         | 2.7.1                 | https://labs.xda-developers.com/store/app/com.pittvandewitt.viperfx                               |
