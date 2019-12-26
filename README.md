@@ -11,7 +11,7 @@ links to download apks + latest versions
 | adaway                  | AdAway.apk                  | 4.3.0-191101          | https://androidfilehost.com/?w=files&flid=249276                                                  |
 | audiofx                 | AudioFX.apk                 |                       |                                                                                                   |
 | betterbatterystats      | betterbatterystats.apk      | 2.5-341 (98)          | install.appcenter.ms                                                                  |
-| brave                   | Brave.apk                   |                       | https://www.apkmirror.com/apk/brave-software/brave-browser/                                       |
+| brave                   | Brave.apk                   | 1.6.0-390411502       | https://www.apkmirror.com/apk/brave-software/brave-browser/                                       |
 | buffcore                | Buffcore.apk                | v3.0                  |                                                                                                   |
 | camerasounds            |                             |                       |                                                                                                   |
 | devcheck                | devcheck.apk                | 2.41-241              | https://www.apkmirror.com/apk/flar2/devcheck-system-info/                                         |
