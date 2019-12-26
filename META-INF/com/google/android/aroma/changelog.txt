@@ -1,3 +1,18 @@
+<b><u>Aroma Version 5.1:</u></b>
+---------------------------------------------------------
+<*> Updated AdAway to 4.3.0-191101  </*>
+<*> Updated betterbatterystats  to 2.5-341 (98) </*>
+<*> Updated Brave to 1.6.0-390411502 </*>
+<*> Updated Devcheck to 2.41-241 </*>
+<*> Updated Drminfo to 1.1.2.191021 </*>
+<*> Updated Magisk to 11b7076a / canary </*>
+<*> Updated Magisk Manager to 11b7076a / canary </*>
+<*> Updated Magisk Uninstaller to 11b7076a / canary </*>
+<*> Updated Mixplorer to 6.42.3-19121310 </*>
+<*> Updated NewPipe to 0.17.4-790 </*>
+<*> Updated Syslog to  2.2.1-32 </*>
+<*> Updated YTvanced to 14.21.54-1421542300 </*>
+
 <b><u>Aroma Version 5.0:</u></b>
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
