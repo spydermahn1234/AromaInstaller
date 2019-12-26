@@ -2,7 +2,7 @@
 ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDCTeam Aroma Package");
-ini_set("rom_version",          "Aroma v5.1");
+ini_set("rom_version",          "Aroma v5.11");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE");
 ini_set("rom_date",             "December 2019");
@@ -284,7 +284,7 @@ ini_set("text_next", "Install now");
 
 
 viewbox(
-	"READY TO INSTALL"
+	"READY TO INSTALL",
 	"The wizard is ready to begin installation.\n\n"+
 	"Press <b>install now</b> to begin the installation.\n\n"+
 	"If you want to make any changes, press <b>back</b>.\n\n"+
