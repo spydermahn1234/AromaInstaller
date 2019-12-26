@@ -10,7 +10,7 @@ links to download apks + latest versions
 | :---------------------- | :-------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------ |
 | adaway                  | AdAway.apk                  | 4.3.0-191101          | https://androidfilehost.com/?w=files&flid=249276                                                  |
 | audiofx                 | AudioFX.apk                 |                       |                                                                                                   |
-| betterbatterystats      | betterbatterystats.apk      | 2.5-341 (98)          | install.appcenter.ms                                                                  |
+| betterbatterystats      | betterbatterystats.apk      | 2.5-341 (98)          | install.appcenter.ms                                                                              |
 | brave                   | Brave.apk                   | 1.6.0-390411502       | https://www.apkmirror.com/apk/brave-software/brave-browser/                                       |
 | buffcore                | Buffcore.apk                | v3.0                  |                                                                                                   |
 | camerasounds            |                             |                       |                                                                                                   |
@@ -32,7 +32,7 @@ links to download apks + latest versions
 | snap                    | Snap.apk                    |                       |                                                                                                   |
 | syslog                  | syslog.apk                  | 2.2.1-32              | https://www.apkmirror.com/apk/scott-warner/syslog/                                                |
 | toolbox                 | Toolbox.apk                 |                       |                                                                                                   |
-| vanced  yt              | VancedYT.apk                | 13.43.50              | https://vanced.app/APKs?type=ROOT                                                                 |
+| vanced  yt              | VancedYT.apk                | 14.21.54-1421542300   | https://www.mediafire.com/folder/773e97cz2ezx1/AddFree_Youtube_BackgroundPlay_Enabled             |
 | viper4androidfx         | ViPER4AndroidFX.apk         | 2.7.1                 | https://labs.xda-developers.com/store/app/com.pittvandewitt.viperfx                               |
 | xperiakeyboard          | textinput-tng.apk           |                       |                                                                                                   |
 
