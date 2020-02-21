@@ -4,6 +4,9 @@
 <*> Updated Brave to 1.5.6-398710302 </*>
 <*> Updated Devcheck to 2.45 </*>
 <*> Updated Mixplorer to 6.43.1-20020410 </*>
+<*> Updated Magisk to ce7cb1ee / canary </*>
+<*> Updated Magisk Manager to ce7cb1ee / canary </*>
+<*> Updated Magisk Uninstaller to ce7cb1ee / canary </*>
 
 <*> Updated Syslog to 2.3.0-33 </*>
 

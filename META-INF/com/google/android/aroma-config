@@ -130,7 +130,7 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "11b7076a / canary"                                                                 ,0,    #-- selected.1 = 1
+	"Add Magisk and Magisk manager",               "ce7cb1ee / canary"                                                                 ,0,    #-- selected.1 = 1
 	"Remove Magisk, if previously added",          "Will restore built-in superuser"                                                   ,0,    #-- selected.1 = 2
 	"No changes",                                  ""                                                                                  ,1,    #-- selected.1 = 3
 
