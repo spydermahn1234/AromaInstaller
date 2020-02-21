@@ -259,7 +259,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add DevCheck",                                "Displays lots of helpful debug information including sensors"                      ,0,    #-- selected.2 = 1
-	"Remove DevCheck",                             "2.41-241"                                                                          ,0,    #-- selected.2 = 2
+	"Remove DevCheck",                             "2.45"                                                                          ,0,    #-- selected.2 = 2
 	"No changes",                                  ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
