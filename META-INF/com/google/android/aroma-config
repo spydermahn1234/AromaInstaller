@@ -274,7 +274,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Syslog",                                  "Tool to grab and package all system logs to include with error reports"            ,0,    #-- selected.5 = 1
-	"Remove Syslog",                               "2.2.1-32"                                                                          ,0,    #-- selected.5 = 2
+	"Remove Syslog",                               "2.3.0-33"                                                                          ,0,    #-- selected.5 = 2
 	"No changes",                                  ""                                                                                  ,1     #-- selected.5 = 3
 
 );

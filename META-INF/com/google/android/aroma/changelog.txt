@@ -5,6 +5,9 @@
 <*> Updated Devcheck to 2.45 </*>
 <*> Updated Mixplorer to 6.43.1-20020410 </*>
 
+<*> Updated Syslog to 2.3.0-33 </*>
+
+
 <b><u>Aroma Version 5.11:</u></b>
 ---------------------------------------------------------
 <*> Bugfix "ready to install" comma issue  </*>
