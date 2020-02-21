@@ -1,3 +1,8 @@
+<b><u>Aroma Version 5.2:</u></b>
+---------------------------------------------------------
+<*> Updated NewPipe to 0.18.3-830 </*>
+
+
 
 <b><u>Aroma Version 5.11:</u></b>
 ---------------------------------------------------------
@@ -6,7 +11,7 @@
 <b><u>Aroma Version 5.1:</u></b>
 ---------------------------------------------------------
 <*> Updated AdAway to 4.3.0-191101  </*>
-<*> Updated betterbatterystats  to 2.5-341 (98) </*>
+<*> Updated BetterBatteryStats  to 2.5-341 (98) </*>
 <*> Updated Brave to 1.6.0-390411502 </*>
 <*> Updated Devcheck to 2.41-241 </*>
 <*> Updated Drminfo to 1.1.2.191021 </*>
