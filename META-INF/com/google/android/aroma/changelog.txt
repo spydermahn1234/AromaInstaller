@@ -1,6 +1,12 @@
-<b><u>Aroma Version 5.2:</u></b>
+<b><u>JDC AromaInstaller Version 10.0 <alpha 01>:</u></b>
 ---------------------------------------------------------
-<*> Updated AdAway to 4.3.2-191229  </*>
+<*> make new branch for 10, update readme and changelist for 10.0 </*>
+
+
+
+<b><u>JDC AromaInstaller Version 5.2:</u></b>
+---------------------------------------------------------
+<*> Updated AdAway to 4.3.2-191229 </*>
 <*> Updated Brave to 1.5.6-398710302 </*>
 <*> Updated Devcheck to 2.45 </*>
 <*> Updated Magisk to ce7cb1ee / canary </*>
@@ -10,15 +16,14 @@
 <*> Updated NewPipe to 0.18.3-830 </*>
 <*> Updated Syslog to 2.3.0-33 </*>
 
-
-<b><u>Aroma Version 5.11:</u></b>
+<b><u>JDC AromaInstaller Version 5.11:</u></b>
 ---------------------------------------------------------
-<*> Bugfix "ready to install" comma issue  </*>
+<*> Bugfix "ready to install" comma issue </*>
 
-<b><u>Aroma Version 5.1:</u></b>
+<b><u>JDC AromaInstaller Version 5.1:</u></b>
 ---------------------------------------------------------
-<*> Updated AdAway to 4.3.0-191101  </*>
-<*> Updated BetterBatteryStats  to 2.5-341 (98) </*>
+<*> Updated AdAway to 4.3.0-191101 </*>
+<*> Updated BetterBatteryStats to 2.5-341 (98) </*>
 <*> Updated Brave to 1.6.0-390411502 </*>
 <*> Updated Devcheck to 2.41-241 </*>
 <*> Updated Drminfo to 1.1.2.191021 </*>
@@ -27,10 +32,10 @@
 <*> Updated Magisk Uninstaller to 11b7076a / canary </*>
 <*> Updated Mixplorer to 6.42.3-19121310 </*>
 <*> Updated NewPipe to 0.17.4-790 </*>
-<*> Updated Syslog to  2.2.1-32 </*>
+<*> Updated Syslog to 2.2.1-32 </*>
 <*> Updated YTvanced to 14.21.54-1421542300 </*>
 
-<b><u>Aroma Version 5.0:</u></b>
+<b><u>JDC AromaInstaller Version 5.0:</u></b>
 ---------------------------------------------------------
 <*> Added Option to Uninstall debug tools </*>
 <*> Added Option to Install Google Camera manually </*>
@@ -42,14 +47,14 @@
 <*> Updated Brave browser to v1.1.2 </*>
 <*> Updated DRMInfo to v1.1.2.190630-177 </*>
 
-<b><u>Aroma Version 4.1:</u></b>
+<b><u>JDC AromaInstaller Version 4.1:</u></b>
 ---------------------------------------------------------
 <*> Updated MiXplorer to v6.39.0 beta </*>
 <*> Updated Magisk Manager to v7.3.2 </*>
 <*> Updated AdAway - v4.2.6-190623 </*>
 <*> Updated Brave to v1.0.99 </*>
 
-<b><u>Aroma Version 4.0:</u></b>
+<b><u>JDC AromaInstaller Version 4.0:</u></b>
 ---------------------------------------------------------
 <*> Updated Magisk to v19.3 </*>
 <*> Updated Magisk Manager to v7.2 </*>
@@ -65,7 +70,7 @@
 <*> Added Syslog - v2.2.0-31 </*>
 <*> Added BetterBatteryStats - v2.5-330 </*>
 
-<b><u>Aroma Version 3.0:</u></b>
+<b><u>JDC AromaInstaller Version 3.0:</u></b>
 ---------------------------------------------------------
 
 <*> Added option to remove Camera shutter sounds </*>
@@ -77,7 +82,7 @@
 <*> Updated Brave to v1.0.88 </*>
 <*> Updated NewPipe to v0.16.1 </*>
 
-<b><u>Aroma Version 2.0:</u></b>
+<b><u>JDC AromaInstaller Version 2.0:</u></b>
 ---------------------------------------------------------
 
 <*> Prioritize our Red-Black JDC theme </*>
@@ -95,7 +100,7 @@
 <*> Updated MiXplorer to v6.33.10 </*>
 <*> Updated Brave to v1.0.84 </*>
 
-<b><u>Aroma Version 1.0:</u></b>
+<b><u>JDC AromaInstaller Version 1.0:</u></b>
 ---------------------------------------------------------
 
 <*> Initial Release </*>
