@@ -35,4 +35,3 @@ Included applications and links to download.
 | vanced  yt              | https://www.mediafire.com/folder/773e97cz2ezx1/AddFree_Youtube_BackgroundPlay_Enabled             |
 | viper4androidfx         | https://labs.xda-developers.com/store/app/com.pittvandewitt.viperfx                               |
 | xperiakeyboard          |                                                                                                   |
-

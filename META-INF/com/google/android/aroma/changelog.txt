@@ -1,8 +1,16 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 02>:</u></b>
+---------------------------------------------------------
+<*> Updated Brave to 1.5.9-398713202 </*>
+<*> Updated Magisk to 72f6770d / canary </*>
+<*> Updated Magisk Manager to 72f6770d / canary </*>
+<*> Updated Magisk Uninstaller to 72f6770d / canary </*>
+<*> Updated Mixplorer to 6.44.0 </*>
+<*> Updated NewPipe to 0.18.7 (870) </*>
+<*> Updated Viper4Android to 2.7.1.6 </*>
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 01>:</u></b>
 ---------------------------------------------------------
 <*> make new branch for 10, update readme and changelist for 10.0 </*>
-
-
 
 <b><u>JDC AromaInstaller Version 5.2:</u></b>
 ---------------------------------------------------------
@@ -72,7 +80,6 @@
 
 <b><u>JDC AromaInstaller Version 3.0:</u></b>
 ---------------------------------------------------------
-
 <*> Added option to remove Camera shutter sounds </*>
 <*> Removed Substratum Key </*>
 <*> Updated Magisk to v19.1 </*>
@@ -84,7 +91,6 @@
 
 <b><u>JDC AromaInstaller Version 2.0:</u></b>
 ---------------------------------------------------------
-
 <*> Prioritize our Red-Black JDC theme </*>
 <*> Added OPTLOS Pie bootaimation </*>
 <*> Added Liquid Remix bootaimation </*>
@@ -102,5 +108,4 @@
 
 <b><u>JDC AromaInstaller Version 1.0:</u></b>
 ---------------------------------------------------------
-
 <*> Initial Release </*>
