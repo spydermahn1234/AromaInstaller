@@ -1,3 +1,14 @@
+<b><u>Aroma Version 5.3:</u></b>
+---------------------------------------------------------
+<*> Updated Brave to 1.5.9-398713202 </*>
+<*> Updated Magisk to 72f6770d / canary </*>
+<*> Updated Magisk Manager to 72f6770d / canary </*>
+<*> Updated Magisk Uninstaller to 72f6770d / canary </*>
+<*> Updated Mixplorer to 6.44.0 </*>
+<*> Updated NewPipe to 0.18.7 (870) </*>
+<*> Updated Viper4Android to 2.7.1.6 </*>
+
+
 <b><u>Aroma Version 5.2:</u></b>
 ---------------------------------------------------------
 <*> Updated AdAway to 4.3.2-191229  </*>
@@ -9,7 +20,6 @@
 <*> Updated Mixplorer to 6.43.1-20020410 </*>
 <*> Updated NewPipe to 0.18.3-830 </*>
 <*> Updated Syslog to 2.3.0-33 </*>
-
 
 <b><u>Aroma Version 5.11:</u></b>
 ---------------------------------------------------------
@@ -67,7 +77,6 @@
 
 <b><u>Aroma Version 3.0:</u></b>
 ---------------------------------------------------------
-
 <*> Added option to remove Camera shutter sounds </*>
 <*> Removed Substratum Key </*>
 <*> Updated Magisk to v19.1 </*>
@@ -79,7 +88,6 @@
 
 <b><u>Aroma Version 2.0:</u></b>
 ---------------------------------------------------------
-
 <*> Prioritize our Red-Black JDC theme </*>
 <*> Added OPTLOS Pie bootaimation </*>
 <*> Added Liquid Remix bootaimation </*>
@@ -97,5 +105,4 @@
 
 <b><u>Aroma Version 1.0:</u></b>
 ---------------------------------------------------------
-
 <*> Initial Release </*>

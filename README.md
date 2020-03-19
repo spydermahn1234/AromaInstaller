@@ -11,7 +11,7 @@ links to download apks + latest versions
 | adaway                  | AdAway.apk                  | 4.3.0-191101          | https://androidfilehost.com/?w=files&flid=249276                                                  |
 | audiofx                 | AudioFX.apk                 |                       |                                                                                                   |
 | betterbatterystats      | betterbatterystats.apk      | 2.5-341 (98)          | install.appcenter.ms                                                                              |
-| brave                   | Brave.apk                   | 1.6.0-390411502       | https://www.apkmirror.com/apk/brave-software/brave-browser/                                       |
+| brave                   | Brave.apk                   | 1.5.9-398713202       | https://www.apkmirror.com/apk/brave-software/brave-browser/                                       |
 | buffcore                | Buffcore.apk                | v3.0                  |                                                                                                   |
 | camerasounds            |                             |                       |                                                                                                   |
 | devcheck                | devcheck.apk                | 2.41-241              | https://www.apkmirror.com/apk/flar2/devcheck-system-info/                                         |
@@ -22,17 +22,17 @@ links to download apks + latest versions
 | fonts                   |                             |                       |                                                                                                   |
 | googlecamera            | GoogleCamera.apk            |                       | https://www.celsoazevedo.com/files/android/google-camera/                                         |
 | livewallpaperspicker    | LiveWallpapersPicker.apk    | 9                     | https://www.apkmirror.com/apk/google-inc/live-wallpaper-picker/                                   |
-| magisk                  | magisk.zip                  | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
-| magiskmanager           | MagiskManager.apk           | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
-| magiskuninstaller       | magiskuninstaller.zip       | 11b7076a / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
-| mixplorer               | Mixplorer.apk               | 6.42.3-19121310       | https://www.apkmirror.com/apk/pishrodevs/mixplorer-hootanparsa/                                   |
-| newpipe                 | newpipe.apk                 | 0.17.4-790            | https://www.apkmirror.com/apk/thescrabi/newpipe-github/                                           |
+| magisk                  | magisk.zip                  | 72f6770d / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
+| magiskmanager           | MagiskManager.apk           | 72f6770d / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
+| magiskuninstaller       | magiskuninstaller.zip       | 72f6770d / canary     | https://github.com/topjohnwu/magisk_files/tree/canary                                             |
+| mixplorer               | Mixplorer.apk               | 6.44.0                | https://www.apkmirror.com/apk/pishrodevs/mixplorer-hootanparsa/                                   |
+| newpipe                 | newpipe.apk                 | 0.18.7 (870)          | https://www.apkmirror.com/apk/thescrabi/newpipe-github/                                           |
 | profiler                | profiler.apk                | 2.0_xda               | https://forum.xda-developers.com/android/apps-games/app-profiler-cpu-gpu-ram-monitoring-t3759672  |
 | recorder                | Recorder.apk                |                       |                                                                                                   |
 | snap                    | Snap.apk                    |                       |                                                                                                   |
 | syslog                  | syslog.apk                  | 2.2.1-32              | https://www.apkmirror.com/apk/scott-warner/syslog/                                                |
 | toolbox                 | Toolbox.apk                 |                       |                                                                                                   |
 | vanced  yt              | VancedYT.apk                | 14.21.54-1421542300   | https://www.mediafire.com/folder/773e97cz2ezx1/AddFree_Youtube_BackgroundPlay_Enabled             |
-| viper4androidfx         | ViPER4AndroidFX.apk         | 2.7.1                 | https://labs.xda-developers.com/store/app/com.pittvandewitt.viperfx                               |
+| viper4android         | ViPER4Android.apk             | 2.7.1.6               | https://labs.xda-developers.com/store/app/com.pittvandewitt.viperfx                               |
 | xperiakeyboard          | textinput-tng.apk           |                       |                                                                                                   |
 
