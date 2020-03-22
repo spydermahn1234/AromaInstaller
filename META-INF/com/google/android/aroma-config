@@ -39,8 +39,8 @@ anisplash(
 
 theme("redblack");
 loadlang("langs/en.lang");
-fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
-fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
+fontresload( "0", "ttf/CaviarDreams-Regular.ttf", "12" );
+fontresload( "1", "ttf/CaviarDreams-Regular.ttf", "18" );
 
 viewbox(
 	"",
