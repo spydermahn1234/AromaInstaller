@@ -25,7 +25,7 @@ delete_recursive("/tmp/magisk");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
 ui_print("Installing Magisk manager...");
-package_extract_dir("jdc/magiskmanager", "/system/priv-app/magiskmanager");
+package_extract_dir("jdc/magiskmanager", "/system/system/priv-app/magiskmanager");
 ui_print("  ");
 ui_print("Magisk successfully installed");
 ui_print("  ");
@@ -45,7 +45,7 @@ package_extract_dir("jdc/magiskuninstaller", "/tmp/magiskuninstaller");
 run_program("/sbin/busybox", "unzip", "/tmp/magiskuninstaller/magiskuninstaller.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magiskuninstaller");
 run_program("/sbin/busybox", "sh", "/tmp/magiskuninstaller/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magiskuninstaller/magiskuninstaller.zip");
 delete_recursive("/tmp/magiskuninstaller");
-delete_recursive("/system/priv-app/magiskmanager");
+delete_recursive("/system/system/priv-app/magiskmanager");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
 ui_print("  ");
@@ -65,7 +65,7 @@ then
 ui_print("  ");
 ui_print("Installing AdAway...");
 ui_print("  ");
-package_extract_dir("jdc/adaway", "/system/priv-app/AdAway");
+package_extract_dir("jdc/adaway", "/system/system/priv-app/AdAway");
 ui_print("AdAway successfully installed");
 ui_print("  ");
 endif;
@@ -80,7 +80,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling AdAway...");
 ui_print("  ");
-delete_recursive("/system/priv-app/AdAway");
+delete_recursive("/system/system/priv-app/AdAway");
 ui_print("AdAway successfully uninstalled");
 ui_print("  ");
 endif;
@@ -97,8 +97,8 @@ then
 ui_print("  ");
 ui_print("Installing JDCToolbox - Magisk...");
 ui_print("  ");
-delete_recursive("/system/app/Toolbox");
-package_extract_dir("jdc/toolbox/magisk", "/system/app/Toolbox");
+delete_recursive("/system/system/app/Toolbox");
+package_extract_dir("jdc/toolbox/magisk", "/system/system/app/Toolbox");
 ui_print("JDCToolbox - Magisk successfully installed");
 ui_print("  ");
 endif;
@@ -113,8 +113,8 @@ then
 ui_print("  ");
 ui_print("Installing JDCToolbox - non-Magisk...");
 ui_print("  ");
-delete_recursive("/system/app/Toolbox");
-package_extract_dir("jdc/toolbox/nonmagisk", "/system/app/Toolbox");
+delete_recursive("/system/system/app/Toolbox");
+package_extract_dir("jdc/toolbox/nonmagisk", "/system/system/app/Toolbox");
 ui_print("JDCToolbox - non-Magisk successfully installed");
 ui_print("  ");
 endif;
@@ -129,7 +129,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling JDCToolbox...");
 ui_print("  ");
-delete_recursive("/system/app/Toolbox");
+delete_recursive("/system/system/app/Toolbox");
 ui_print("JDCToolbox successfully uninstalled");
 ui_print("  ");
 endif;
@@ -146,8 +146,8 @@ then
 ui_print("  ");
 ui_print("Installing Buffcore Adiutor...");
 ui_print("  ");
-delete_recursive("/system/app/Buffcore");
-package_extract_dir("jdc/buffcore", "/system/app/Buffcore");
+delete_recursive("/system/system/app/Buffcore");
+package_extract_dir("jdc/buffcore", "/system/system/app/Buffcore");
 ui_print("Buffcore Adiutor successfully installed");
 ui_print("  ");
 endif;
@@ -162,7 +162,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Buffcore Adiutor...");
 ui_print("  ");
-delete_recursive("/system/app/Buffcore");
+delete_recursive("/system/system/app/Buffcore");
 ui_print("Buffcore Adiutor successfully uninstalled");
 ui_print("  ");
 endif;
@@ -179,8 +179,8 @@ then
 ui_print("  ");
 ui_print("Installing Mixplorer...");
 ui_print("  ");
-delete_recursive("/system/app/Mixplorer");
-package_extract_dir("jdc/mixplorer", "/system/app/Mixplorer");
+delete_recursive("/system/system/app/Mixplorer");
+package_extract_dir("jdc/mixplorer", "/system/system/app/Mixplorer");
 ui_print("Mixplorer successfully installed");
 ui_print("  ");
 endif;
@@ -195,7 +195,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Mixplorer...");
 ui_print("  ");
-delete_recursive("/system/app/Mixplorer");
+delete_recursive("/system/system/app/Mixplorer");
 ui_print("Mixplorer successfully uninstalled");
 ui_print("  ");
 endif;
@@ -222,8 +222,8 @@ then
 ui_print("  ");
 ui_print("Installing ViPER4AndroidFX...");
 ui_print("  ");
-package_extract_dir("jdc/ViPER4AndroidFX", "/system/priv-app/ViPER4AndroidFX");
-delete_recursive("/system/priv-app/AudioFX");
+package_extract_dir("jdc/ViPER4AndroidFX", "/system/system/priv-app/ViPER4AndroidFX");
+delete_recursive("/system/system/priv-app/AudioFX");
 ui_print("ViPER4AndroidFX successfully installed");
 ui_print("  ");
 endif;
@@ -238,11 +238,11 @@ then
 ui_print("  ");
 ui_print("Uninstalling ViPER4AndroidFX...");
 ui_print("  ");
-delete_recursive("/system/priv-app/ViPER4AndroidFX");
+delete_recursive("/system/system/priv-app/ViPER4AndroidFX");
 ui_print("VIPER4AndroidFX successfully uninstalled");
 ui_print("  ");
 ui_print("Restoring AudioFX...");
-package_extract_dir("jdc/audiofx", "/system/priv-app/AudioFX");
+package_extract_dir("jdc/audiofx", "/system/system/priv-app/AudioFX");
 ui_print("AudioFX successfully restored");
 ui_print("  ");
 endif;
@@ -259,9 +259,9 @@ then
 ui_print("  ");
 ui_print("Installing Newpipe...");
 ui_print("  ");
-delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/system/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/newpipe", "/system/priv-app/newpipe");
+package_extract_dir("jdc/newpipe", "/system/system/priv-app/newpipe");
 ui_print("Newpipe successfully installed");
 ui_print("  ");
 endif;
@@ -276,7 +276,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Newpipe...");
 ui_print("  ");
-delete_recursive("/system/priv-app/newpipe");
+delete_recursive("/system/system/priv-app/newpipe");
 ui_print("Newpipe successfully uninstalled");
 ui_print("  ");
 endif;
@@ -291,9 +291,9 @@ then
 ui_print("  ");
 ui_print("Installing Vanced Black...");
 ui_print("  ");
-delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/system/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/VancedYT/black", "/system/priv-app/VancedYT");
+package_extract_dir("jdc/VancedYT/black", "/system/system/priv-app/VancedYT");
 ui_print("Vanced successfully installed");
 ui_print("  ");
 endif;
@@ -308,9 +308,9 @@ then
 ui_print("  ");
 ui_print("Installing Vanced Dark...");
 ui_print("  ");
-delete_recursive("/system/priv-app/YouTube");
+delete_recursive("/system/system/priv-app/YouTube");
 delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/VancedYT/dark", "/system/priv-app/VancedYT");
+package_extract_dir("jdc/VancedYT/dark", "/system/system/priv-app/VancedYT");
 ui_print("Vanced successfully installed");
 ui_print("  ");
 endif;
@@ -324,7 +324,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Vanced...");
 ui_print("  ");
-delete_recursive("/system/priv-app/VancedYT");
+delete_recursive("/system/system/priv-app/VancedYT");
 ui_print("Vanced successfully uninstalled");
 ui_print("  ");
 endif;
@@ -341,7 +341,7 @@ then
 ui_print("  ");
 ui_print("Installing Google camera...");
 ui_print("  ");
-package_extract_dir("jdc/googlecamera", "/system/app/GoogleCamera");
+package_extract_dir("jdc/googlecamera", "/system/system/app/GoogleCamera");
 ui_print("Google camera successfully installed");
 ui_print("  ");
 endif;
@@ -356,7 +356,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Google camera...");
 ui_print("  ");
-delete_recursive("/system/app/GoogleCamera");
+delete_recursive("/system/system/app/GoogleCamera");
 ui_print("Google camera successfully uninstalled");
 ui_print("  ");
 endif;
@@ -421,7 +421,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Xperia keyboard...");
 ui_print("  ");
-delete_recursive("/system/app/textinput-tng");
+delete_recursive("/system/system/app/textinput-tng");
 ui_print("Xperia keyboard successfully uninstalled");
 ui_print("  ");
 endif;
@@ -437,7 +437,7 @@ file_getprop("/tmp/aroma-data/add.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("Installing Enhanced AOSP keyboard...");
-package_extract_dir("jdc/EnhancedIME", "/system/app/EnhancedIME");
+package_extract_dir("jdc/EnhancedIME", "/system/system/app/EnhancedIME");
 package_extract_dir("jdc/EnhancedIME/lib", "/system/lib");
 ui_print("Enhanced AOSP successfully installed");
 ui_print("  ");
@@ -453,7 +453,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Enhanced AOSP keyboard...");
 ui_print("  ");
-delete_recursive("/system/app/EnhancedIME");
+delete_recursive("/system/system/app/EnhancedIME");
 ui_print("Enhanced AOSP keyboard successfully uninstalled");
 ui_print("  ");
 endif;
@@ -470,8 +470,8 @@ then
 ui_print("  ");
 ui_print("Installing Recorder...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Recorder");
-package_extract_dir("jdc/Recorder", "/system/priv-app/Recorder");
+delete_recursive("/system/system/priv-app/Recorder");
+package_extract_dir("jdc/Recorder", "/system/system/priv-app/Recorder");
 ui_print("Recorder successfully installed");
 ui_print("  ");
 endif;
@@ -486,7 +486,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Recorder...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Recorder");
+delete_recursive("/system/system/priv-app/Recorder");
 ui_print("Recorder successfully uninstalled");
 ui_print("  ");
 endif;
@@ -503,8 +503,8 @@ then
 ui_print("  ");
 ui_print("Installing Brave...");
 ui_print("  ");
-delete_recursive("/system/app/Brave");
-package_extract_dir("jdc/Brave", "/system/app/Brave");
+delete_recursive("/system/system/app/Brave");
+package_extract_dir("jdc/Brave", "/system/system/app/Brave");
 ui_print("Brave successfully installed");
 ui_print("  ");
 endif;
@@ -519,7 +519,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Brave...");
 ui_print("  ");
-delete_recursive("/system/app/Brave");
+delete_recursive("/system/system/app/Brave");
 ui_print("Brave successfully uninstalled");
 ui_print("  ");
 endif;
@@ -536,7 +536,7 @@ then
 ui_print("  ");
 ui_print("Oxygen OS fonts are installing...");
 ui_print("  ");
-package_extract_dir("jdc/fonts/oosfonts", "/system/fonts");
+package_extract_dir("jdc/fonts/oosfonts", "/system/system/fonts");
 ui_print("Oxygen OS fonts successfully installed");
 ui_print("  ");
 endif;
@@ -551,7 +551,7 @@ then
 ui_print("  ");
 ui_print("Restoring OPTLOS fonts...");
 ui_print("  ");
-package_extract_dir("jdc/fonts/optlosfonts", "/system/fonts");
+package_extract_dir("jdc/fonts/optlosfonts", "/system/system/fonts");
 ui_print("OPTLOS fonts restored successfully");
 ui_print("  ");
 endif;
@@ -566,7 +566,7 @@ then
 ui_print("  ");
 ui_print("Removing camera shutter sounds...");
 ui_print("  ");
-package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/media/audio/ui");
+package_extract_dir("jdc/camerasounds/nosound/system/system/media/audio/ui", "/system/system/media/audio/ui");
 ui_print("Camera shutter sounds removed successfully");
 ui_print("  ");
 endif;
@@ -581,7 +581,7 @@ then
 ui_print("  ");
 ui_print("Restoring camera shutter sounds...");
 ui_print("  ");
-package_extract_dir("jdc/camerasounds/optlos/system/media/audio/ui", "/system/media/audio/ui");
+package_extract_dir("jdc/camerasounds/optlos/system/system/media/audio/ui", "/system/system/media/audio/ui");
 ui_print("Camera shutter sounds restored successfully");
 ui_print("  ");
 endif;
@@ -607,8 +607,8 @@ then
 ui_print("  ");
 ui_print("Removing Live Wallpaper Picker...");
 ui_print("  ");
-delete_recursive("/system/app/LiveWallpaperPicker");
-delete_recursive("/system/app/LiveWallpapersPicker");
+delete_recursive("/system/system/app/LiveWallpaperPicker");
+delete_recursive("/system/system/app/LiveWallpapersPicker");
 ui_print("Live Wallpaper Picker removed successfully");
 ui_print("  ");
 endif;
@@ -623,9 +623,9 @@ then
 ui_print("  ");
 ui_print("Restoring Live Wallpaper Picker...");
 ui_print("  ");
-delete_recursive("/system/app/LiveWallpaperPicker");
-delete_recursive("/system/app/LiveWallpapersPicker");
-package_extract_dir("jdc/LiveWallpapersPicker", "/system/app/LiveWallpapersPicker");
+delete_recursive("/system/system/app/LiveWallpaperPicker");
+delete_recursive("/system/system/app/LiveWallpapersPicker");
+package_extract_dir("jdc/LiveWallpapersPicker", "/system/system/app/LiveWallpapersPicker");
 ui_print("Live Wallpaper Picker restored successfully");
 ui_print("  ");
 endif;
@@ -642,7 +642,7 @@ then
 ui_print("  ");
 ui_print("Removing Eleven player...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Eleven");
+delete_recursive("/system/system/priv-app/Eleven");
 ui_print("Eleven player removed successfully");
 ui_print("  ");
 endif;
@@ -657,8 +657,8 @@ then
 ui_print("  ");
 ui_print("Restoring Eleven player...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Eleven");
-package_extract_dir("jdc/eleven", "/system/priv-app/Eleven");
+delete_recursive("/system/system/priv-app/Eleven");
+package_extract_dir("jdc/eleven", "/system/system/priv-app/Eleven");
 ui_print("Eleven player restored successfully");
 ui_print("  ");
 endif;
@@ -675,7 +675,7 @@ then
 ui_print("  ");
 ui_print("Removing Snap camera...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Snap");
+delete_recursive("/system/system/priv-app/Snap");
 ui_print("Snap camera removed successfully");
 ui_print("  ");
 endif;
@@ -690,8 +690,8 @@ then
 ui_print("  ");
 ui_print("Restoring Snap camera...");
 ui_print("  ");
-delete_recursive("/system/priv-app/Snap");
-package_extract_dir("jdc/snap", "/system/priv-app/Snap");
+delete_recursive("/system/system/priv-app/Snap");
+package_extract_dir("jdc/snap", "/system/system/priv-app/Snap");
 ui_print("Snap camera restored successfully");
 ui_print("  ");
 endif;
@@ -707,7 +707,7 @@ then
 ui_print("  ");
 ui_print("Removing Email...");
 ui_print("  ");
-delete_recursive("/system/app/Email");
+delete_recursive("/system/system/app/Email");
 ui_print("Email removed successfully");
 ui_print("  ");
 endif;
@@ -722,8 +722,8 @@ then
 ui_print("  ");
 ui_print("Restoring Email...");
 ui_print("  ");
-delete_recursive("/system/app/Email");
-package_extract_dir("jdc/Email", "/system/app/Email");
+delete_recursive("/system/system/app/Email");
+package_extract_dir("jdc/Email", "/system/system/app/Email");
 ui_print("Email restored successfully");
 ui_print("  ");
 endif;
@@ -750,7 +750,7 @@ then
 ui_print("  ");
 ui_print("Installing BetterBatteryStats...");
 ui_print("  ");
-package_extract_dir("jdc/BetterBatteryStats", "/system/priv-app/BetterBatteryStats");
+package_extract_dir("jdc/BetterBatteryStats", "/system/system/priv-app/BetterBatteryStats");
 ui_print("BetterBatteryStats successfully installed");
 ui_print("  ");
 endif;
@@ -765,7 +765,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling BetterBatteryStats...");
 ui_print("  ");
-delete_recursive("/system/priv-app/BetterBatteryStats");
+delete_recursive("/system/system/priv-app/BetterBatteryStats");
 ui_print("BetterBatteryStats successfully uninstalled");
 ui_print("  ");
 endif;
@@ -782,7 +782,7 @@ then
 ui_print("  ");
 ui_print("Installing DevCheck...");
 ui_print("  ");
-package_extract_dir("jdc/devcheck", "/system/app/DevCheck");
+package_extract_dir("jdc/devcheck", "/system/system/app/DevCheck");
 ui_print("DevCheck successfully installed");
 ui_print("  ");
 endif;
@@ -797,7 +797,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling DevCheck...");
 ui_print("  ");
-delete_recursive("/system/app/DevCheck");
+delete_recursive("/system/system/app/DevCheck");
 ui_print("DevCheck successfully uninstalled");
 ui_print("  ");
 endif;
@@ -813,7 +813,7 @@ then
 ui_print("  ");
 ui_print("Installing DrmInfo...");
 ui_print("  ");
-package_extract_dir("jdc/drminfo", "/system/app/DrmInfo");
+package_extract_dir("jdc/drminfo", "/system/system/app/DrmInfo");
 ui_print("DrmInfo successfully installed");
 ui_print("  ");
 endif;
@@ -828,7 +828,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling DrmInfo...");
 ui_print("  ");
-delete_recursive("/system/app/DrmInfo");
+delete_recursive("/system/system/app/DrmInfo");
 ui_print("DrmInfo successfully uninstalled");
 ui_print("  ");
 endif;
@@ -844,7 +844,7 @@ file_getprop("/tmp/aroma-data/dbg.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Installing Profiler...");
-package_extract_dir("jdc/profiler", "/system/app/Profiler");
+package_extract_dir("jdc/profiler", "/system/system/app/Profiler");
 ui_print("Profiler successfully installed");
 ui_print("  ");
 endif;
@@ -859,7 +859,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Profiler...");
 ui_print("  ");
-delete_recursive("/system/app/Profiler");
+delete_recursive("/system/system/app/Profiler");
 ui_print("Profiler successfully uninstalled");
 ui_print("  ");
 endif;
@@ -876,7 +876,7 @@ then
 ui_print("  ");
 ui_print("Installing Syslog...");
 ui_print("  ");
-package_extract_dir("jdc/syslog", "/system/app/Syslog");
+package_extract_dir("jdc/syslog", "/system/system/app/Syslog");
 ui_print("Syslog successfully installed");
 ui_print("  ");
 endif;
@@ -891,7 +891,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Syslog...");
 ui_print("  ");
-delete_recursive("/system/app/Syslog");
+delete_recursive("/system/system/app/Syslog");
 ui_print("Syslog successfully uninstalled");
 ui_print("  ");
 endif;
