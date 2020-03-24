@@ -13,7 +13,7 @@ set_progress(0.5);
 # ADD MAGISK
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("Installing Magisk binaries...");
@@ -36,7 +36,7 @@ endif;
 # REMOVE MAGISK
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Magisk binaries...");
@@ -60,7 +60,7 @@ set_progress(0.10);
 # ADD ADAWAY
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("Installing AdAway...");
@@ -75,7 +75,7 @@ endif;
 # REMOVE ADAWAY
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.2") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling AdAway...");
@@ -92,7 +92,7 @@ set_progress(0.15);
 # ADD JDCTOOLBOX MAGISK
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("Installing JDCToolbox - Magisk...");
@@ -108,7 +108,7 @@ endif;
 # ADD JDCTOOLBOX NONMAGISK
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "2"
 then
 ui_print("  ");
 ui_print("Installing JDCToolbox - non-Magisk...");
@@ -124,7 +124,7 @@ endif;
 # REMOVE JDCTOOLBOX
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.3") == "3"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "3"
 then
 ui_print("  ");
 ui_print("Uninstalling JDCToolbox...");
@@ -141,7 +141,7 @@ set_progress(0.20);
 # ADD BUFFCORE ADIUTOR
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Installing Buffcore Adiutor...");
@@ -157,7 +157,7 @@ endif;
 # REMOVE BUFFCORE ADIUTOR
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Buffcore Adiutor...");
@@ -174,7 +174,7 @@ set_progress(0.25);
 # ADD MIXPLORER
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.5") == "1"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("Installing Mixplorer...");
@@ -190,7 +190,7 @@ endif;
 # REMOVE MIXPLORER
 
 if
-file_getprop("/tmp/aroma/addroot.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.5") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Mixplorer...");
@@ -202,7 +202,7 @@ endif;
 
 ####################################################
 
-delete_recursive("/tmp/aroma/addroot.prop");
+delete_recursive("/tmp/aroma-data/addroot.prop");
 
 ui_print("#############end addroot#################");
 
@@ -217,7 +217,7 @@ set_progress(0.30);
 # ADD ViPER4AndroidFX
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("Installing ViPER4AndroidFX...");
@@ -233,7 +233,7 @@ endif;
 # REMOVE ViPER4AndroidFX
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.1") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling ViPER4AndroidFX...");
@@ -254,7 +254,7 @@ set_progress(0.35);
 # ADD NEWPIPE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("Installing Newpipe...");
@@ -271,7 +271,7 @@ endif;
 # REMOVE NEWPIPE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.2") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Newpipe...");
@@ -286,7 +286,7 @@ endif;
 # ADD VANCED BLACK
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("Installing Vanced Black...");
@@ -303,7 +303,7 @@ endif;
 # ADD VANCED DARK
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.3") == "2"
 then
 ui_print("  ");
 ui_print("Installing Vanced Dark...");
@@ -319,7 +319,7 @@ endif;
 # REMOVE VANCED
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.3") == "3"
+file_getprop("/tmp/aroma-data/add.prop","selected.3") == "3"
 then
 ui_print("  ");
 ui_print("Uninstalling Vanced...");
@@ -336,7 +336,7 @@ set_progress(0.40);
 # ADD GOOGLE CAMERA SYSTEM
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Installing Google camera...");
@@ -351,7 +351,7 @@ endif;
 # REMOVE GOOGLE CAMERA SYSTEM
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Google camera...");
@@ -366,7 +366,7 @@ endif;
 # ADD GOOGLE CAMERA MANUAL
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "3"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "3"
 then
 ui_print("  ");
 ui_print("-- Pasting Google Camera to ");
@@ -383,7 +383,7 @@ endif;
 # REMOVE GOOGLE CAMERA MANUAL
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.4") == "4"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "4"
 then
 ui_print("  ");
 ui_print("-- Removing Google Camera Paste Folder...");
@@ -402,7 +402,7 @@ set_progress(0.45);
 # ADD XPERIA KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.5") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("Installing Xperia keyboard...");
@@ -416,7 +416,7 @@ endif;
 # REMOVE XPERIA KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.5") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Xperia keyboard...");
@@ -433,7 +433,7 @@ set_progress(0.50);
 # ADD ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.6") == "1"
 then
 ui_print("  ");
 ui_print("Installing Enhanced AOSP keyboard...");
@@ -448,7 +448,7 @@ endif;
 # REMOVE ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.6") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.6") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Enhanced AOSP keyboard...");
@@ -465,7 +465,7 @@ set_progress(0.50);
 # ADD RECORDER APP
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.7") == "1"
 then
 ui_print("  ");
 ui_print("Installing Recorder...");
@@ -481,7 +481,7 @@ endif;
 # REMOVE RECORDER APP
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.7") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.7") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Recorder...");
@@ -498,7 +498,7 @@ set_progress(0.55);
 # ADD BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.8") == "1"
 then
 ui_print("  ");
 ui_print("Installing Brave...");
@@ -514,7 +514,7 @@ endif;
 # REMOVE BRAVE
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.8") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.8") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Brave...");
@@ -531,7 +531,7 @@ set_progress(0.60);
 # ADD OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.9") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.9") == "1"
 then
 ui_print("  ");
 ui_print("Oxygen OS fonts are installing...");
@@ -546,7 +546,7 @@ endif;
 # REMOVE OXYGEN OS FONTS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.9") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.9") == "2"
 then
 ui_print("  ");
 ui_print("Restoring OPTLOS fonts...");
@@ -561,7 +561,7 @@ endif;
 # REMOVE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.10") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.10") == "1"
 then
 ui_print("  ");
 ui_print("Removing camera shutter sounds...");
@@ -576,7 +576,7 @@ endif;
 # RESTORE CAMERA SHUTTER SOUNDS
 
 if
-file_getprop("/tmp/aroma/add.prop","selected.10") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.10") == "2"
 then
 ui_print("  ");
 ui_print("Restoring camera shutter sounds...");
@@ -590,7 +590,7 @@ endif;
 set_progress(0.65);
 ######################################################
 
-delete_recursive("/tmp/aroma/add.prop");
+delete_recursive("/tmp/aroma-data/add.prop");
 
 ui_print("###############end add##################");
 
@@ -602,7 +602,7 @@ ui_print("###############end add##################");
 # REMOVE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/remove.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("Removing Live Wallpaper Picker...");
@@ -618,7 +618,7 @@ endif;
 # RESTORE LIVE WALLPAPER PICKER APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/remove.prop","selected.1") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Live Wallpaper Picker...");
@@ -637,7 +637,7 @@ set_progress(0.70);
 # REMOVE ELEVEN PLAYER
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/remove.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("Removing Eleven player...");
@@ -652,7 +652,7 @@ endif;
 # RESTORE ELEVEN PLAYER
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/remove.prop","selected.2") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Eleven player...");
@@ -670,7 +670,7 @@ set_progress(0.75);
 # REMOVE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/remove.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("Removing Snap camera...");
@@ -685,7 +685,7 @@ endif;
 # RESTORE SNAP CAMERA
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/remove.prop","selected.3") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Snap camera...");
@@ -702,7 +702,7 @@ set_progress(0.80);
 
 # REMOVE EMAIL APP
 if
-file_getprop("/tmp/aroma/remove.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/remove.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Removing Email...");
@@ -717,7 +717,7 @@ endif;
 # RESTORE EMAIL APP
 
 if
-file_getprop("/tmp/aroma/remove.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/remove.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Restoring Email...");
@@ -732,7 +732,7 @@ endif;
 set_progress(0.85);
 ######################################################
 
-delete_recursive("/tmp/aroma/remove.prop");
+delete_recursive("/tmp/aroma-data/remove.prop");
 
 ui_print("##############end remove################");
 
@@ -745,7 +745,7 @@ ui_print("##############end remove################");
 # ADD BETTERYBATTERYSTATS
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.1") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.1") == "1"
 then
 ui_print("  ");
 ui_print("Installing BetterBatteryStats...");
@@ -760,7 +760,7 @@ endif;
 # REMOVE BETTERYBATTERYSTATS
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.1") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling BetterBatteryStats...");
@@ -777,7 +777,7 @@ set_progress(0.87);
 # ADD DEVCHECK
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.2") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "1"
 then
 ui_print("  ");
 ui_print("Installing DevCheck...");
@@ -792,7 +792,7 @@ endif;
 # REMOVE DEVCHECK
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.2") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling DevCheck...");
@@ -808,7 +808,7 @@ set_progress(0.89);
 
 # ADD DRMINFO
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "1"
 then
 ui_print("  ");
 ui_print("Installing DrmInfo...");
@@ -823,7 +823,7 @@ endif;
 # REMOVE DRMINFO
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling DrmInfo...");
@@ -840,7 +840,7 @@ set_progress(0.91);
 # ADD PROFILER
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.4") == "1"
 then
 ui_print("  ");
 ui_print("Installing Profiler...");
@@ -854,7 +854,7 @@ endif;
 # REMOVE PROFILER
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.4") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Profiler...");
@@ -871,7 +871,7 @@ set_progress(0.93);
 # ADD SYSLOG
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.5") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.5") == "1"
 then
 ui_print("  ");
 ui_print("Installing Syslog...");
@@ -886,7 +886,7 @@ endif;
 # REMOVE SYSLOG
 
 if
-file_getprop("/tmp/aroma/dbg.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.5") == "2"
 then
 ui_print("  ");
 ui_print("Uninstalling Syslog...");
@@ -900,7 +900,7 @@ endif;
 set_progress(0.99);
 ######################################################
 
-delete_recursive("/tmp/aroma/dbg.prop");
+delete_recursive("/tmp/aroma-data/dbg.prop");
 
 ui_print("###############end dbg##################");
 ui_print("  ");
