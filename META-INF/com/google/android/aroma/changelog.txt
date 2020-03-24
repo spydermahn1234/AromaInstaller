@@ -1,3 +1,9 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 04></u></b>
+<*> Remove non magisk version of JDC toolbox </*>
+<*> Change install / remove paths for android 10 </*>
+<*> Fix the english </*>
+<*> Change font to CaviarDreams </*>
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 03></u></b>
 <*> Remove Aroma themes, default to RedBlack </*>
 <*> Remove boot anims </*>
