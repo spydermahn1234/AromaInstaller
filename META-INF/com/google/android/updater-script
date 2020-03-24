@@ -98,24 +98,8 @@ ui_print("  ");
 ui_print("Installing JDCToolbox - Magisk...");
 ui_print("  ");
 delete_recursive("/system/system/app/Toolbox");
-package_extract_dir("jdc/toolbox/magisk", "/system/system/app/Toolbox");
+package_extract_dir("jdc/toolbox", "/system/system/app/Toolbox");
 ui_print("JDCToolbox - Magisk successfully installed");
-ui_print("  ");
-endif;
-
-######################################################
-
-# ADD JDCTOOLBOX NONMAGISK
-
-if
-file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "2"
-then
-ui_print("  ");
-ui_print("Installing JDCToolbox - non-Magisk...");
-ui_print("  ");
-delete_recursive("/system/system/app/Toolbox");
-package_extract_dir("jdc/toolbox/nonmagisk", "/system/system/app/Toolbox");
-ui_print("JDCToolbox - non-Magisk successfully installed");
 ui_print("  ");
 endif;
 

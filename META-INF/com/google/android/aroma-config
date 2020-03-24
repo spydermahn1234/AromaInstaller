@@ -87,7 +87,6 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add JDCToolbox - Magisk ONLY version",        "JDC-related LEDify and IRDA tweaks"                                                ,0,    #-- selected.3 = 1
-	"Add JDCToolbox - Non-Magisk version",         "Works with SuperSU and LineageOS SU addon"                                         ,0,    #-- selected.3 = 2
 	"Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.3 = 3
 	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 4
 
