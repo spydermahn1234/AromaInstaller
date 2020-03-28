@@ -46,11 +46,11 @@ viewbox(
 	"",
 	"You are about to install <b>JDC AromaInstaller</b>\n\n\n"+
 	"Rom information:\n\n"+
-		"  Rom\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
+		"  Rom    \t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
 		"  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
-		"  Author\t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
-		"  Device\t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
-		"  Date\t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n"+
+		"  Author \t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
+		"  Device \t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
+		"  Date   \t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n"+
 	"Press <b>next</b> to continue...",
 	"@welcome"
 );
