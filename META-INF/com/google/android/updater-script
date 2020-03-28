@@ -243,9 +243,7 @@ then
 ui_print("  ");
 ui_print("Installing Newpipe...");
 ui_print("  ");
-delete_recursive("/system/system/priv-app/YouTube");
-delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/newpipe", "/system/system/priv-app/newpipe");
+package_extract_dir("jdc/newpipe", "/system/system/app/newpipe");
 ui_print("Newpipe successfully installed");
 ui_print("  ");
 endif;
@@ -260,7 +258,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling Newpipe...");
 ui_print("  ");
-delete_recursive("/system/system/priv-app/newpipe");
+delete_recursive("/system/system/app/newpipe");
 ui_print("Newpipe successfully uninstalled");
 ui_print("  ");
 endif;
