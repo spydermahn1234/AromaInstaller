@@ -65,7 +65,7 @@ then
 ui_print("  ");
 ui_print("Installing AdAway...");
 ui_print("  ");
-package_extract_dir("jdc/adaway", "/system/system/priv-app/AdAway");
+package_extract_dir("jdc/adaway", "/system/system/app/AdAway");
 ui_print("AdAway successfully installed");
 ui_print("  ");
 endif;
@@ -80,7 +80,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling AdAway...");
 ui_print("  ");
-delete_recursive("/system/system/priv-app/AdAway");
+delete_recursive("/system/system/app/AdAway");
 ui_print("AdAway successfully uninstalled");
 ui_print("  ");
 endif;
