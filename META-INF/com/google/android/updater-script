@@ -383,37 +383,6 @@ endif;
 set_progress(0.45);
 ######################################################
 
-# ADD XPERIA KEYBOARD
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.5") == "1"
-then
-ui_print("  ");
-ui_print("Installing Xperia keyboard...");
-package_extract_dir("jdc/xperiakeyboard/system", "/system");
-ui_print("Xperia keyboard successfully installed");
-ui_print("  ");
-endif;
-
-######################################################
-
-# REMOVE XPERIA KEYBOARD
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.5") == "2"
-then
-ui_print("  ");
-ui_print("Uninstalling Xperia keyboard...");
-ui_print("  ");
-delete_recursive("/system/system/app/textinput-tng");
-ui_print("Xperia keyboard successfully uninstalled");
-ui_print("  ");
-endif;
-
-######################################################
-set_progress(0.50);
-######################################################
-
 # ADD ENHANCED AOSP KEYBOARD
 
 if
