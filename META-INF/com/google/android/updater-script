@@ -389,7 +389,7 @@ then
 ui_print("  ");
 ui_print("Installing Enhanced AOSP keyboard...");
 package_extract_dir("jdc/EnhancedIME", "/system/system/app/EnhancedIME");
-package_extract_dir("jdc/EnhancedIME/lib", "/system/lib");
+package_extract_dir("jdc/EnhancedIME/lib", "/system/system/lib");
 ui_print("Enhanced AOSP successfully installed");
 ui_print("  ");
 endif;
