@@ -1,3 +1,9 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 05></u></b>
+<*> Change adaway to non-system app </*>
+<*> Change newpipe to non-system app / dont remove youtube app </*>
+<*> Fix Enhanced AOSP lib path </*>
+<*> Remove Xperia keyboard </*>
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 04></u></b>
 <*> Remove non magisk version of JDC toolbox </*>
 <*> Change install / remove paths for android 10 </*>
