@@ -51,7 +51,7 @@ viewbox(
 		"  Author \t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
 		"  Device \t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
 		"  Date   \t:  <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n\n"+
-	"Press <b>next</b> to continue...",
+	"Press <b>Next</b> to continue...",
 	"@welcome"
 );
 
@@ -219,14 +219,14 @@ ini_set("text_next", "Install now");
 viewbox(
 	"READY TO INSTALL",
 	"The wizard is ready to begin installation\n\n"+
-	"Press <b>install now</b> to begin\n\n"+
-	"Press <b>back</b> to make changes\n\n"+
-	"Press <b>menu</b> to quit install and exit",
+	"Press <b>Install now</b> to begin\n\n"+
+	"Press <b>Back</b> to make changes\n\n"+
+	"Press <b>Q</b> to quit",
 	"@install"
 );
 
 
-ini_set("text_next", "next >");
+ini_set("text_next", "Next >");
 
 
 restotmp("exec_demo/sleep","sleep");
@@ -239,7 +239,7 @@ setvar("retstatus",
 		"<b>Please wait... this may take several minutes</b>",
 		"@install",
 		"Installation has completed.\n\n"+
-		"Press <b>next</b> to continue..."
+		"Press <b>Next</b> to continue..."
   )
 );
 
@@ -252,6 +252,6 @@ viewbox(
 		"<#selectbg_g><b>Congratulations...</b></#>\n\n"+
 		"<b>"+ini_get("rom_name")+"</b> has been installed.\n\n"+
 		"Installer status: "+getvar("retstatus")+"\n\n\n\n\n\n"+
-		"Press <b>finish</b> to continue...",
+		"Press <b>Finish</b> to exit...",
 		"@welcome"
 );
