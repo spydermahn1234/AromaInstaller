@@ -1,3 +1,11 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 06></u></b>
+<*> Rebrand intro anim to more generic JDC </*>
+<*> Change main menu button to Q </*>
+<*> Change betterbatterystats to non-system app - stop failing sygote whitelist </*>
+<*> Stop manually installing magiskmanager </*>
+<*>   TODO: check apps installed to priv-app (system apps) work correctly or move to user apps (apps) </*>
+<*>    - Magisk manager, ViperFX4Android, Vanced, Recorder, Eleven, Snap </*>
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 05></u></b>
 <*> Change adaway to non-system app </*>
 <*> Change newpipe to non-system app / dont remove youtube app </*>
