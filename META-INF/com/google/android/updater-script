@@ -1,13 +1,14 @@
 ifelse(is_mounted("/system"), unmount("/system"));
 
-ui_print("- Mounting  /system");
+ui_print("Mounting  /system");
 run_program("/sbin/busybox", "mount", "/system");
 ui_print(" ");
 
-set_progress(0.5);
+####################################################
+set_progress(0.05);
+####################################################
 
 # APPS ROOT SECTION
-
 ####################################################
 
 # ADD MAGISK
@@ -31,7 +32,6 @@ ui_print("Magisk successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
 
 # REMOVE MAGISK
 
@@ -70,7 +70,6 @@ ui_print("AdAway successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE ADAWAY
 
@@ -103,7 +102,6 @@ ui_print("JDCToolbox - Magisk successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE JDCTOOLBOX
 
@@ -136,7 +134,6 @@ ui_print("Buffcore Adiutor successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE BUFFCORE ADIUTOR
 
@@ -169,7 +166,6 @@ ui_print("Mixplorer successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE MIXPLORER
 
@@ -184,18 +180,13 @@ ui_print("Mixplorer successfully uninstalled");
 ui_print("  ");
 endif;
 
-####################################################
-
 delete_recursive("/tmp/aroma-data/addroot.prop");
 
-ui_print("#############end addroot#################");
-
+######################################################
 set_progress(0.30);
-
 ######################################################
 
 # APPS SECTION
-
 ######################################################
 
 # ADD ViPER4AndroidFX
@@ -212,7 +203,6 @@ ui_print("ViPER4AndroidFX successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE ViPER4AndroidFX
 
@@ -248,7 +238,6 @@ ui_print("Newpipe successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE NEWPIPE
 
@@ -263,6 +252,8 @@ ui_print("Newpipe successfully uninstalled");
 ui_print("  ");
 endif;
 
+######################################################
+set_progress(0.37);
 ######################################################
 
 # ADD VANCED BLACK
@@ -280,7 +271,6 @@ ui_print("Vanced successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # ADD VANCED DARK
 
@@ -297,7 +287,7 @@ ui_print("Vanced successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
+
 # REMOVE VANCED
 
 if
@@ -328,7 +318,6 @@ ui_print("Google camera successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE GOOGLE CAMERA SYSTEM
 
@@ -343,7 +332,6 @@ ui_print("Google camera successfully uninstalled");
 ui_print("  ");
 endif;
 
-######################################################
 
 # ADD GOOGLE CAMERA MANUAL
 
@@ -351,7 +339,7 @@ if
 file_getprop("/tmp/aroma-data/add.prop","selected.4") == "3"
 then
 ui_print("  ");
-ui_print("-- Pasting Google Camera to ");
+ui_print("Pasting Google Camera to ");
 ui_print("       '/internal storage/GoogleCamera/'...");
 ui_print("  ");
 ui_print("---->  PLEASE INSTALL MANUALLY");
@@ -360,7 +348,6 @@ package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE GOOGLE CAMERA MANUAL
 
@@ -368,7 +355,7 @@ if
 file_getprop("/tmp/aroma-data/add.prop","selected.4") == "4"
 then
 ui_print("  ");
-ui_print("-- Removing Google Camera Paste Folder...");
+ui_print("Removing Google Camera Paste Folder...");
 ui_print("  ");
 ui_print("---->  PLEASE UNINSTALL MANUALLY");
 ui_print("---->  Settings > Apps > Camera > Uninstall");
@@ -394,7 +381,6 @@ ui_print("Enhanced AOSP successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE ENHANCED AOSP KEYBOARD
 
@@ -427,7 +413,6 @@ ui_print("Recorder successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE RECORDER APP
 
@@ -460,7 +445,6 @@ ui_print("Brave successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE BRAVE
 
@@ -492,7 +476,6 @@ ui_print("Oxygen OS fonts successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE OXYGEN OS FONTS
 
@@ -508,6 +491,8 @@ ui_print("  ");
 endif;
 
 ######################################################
+set_progress(0.62);
+######################################################
 
 # REMOVE CAMERA SHUTTER SOUNDS
 
@@ -522,7 +507,6 @@ ui_print("Camera shutter sounds removed successfully");
 ui_print("  ");
 endif;
 
-######################################################
 
 # RESTORE CAMERA SHUTTER SOUNDS
 
@@ -537,18 +521,14 @@ ui_print("Camera shutter sounds restored successfully");
 ui_print("  ");
 endif;
 
+delete_recursive("/tmp/aroma-data/add.prop");
+
 ######################################################
 set_progress(0.65);
 ######################################################
 
-delete_recursive("/tmp/aroma-data/add.prop");
-
-ui_print("###############end add##################");
-
 # DEBLOATER SECTION
-
 ######################################################
-
 
 # REMOVE LIVE WALLPAPER PICKER APP
 
@@ -564,7 +544,6 @@ ui_print("Live Wallpaper Picker removed successfully");
 ui_print("  ");
 endif;
 
-######################################################
 
 # RESTORE LIVE WALLPAPER PICKER APP
 
@@ -598,7 +577,6 @@ ui_print("Eleven player removed successfully");
 ui_print("  ");
 endif;
 
-######################################################
 
 # RESTORE ELEVEN PLAYER
 
@@ -631,7 +609,6 @@ ui_print("Snap camera removed successfully");
 ui_print("  ");
 endif;
 
-######################################################
 
 # RESTORE SNAP CAMERA
 
@@ -663,7 +640,6 @@ ui_print("Email removed successfully");
 ui_print("  ");
 endif;
 
-######################################################
 
 # RESTORE EMAIL APP
 
@@ -679,18 +655,13 @@ ui_print("Email restored successfully");
 ui_print("  ");
 endif;
 
+delete_recursive("/tmp/aroma-data/remove.prop");
+
 ######################################################
 set_progress(0.85);
 ######################################################
 
-delete_recursive("/tmp/aroma-data/remove.prop");
-
-ui_print("##############end remove################");
-
-######################################################
-
 # DEBUG TOOLS SECTION
-
 ######################################################
 
 # ADD BETTERYBATTERYSTATS
@@ -706,7 +677,6 @@ ui_print("BetterBatteryStats successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE BETTERYBATTERYSTATS
 
@@ -738,7 +708,6 @@ ui_print("DevCheck successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE DEVCHECK
 
@@ -758,6 +727,7 @@ set_progress(0.89);
 ######################################################
 
 # ADD DRMINFO
+
 if
 file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "1"
 then
@@ -769,7 +739,6 @@ ui_print("DrmInfo successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE DRMINFO
 
@@ -800,7 +769,6 @@ ui_print("Profiler successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE PROFILER
 
@@ -832,7 +800,6 @@ ui_print("Syslog successfully installed");
 ui_print("  ");
 endif;
 
-######################################################
 
 # REMOVE SYSLOG
 
@@ -847,19 +814,19 @@ ui_print("Syslog successfully uninstalled");
 ui_print("  ");
 endif;
 
+delete_recursive("/tmp/aroma-data/dbg.prop");
+
 ######################################################
 set_progress(0.99);
 ######################################################
 
-delete_recursive("/tmp/aroma-data/dbg.prop");
 
-ui_print("###############end dbg##################");
 ui_print("  ");
-ui_print("- Unmounting  /system");
+ui_print("Unmounting  /system");
 ui_print("  ");
 set_progress(0.90);
 ifelse(is_mounted("/system"), unmount("/system"));
-ui_print("- Done!");
+ui_print("Done!");
 ui_print("  ");
 ######################################################
 set_progress(1.0);
