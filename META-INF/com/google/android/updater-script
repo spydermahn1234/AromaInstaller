@@ -701,7 +701,7 @@ then
 ui_print("  ");
 ui_print("Installing BetterBatteryStats...");
 ui_print("  ");
-package_extract_dir("jdc/BetterBatteryStats", "/system/system/priv-app/BetterBatteryStats");
+package_extract_dir("jdc/BetterBatteryStats", "/system/system/app/BetterBatteryStats");
 ui_print("BetterBatteryStats successfully installed");
 ui_print("  ");
 endif;
@@ -716,7 +716,7 @@ then
 ui_print("  ");
 ui_print("Uninstalling BetterBatteryStats...");
 ui_print("  ");
-delete_recursive("/system/system/priv-app/BetterBatteryStats");
+delete_recursive("/system/system/app/BetterBatteryStats");
 ui_print("BetterBatteryStats successfully uninstalled");
 ui_print("  ");
 endif;
