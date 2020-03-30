@@ -1,4 +1,5 @@
 <b><u>JDC AromaInstaller Version 10.0 <alpha 06></u></b>
+<*> Update Magisk canary to ef9d077c  </*>
 <*> Rebrand intro anim to more generic JDC </*>
 <*> Change main menu button to Q </*>
 <*> Change betterbatterystats to non-system app - stop failing sygote whitelist </*>
