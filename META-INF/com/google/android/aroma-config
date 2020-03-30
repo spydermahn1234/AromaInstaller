@@ -5,7 +5,7 @@ ini_set("rom_name",             "JDC AromaInstaller");
 ini_set("rom_version",          "Aroma v10.0 <alpha 06>");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE and variants");
-ini_set("rom_date",             "28th March 2020");
+ini_set("rom_date",             "30th March 2020");
 
 
 anisplash(
@@ -45,8 +45,8 @@ fontresload( "1", "ttf/CaviarDreams-Regular.ttf", "18" );
 viewbox(
 	"",
 	"You are about to install <b>JDC AromaInstaller</b>\n\n\n"+
-	"Rom information:\n\n"+
-		"  Rom    \t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
+	"Information:\n\n"+
+		"  Package\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
 		"  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
 		"  Author \t:  <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
 		"  Device \t:  <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
@@ -62,13 +62,6 @@ textbox(
 		resread("changelog.txt")
 );
 
-loadlang("langs/en.lang");
-fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
-fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
-
-
-
-
 selectbox(
 		"ADD ROOT RELATED ITEMS",
 		"Please select:\n",
@@ -76,23 +69,23 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "ef9d077c  / canary"                                                                 ,0,    #-- selected.1 = 1
-	"Remove Magisk, if previously added",          ""                                                                                  ,0,    #-- selected.1 = 2
+	"Add Magisk and Magisk manager",               "ef9d077c / canary"                                                                 ,0,    #-- selected.1 = 1
+	"Remove Magisk",                               ""                                                                                  ,0,    #-- selected.1 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add AdAway",                                  "Host filtering to filter adverts and protect your security"                        ,0,    #-- selected.2 = 1
-	"Remove AdAway, if previously added",          "4.3.2-191229"                                                                      ,0,    #-- selected.2 = 2
+	"Remove AdAway",                               "4.3.2-191229"                                                                      ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add JDCToolbox - Magisk ONLY version",        "JDC-related LEDify and IRDA tweaks"                                                ,0,    #-- selected.3 = 1
-	"Remove JDCToolbox, if previously added",      ""                                                                                  ,0,    #-- selected.3 = 3
+	"Remove JDCToolbox",                           ""                                                                                  ,0,    #-- selected.3 = 3
 	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 4
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Buffcore Kernel Adiutor",                 "Kernel Adiutor built for Buffcore kernel"                                          ,0,    #-- selected.4 = 1
-	"Remove Buffcore, if previously added",        ""                                                                                  ,0,    #-- selected.4 = 2
+	"Remove Buffcore",                             ""                                                                                  ,0,    #-- selected.4 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.4 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -110,30 +103,30 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Viper4Android",                           "ViPER4Android 2.7.1.6 - Install drivers on first run"                              ,0,    #-- selected.1 = 1
-	"Remove Viper4Android, if previously added",   "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
+	"Remove Viper4Android",                        "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Newpipe",                                 "A free YouTube client"                                                             ,0,    #-- selected.2 = 1
-	"Remove Newpipe, if previously added",         "0.18.7 (870)"                                                                      ,0,    #-- selected.2 = 2
+	"Remove Newpipe",                              "0.18.7 (870)"                                                                      ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
     "Add Vanced YouTube - BLACK",                  "White theme is default"                                                            ,0,    #-- selected.3 = 1
     "Add Vanced YouTube - DARK",                   "White theme is default"                                                            ,0,    #-- selected.3 = 2
-    "Remove Vanced, if previously added",          "14.21.54-1421542300"                                                               ,0,    #-- selected.3 = 3
+    "Remove Vanced",                               "14.21.54-1421542300"                                                               ,0,    #-- selected.3 = 3
     "No change",                                   ""                                                                                  ,1,    #-- selected.3 = 4
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Google camera to system",                 "Panorama features will not work"                                                   ,0,    #-- selected.4 = 1
 	"Remove Google camera from system",            "Will uninstall it from system"                                                     ,0,    #-- selected.4 = 2
 	"Add Google camera as Manual Installation",    "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.4 = 3
-	"Remove Google camera, if previously added",   "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.4 = 4
+	"Remove Google camera",                         "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"       ,0,    #-- selected.4 = 4
 	"No change",                                   ""                                                                                  ,1,    #-- selected.4 = 5
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.6 = 1
-	"Remove Enhanced AOSP Keyboard, if previously added", ""                                                                           ,0,    #-- selected.6 = 2
+	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.6 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -148,7 +141,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.9 = 1
-	"Remove Oxygen OS Fonts, if previously added", "Will restore stock fonts"                                                          ,0,    #-- selected.9 = 2
+	"Remove Oxygen OS Fonts",                      "Will restore stock fonts"                                                          ,0,    #-- selected.9 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.9 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -242,7 +235,7 @@ restotmp("exec_demo/sleep","sleep");
 setvar("retstatus",
   install(
 		"INSTALLING",
-		"<b>JDC AromaInstaller is being installed on "+ini_get("rom_name")+"</b>\n\n"+
+		"<b>JDC AromaInstaller is begining installation</b>\n\n"+
 		"<b>Please wait... this may take several minutes</b>",
 		"@install",
 		"Installation has completed.\n\n"+
