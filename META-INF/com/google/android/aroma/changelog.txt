@@ -1,3 +1,9 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
+<*> Update DevCheck  to 2.49  </*>
+<*> Rebrand intro anim to more generic JDC </*>
+
+
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 06></u></b>
 <*> Update Magisk canary to ef9d077c  </*>
 <*> Rebrand intro anim to more generic JDC </*>
