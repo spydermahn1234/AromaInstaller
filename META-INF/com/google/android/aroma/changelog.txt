@@ -3,8 +3,6 @@
 <*> Update MagiskManager canary to 5537b083  </*>
 <*> Updated NewPipe to 0.19.1 </*>
 
-
-
 <b><u>JDC AromaInstaller Version 10.0 <alpha 06></u></b>
 <*> Update Magisk canary to ef9d077c  </*>
 <*> Rebrand intro anim to more generic JDC </*>
