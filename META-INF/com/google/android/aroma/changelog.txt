@@ -1,7 +1,7 @@
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>
 <*> Update MagiskManager canary to 5537b083  </*>
-<*> Rebrand intro anim to more generic JDC </*>
+<*> Updated NewPipe to 0.19.1 </*>
 
 
 
