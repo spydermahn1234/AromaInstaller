@@ -11,20 +11,40 @@ set_progress(0.05);
 # APPS ROOT SECTION
 ####################################################
 
-# ADD MAGISK
+# CLEAN INSTALL MAGISK
 
 if
 file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "1"
 then
-ui_print("Installing Magisk binaries...");
+ui_print("Uninstalling Magisk...");
+package_extract_dir("jdc/magiskuninstaller", "/tmp/magiskuninstaller");
+run_program("/sbin/busybox", "unzip", "/tmp/magiskuninstaller/magiskuninstaller.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magiskuninstaller");
+run_program("/sbin/busybox", "sh", "/tmp/magiskuninstaller/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magiskuninstaller/magiskuninstaller.zip");
+delete_recursive("/tmp/magiskuninstaller");
+ui_print("Installing Magisk...");
 package_extract_dir("jdc/magisk", "/tmp/magisk");
 run_program("/sbin/busybox", "unzip", "/tmp/magisk/magisk.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magisk");
 run_program("/sbin/busybox", "sh", "/tmp/magisk/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magisk/magisk.zip");
 delete_recursive("/tmp/magisk");
 ifelse(is_mounted("/system"), unmount("/system"));
 run_program("/sbin/busybox", "mount", "/system");
-#ui_print("Installing Magisk manager...");
-#package_extract_dir("jdc/magiskmanager", "/system/system/priv-app/magiskmanager");
+ui_print("Magisk successfully installed");
+ui_print("  ");
+endif;
+
+
+# UPDATE MAGISK
+
+if
+file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "2"
+then
+ui_print("Installing Magisk...");
+package_extract_dir("jdc/magisk", "/tmp/magisk");
+run_program("/sbin/busybox", "unzip", "/tmp/magisk/magisk.zip", "META-INF/com/google/android/update-binary", "-d", "/tmp/magisk");
+run_program("/sbin/busybox", "sh", "/tmp/magisk/META-INF/com/google/android/update-binary", "null", "1", "/tmp/magisk/magisk.zip");
+delete_recursive("/tmp/magisk");
+ifelse(is_mounted("/system"), unmount("/system"));
+run_program("/sbin/busybox", "mount", "/system");
 ui_print("Magisk successfully installed");
 ui_print("  ");
 endif;
@@ -33,7 +53,7 @@ endif;
 # REMOVE MAGISK
 
 if
-file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "2"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.1") == "3"
 then
 ui_print("Uninstalling Magisk binaries...");
 package_extract_dir("jdc/magiskuninstaller", "/tmp/magiskuninstaller");
@@ -728,6 +748,7 @@ set_progress(0.90);
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Done!");
 ui_print("  ");
+
 ######################################################
 set_progress(1.0);
 ######################################################

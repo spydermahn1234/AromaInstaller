@@ -2,10 +2,10 @@
 ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDC AromaInstaller");
-ini_set("rom_version",          "Aroma v10.0 <alpha 06>");
+ini_set("rom_version",          "Aroma v10.0 <alpha 08>");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE and variants");
-ini_set("rom_date",             "30th March 2020");
+ini_set("rom_date",             "4th April 2020");
 
 
 anisplash(
@@ -69,9 +69,10 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Magisk and Magisk manager",               "ef9d077c / canary"                                                                 ,0,    #-- selected.1 = 1
-	"Remove Magisk",                               ""                                                                                  ,0,    #-- selected.1 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
+	"Clean install Magisk",                        "Uninstall then install Magisk ef9d077c / canary"                                   ,0,    #-- selected.1 = 1
+	"Update Magisk",                               "Update Magisk ef9d077c / canary"                                                   ,0,    #-- selected.1 = 2
+	"Remove Magisk",                               ""                                                                                  ,0,    #-- selected.1 = 3
+	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 4
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add AdAway",                                  "Host filtering to filter adverts and protect your security"                        ,0,    #-- selected.2 = 1

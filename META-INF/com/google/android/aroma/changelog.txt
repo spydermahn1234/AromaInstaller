@@ -1,3 +1,8 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 08></u></b>
+<*> Rework Magisk to have CLEAN and UPDATE installs  </*>
+
+
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>
 <*> Update MagiskManager canary to 5537b083  </*>
