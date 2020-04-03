@@ -1,6 +1,8 @@
 <b><u>JDC AromaInstaller Version 10.0 <alpha 08></u></b>
 <*> Rework Magisk to have CLEAN and UPDATE installs  </*>
 <*> Updated NewPipe to 0.19.2 </*>
+<*> Remove De-bloat page and associated apps (Live wallpaper picker, Eleven music player, Snap camera, Email) </*>
+<*> Remove Recorder </*>
 
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>

@@ -242,7 +242,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.37);
+set_progress(0.40);
 ######################################################
 
 # ADD VANCED BLACK
@@ -285,7 +285,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.40);
+set_progress(0.45);
 ######################################################
 
 # ADD GOOGLE CAMERA SYSTEM
@@ -340,7 +340,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.45);
+set_progress(0.50);
 ######################################################
 
 # ADD ENHANCED AOSP KEYBOARD
@@ -364,34 +364,6 @@ then
 ui_print("Uninstalling Enhanced AOSP keyboard...");
 delete_recursive("/system/system/app/EnhancedIME");
 ui_print("Enhanced AOSP keyboard successfully uninstalled");
-ui_print("  ");
-endif;
-
-######################################################
-set_progress(0.50);
-######################################################
-
-# ADD RECORDER APP
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.7") == "1"
-then
-ui_print("Installing Recorder...");
-delete_recursive("/system/system/priv-app/Recorder");
-package_extract_dir("jdc/Recorder", "/system/system/priv-app/Recorder");
-ui_print("Recorder successfully installed");
-ui_print("  ");
-endif;
-
-
-# REMOVE RECORDER APP
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.7") == "2"
-then
-ui_print("Uninstalling Recorder...");
-delete_recursive("/system/system/priv-app/Recorder");
-ui_print("Recorder successfully uninstalled");
 ui_print("  ");
 endif;
 

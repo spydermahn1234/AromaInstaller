@@ -127,11 +127,6 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Recorder",                                "Default Recorder"                                                                  ,0,    #-- selected.7 = 1
-	"Remove Recorder",                             ""                                                                                  ,0,    #-- selected.7 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.7 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
 	"Add Brave browser",                           "Security enchanced Chromium with adblock embedded"                                 ,0,    #-- selected.8 = 1
 	"Remove Brave browser",						   "1.5.9-398713202"                                                                   ,0,    #-- selected.8 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.8 = 3
