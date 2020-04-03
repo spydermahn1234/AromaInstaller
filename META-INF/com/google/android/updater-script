@@ -451,7 +451,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.62);
+set_progress(0.65);
 ######################################################
 
 # REMOVE CAMERA SHUTTER SOUNDS
@@ -480,125 +480,7 @@ endif;
 delete_recursive("/tmp/aroma-data/add.prop");
 
 ######################################################
-set_progress(0.65);
-######################################################
-
-# DEBLOATER SECTION
-######################################################
-
-# REMOVE LIVE WALLPAPER PICKER APP
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.1") == "1"
-then
-ui_print("Removing Live Wallpaper Picker...");
-delete_recursive("/system/system/app/LiveWallpaperPicker");
-delete_recursive("/system/system/app/LiveWallpapersPicker");
-ui_print("Live Wallpaper Picker removed successfully");
-ui_print("  ");
-endif;
-
-
-# RESTORE LIVE WALLPAPER PICKER APP
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.1") == "2"
-then
-ui_print("Restoring Live Wallpaper Picker...");
-delete_recursive("/system/system/app/LiveWallpaperPicker");
-delete_recursive("/system/system/app/LiveWallpapersPicker");
-package_extract_dir("jdc/LiveWallpapersPicker", "/system/system/app/LiveWallpapersPicker");
-ui_print("Live Wallpaper Picker restored successfully");
-ui_print("  ");
-endif;
-
-######################################################
 set_progress(0.70);
-######################################################
-
-# REMOVE ELEVEN PLAYER
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.2") == "1"
-then
-ui_print("Removing Eleven player...");
-delete_recursive("/system/system/priv-app/Eleven");
-ui_print("Eleven player removed successfully");
-ui_print("  ");
-endif;
-
-
-# RESTORE ELEVEN PLAYER
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.2") == "2"
-then
-ui_print("Restoring Eleven player...");
-delete_recursive("/system/system/priv-app/Eleven");
-package_extract_dir("jdc/eleven", "/system/system/priv-app/Eleven");
-ui_print("Eleven player restored successfully");
-ui_print("  ");
-endif;
-
-######################################################
-set_progress(0.75);
-######################################################
-
-# REMOVE SNAP CAMERA
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.3") == "1"
-then
-ui_print("Removing Snap camera...");
-delete_recursive("/system/system/priv-app/Snap");
-ui_print("Snap camera removed successfully");
-ui_print("  ");
-endif;
-
-
-# RESTORE SNAP CAMERA
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.3") == "2"
-then
-ui_print("Restoring Snap camera...");
-delete_recursive("/system/system/priv-app/Snap");
-package_extract_dir("jdc/snap", "/system/system/priv-app/Snap");
-ui_print("Snap camera restored successfully");
-ui_print("  ");
-endif;
-
-######################################################
-set_progress(0.80);
-######################################################
-
-# REMOVE EMAIL APP
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.4") == "1"
-then
-ui_print("Removing Email...");
-delete_recursive("/system/system/app/Email");
-ui_print("Email removed successfully");
-ui_print("  ");
-endif;
-
-
-# RESTORE EMAIL APP
-
-if
-file_getprop("/tmp/aroma-data/remove.prop","selected.4") == "2"
-then
-ui_print("Restoring Email...");
-delete_recursive("/system/system/app/Email");
-package_extract_dir("jdc/Email", "/system/system/app/Email");
-ui_print("Email restored successfully");
-ui_print("  ");
-endif;
-
-delete_recursive("/tmp/aroma-data/remove.prop");
-
-######################################################
-set_progress(0.85);
 ######################################################
 
 # DEBUG TOOLS SECTION
@@ -628,7 +510,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.87);
+set_progress(0.75);
 ######################################################
 
 # ADD DEVCHECK
@@ -655,7 +537,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.89);
+set_progress(0.80);
 ######################################################
 
 # ADD DRMINFO
@@ -682,7 +564,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.91);
+set_progress(0.85);
 ######################################################
 
 # ADD PROFILER
@@ -709,7 +591,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.93);
+set_progress(0.90);
 ######################################################
 
 # ADD SYSLOG
@@ -738,7 +620,7 @@ endif;
 delete_recursive("/tmp/aroma-data/dbg.prop");
 
 ######################################################
-set_progress(0.99);
+set_progress(0.95);
 ######################################################
 
 

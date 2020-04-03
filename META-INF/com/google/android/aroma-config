@@ -148,33 +148,6 @@ selectbox(
 );
 
 selectbox(
-		"REMOVE ITEMS - DEBLOAT ROM",
-		"Please select:\n",
-		"@default",
-		"remove.prop",
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Remove Live Wallpaper Picker",                "Collection of live wallpapers"                                                     ,0,    #-- selected.1 = 1
-	"Restore Live Wallpaper Picker",               "If previously removed"                                                             ,0,    #-- selected.1 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Remove Eleven music player",                  "Default Lineage music player"                                                      ,0,    #-- selected.2 = 1
-	"Restore Eleven music player",                 "If previously removed"                                                             ,0,    #-- selected.2 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Remove Snap camera",                          "Default camera"                                                                    ,0,    #-- selected.3 = 1
-	"Restore Snap camera",                         "If previously removed"                                                             ,0,    #-- selected.3 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Remove Email",                                "Stock Email"                                                                       ,0,    #-- selected.4 = 1
-	"Restore Email",                               "If previously removed"                                                             ,0,    #-- selected.4 = 2
-	"No change",                                   ""                                                                                  ,1     #-- selected.4 = 3
-);
-
-selectbox(
 		"ADD DEBUG TOOLS",
 		"Please select:\n",
 		"@default",
