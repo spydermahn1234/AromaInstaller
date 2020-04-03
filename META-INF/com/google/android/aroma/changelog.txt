@@ -1,6 +1,6 @@
 <b><u>JDC AromaInstaller Version 10.0 <alpha 08></u></b>
 <*> Rework Magisk to have CLEAN and UPDATE installs  </*>
-
+<*> Updated NewPipe to 0.19.2 </*>
 
 
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
