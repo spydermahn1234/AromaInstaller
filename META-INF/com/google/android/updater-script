@@ -242,49 +242,6 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.40);
-######################################################
-
-# ADD VANCED BLACK
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "1"
-then
-ui_print("Installing Vanced Black...");
-delete_recursive("/system/system/priv-app/YouTube");
-delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/VancedYT/black", "/system/system/priv-app/VancedYT");
-ui_print("Vanced successfully installed");
-ui_print("  ");
-endif;
-
-
-# ADD VANCED DARK
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "2"
-then
-ui_print("Installing Vanced Dark...");
-delete_recursive("/system/system/priv-app/YouTube");
-delete_recursive("/data/app/YouTube");
-package_extract_dir("jdc/VancedYT/dark", "/system/system/priv-app/VancedYT");
-ui_print("Vanced successfully installed");
-ui_print("  ");
-endif;
-
-
-# REMOVE VANCED
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "3"
-then
-ui_print("Uninstalling Vanced...");
-delete_recursive("/system/system/priv-app/VancedYT");
-ui_print("Vanced successfully uninstalled");
-ui_print("  ");
-endif;
-
-######################################################
 set_progress(0.45);
 ######################################################
 

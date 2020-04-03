@@ -109,12 +109,6 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-    "Add Vanced YouTube - BLACK",                  "White theme is default"                                                            ,0,    #-- selected.3 = 1
-    "Add Vanced YouTube - DARK",                   "White theme is default"                                                            ,0,    #-- selected.3 = 2
-    "Remove Vanced",                               "14.21.54-1421542300"                                                               ,0,    #-- selected.3 = 3
-    "No change",                                   ""                                                                                  ,1,    #-- selected.3 = 4
-
-	"",                                            ""                                                                                  ,2,    #--
 	"Add Google camera to system",                 "Panorama features will not work"                                                   ,0,    #-- selected.4 = 1
 	"Remove Google camera from system",            "Will uninstall it from system"                                                     ,0,    #-- selected.4 = 2
 	"Add Google camera as Manual Installation",    "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.4 = 3
