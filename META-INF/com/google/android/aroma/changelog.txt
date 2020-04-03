@@ -2,7 +2,6 @@
 <*> Rework Magisk to have CLEAN and UPDATE installs  </*>
 <*> Updated NewPipe to 0.19.2 </*>
 
-
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>
 <*> Update MagiskManager canary to 5537b083  </*>

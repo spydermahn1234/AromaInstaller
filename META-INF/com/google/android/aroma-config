@@ -1,12 +1,10 @@
-﻿
-ini_set("force_colorspace","rgba");
+﻿ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDC AromaInstaller");
 ini_set("rom_version",          "Aroma v10.0 <alpha 08>");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE and variants");
 ini_set("rom_date",             "4th April 2020");
-
 
 anisplash(
 	1,
@@ -35,7 +33,6 @@ anisplash(
 	"splash/a22", 5,
 	"splash/a23", 5
 );
-
 
 theme("redblack");
 loadlang("langs/en.lang");
@@ -93,7 +90,6 @@ selectbox(
 	"Add Mixplorer",                               "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
 	"Remove Mixplorer",                            "6.44.0"                                                                            ,0,    #-- selected.5 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.5 = 3
-
 );
 
 selectbox(
@@ -149,7 +145,6 @@ selectbox(
 	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.10 = 1
 	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.20 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.10 = 3
-
 );
 
 selectbox(
@@ -177,7 +172,6 @@ selectbox(
 	"Remove Email",                                "Stock Email"                                                                       ,0,    #-- selected.4 = 1
 	"Restore Email",                               "If previously removed"                                                             ,0,    #-- selected.4 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.4 = 3
-
 );
 
 selectbox(
@@ -210,12 +204,9 @@ selectbox(
 	"Add Syslog",                                  "Tool to grab and package all system logs to include with bug reports"              ,0,    #-- selected.5 = 1
 	"Remove Syslog",                               "2.3.0-33"                                                                          ,0,    #-- selected.5 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.5 = 3
-
 );
 
-
 ini_set("text_next", "Install now");
-
 
 viewbox(
 	"READY TO INSTALL",
@@ -226,12 +217,9 @@ viewbox(
 	"@install"
 );
 
-
 ini_set("text_next", "Next >");
 
-
 restotmp("exec_demo/sleep","sleep");
-
 
 setvar("retstatus",
   install(
@@ -244,14 +232,12 @@ setvar("retstatus",
   )
 );
 
-
 ini_set("text_next", "Finish");
-
 
 viewbox(
 		"INSTALL COMPLETE",
 		"<#selectbg_g><b>Congratulations...</b></#>\n\n"+
-		"<b>"+ini_get("rom_name")+"</b> has been installed.\n\n"+
+		"<b>"+ini_get("rom_name")+"</b> has been installed.\n\n\n\n\n\n"+
 		"Installer status: "+getvar("retstatus")+"\n\n\n\n\n\n"+
 		"Press <b>Finish</b> to exit...",
 		"@welcome"
