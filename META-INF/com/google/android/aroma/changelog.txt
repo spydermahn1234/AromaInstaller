@@ -5,6 +5,7 @@
 <*> Remove Recorder </*>
 <*> Remove VancedYT (now not possible to install to install from Aroma due to being split Apk) </*>
 <*> Change internal numbering of menu items </*>
+<*> Add back in a few select startup anims </*>
 
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>
