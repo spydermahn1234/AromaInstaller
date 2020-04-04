@@ -114,7 +114,7 @@ endif;
 # REMOVE JDCTOOLBOX
 
 if
-file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "3"
+file_getprop("/tmp/aroma-data/addroot.prop","selected.3") == "2"
 then
 ui_print("Uninstalling JDCToolbox...");
 delete_recursive("/system/system/app/Toolbox");

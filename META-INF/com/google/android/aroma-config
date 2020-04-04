@@ -78,8 +78,8 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add JDCToolbox - Magisk ONLY version",        "JDC-related LEDify and IRDA tweaks"                                                ,0,    #-- selected.3 = 1
-	"Remove JDCToolbox",                           ""                                                                                  ,0,    #-- selected.3 = 3
-	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 4
+	"Remove JDCToolbox",                           ""                                                                                  ,0,    #-- selected.3 = 2
+	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Buffcore Kernel Adiutor",                 "Kernel Adiutor built for Buffcore kernel"                                          ,0,    #-- selected.4 = 1
