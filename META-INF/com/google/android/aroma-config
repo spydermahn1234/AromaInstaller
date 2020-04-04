@@ -109,31 +109,31 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Google camera to system",                 "Panorama features will not work"                                                   ,0,    #-- selected.4 = 1
-	"Remove Google camera from system",            "Will uninstall it from system"                                                     ,0,    #-- selected.4 = 2
-	"Add Google camera as Manual Installation",    "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.4 = 3
-	"Remove Google camera",                         "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"       ,0,    #-- selected.4 = 4
-	"No change",                                   ""                                                                                  ,1,    #-- selected.4 = 5
+	"Add Google camera to system",                 "Panorama features will not work"                                                   ,0,    #-- selected.3 = 1
+	"Remove Google camera from system",            "Will uninstall it from system"                                                     ,0,    #-- selected.3 = 2
+	"Add Google camera as Manual Installation",    "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.3 = 3
+	"Remove Google camera",                        "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.3 = 4
+	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 5
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.6 = 1
-	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.6 = 2
+	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.4 = 1
+	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.4 = 2
+	"No change",                                   ""                                                                                  ,1,    #-- selected.4 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Brave browser",                           "Security enchanced Chromium with adblock embedded"                                 ,0,    #-- selected.5 = 1
+	"Remove Brave browser",						   "1.5.9-398713202"                                                                   ,0,    #-- selected.5 = 2
+	"No change",                                   ""                                                                                  ,1,    #-- selected.5 = 3
+
+	"",                                            ""                                                                                  ,2,    #--
+	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.6 = 1
+	"Remove Oxygen OS Fonts",                      "Will restore stock fonts"                                                          ,0,    #-- selected.6 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.6 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Brave browser",                           "Security enchanced Chromium with adblock embedded"                                 ,0,    #-- selected.8 = 1
-	"Remove Brave browser",						   "1.5.9-398713202"                                                                   ,0,    #-- selected.8 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.8 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Add Oxygen OS Fonts",                         "System fonts from Oneplus' Oxygen OS"                                              ,0,    #-- selected.9 = 1
-	"Remove Oxygen OS Fonts",                      "Will restore stock fonts"                                                          ,0,    #-- selected.9 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.9 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.10 = 1
-	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.20 = 2
-	"No change",                                   ""                                                                                  ,1     #-- selected.10 = 3
+	"Remove camera shutter sounds",                ""                                                                                  ,0,    #-- selected.7 = 1
+	"Restore camera shutter sounds",               "Will restore stock sounds"                                                         ,0,    #-- selected.7 = 2
+	"No change",                                   ""                                                                                  ,1     #-- selected.7 = 3
 );
 
 selectbox(

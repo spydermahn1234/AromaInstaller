@@ -4,6 +4,7 @@
 <*> Remove De-bloat page and associated apps (Live wallpaper picker, Eleven music player, Snap camera, Email) </*>
 <*> Remove Recorder </*>
 <*> Remove VancedYT (now not possible to install to install from Aroma due to being split Apk) </*>
+<*> Change internal numbering of menu items </*>
 
 <b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
 <*> Update DevCheck  to 2.49  </*>
