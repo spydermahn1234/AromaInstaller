@@ -546,7 +546,7 @@ if
 file_getprop("/tmp/aroma-data/add.prop","selected.7") == "1"
 then
 ui_print("Removing camera shutter sounds...");
-package_extract_dir("jdc/camerasounds/nosound/system/system/media/audio/ui", "/system/system/media/audio/ui");
+package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/product/media/audio/ui");
 ui_print("Camera shutter sounds removed successfully");
 ui_print("  ");
 endif;
@@ -558,7 +558,7 @@ if
 file_getprop("/tmp/aroma-data/add.prop","selected.7") == "2"
 then
 ui_print("Restoring camera shutter sounds...");
-package_extract_dir("jdc/camerasounds/optlos/system/system/media/audio/ui", "/system/system/media/audio/ui");
+package_extract_dir("jdc/camerasounds/optlos/system/media/audio/ui", "/system/product/media/audio/ui");
 ui_print("Camera shutter sounds restored successfully");
 ui_print("  ");
 endif;
