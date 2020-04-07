@@ -1,3 +1,6 @@
+<b><u>JDC AromaInstaller Version 10.0 <alpha 08.2></u></b>
+<*> Fix error in brave update </*
+
 <b><u>JDC AromaInstaller Version 10.0 <alpha 08.1></u></b>
 <*> Fix paths used for camera sound replacement </*
 <*> Update credits for boot animations </*
