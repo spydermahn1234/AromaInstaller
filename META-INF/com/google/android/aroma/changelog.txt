@@ -1,6 +1,7 @@
 <b><u>JDC AromaInstaller Version 10.0 <alpha 08.1></u></b>
 <*> Fix paths used for camera sound replacement </*
 <*> Update credits for boot animations </*
+<*> Updated Brave to 1.5.120 </*>
 
 <b><u>JDC AromaInstaller Version 10.0 <alpha 08></u></b>
 <*> Rework Magisk to have CLEAN and UPDATE installs  </*>
