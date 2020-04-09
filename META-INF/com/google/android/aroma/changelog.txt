@@ -1,147 +1,31 @@
-<b><u>JDC AromaInstaller Version 10.0 <alpha 08.2></u></b>
-<*> Fix error in brave update </*
+<b><u>JDC AromaInstaller Version 10.0</u></b>
 
-<b><u>JDC AromaInstaller Version 10.0 <alpha 08.1></u></b>
-<*> Fix paths used for camera sound replacement </*
-<*> Update credits for boot animations </*
-<*> Updated Brave to 1.5.120 </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 08></u></b>
-<*> Rework Magisk to have CLEAN and UPDATE installs  </*>
-<*> Updated NewPipe to 0.19.2 </*>
-<*> Remove De-bloat page and associated apps (Live wallpaper picker, Eleven music player, Snap camera, Email) </*>
-<*> Remove Recorder </*>
-<*> Remove VancedYT (now not possible to install to install from Aroma due to being split Apk) </*>
-<*> Change internal numbering of menu items </*>
-<*> Add back in a few select startup anims </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 07></u></b>
-<*> Update DevCheck  to 2.49  </*>
-<*> Update MagiskManager canary to 5537b083  </*>
-<*> Updated NewPipe to 0.19.1 </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 06></u></b>
-<*> Update Magisk canary to ef9d077c  </*>
+<*> Make new branch for 10, update readme and changelist for 10.0 </*>
 <*> Rebrand intro anim to more generic JDC </*>
-<*> Change main menu button to Q </*>
-<*> Change betterbatterystats to non-system app - stop failing sygote whitelist </*>
-<*> Stop manually installing magiskmanager </*>
-<*>   TODO: check apps installed to priv-app (system apps) work correctly or move to user apps (apps) </*>
-<*>    - Magisk manager, ViperFX4Android, Vanced, Recorder, Eleven, Snap </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 05></u></b>
-<*> Change adaway to non-system app </*>
-<*> Change newpipe to non-system app / dont remove youtube app </*>
-<*> Fix Enhanced AOSP lib path </*>
-<*> Remove Xperia keyboard </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 04></u></b>
-<*> Remove non magisk version of JDC toolbox </*>
-<*> Change install / remove paths for android 10 </*>
-<*> Fix the english </*>
 <*> Change font to CaviarDreams </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 03></u></b>
 <*> Remove Aroma themes, default to RedBlack </*>
-<*> Remove boot anims </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 02></u></b>
-<*> Updated Brave to 1.5.9-398713202 </*>
-<*> Updated Magisk to 72f6770d / canary </*>
-<*> Updated Magisk Manager to 72f6770d / canary </*>
-<*> Updated Magisk Uninstaller to 72f6770d / canary </*>
-<*> Updated Mixplorer to 6.44.0 </*>
-<*> Updated NewPipe to 0.18.7 (870) </*>
-<*> Updated Viper4Android to 2.7.1.6 </*>
-
-<b><u>JDC AromaInstaller Version 10.0 <alpha 01></u></b>
-<*> make new branch for 10, update readme and changelist for 10.0 </*>
-
-<b><u>JDC AromaInstaller Version 5.2</u></b>
-<*> Updated AdAway to 4.3.2-191229 </*>
-<*> Updated Brave to 1.5.6-398710302 </*>
-<*> Updated Devcheck to 2.45 </*>
-<*> Updated Magisk to ce7cb1ee / canary </*>
-<*> Updated Magisk Manager to ce7cb1ee / canary </*>
-<*> Updated Magisk Uninstaller to ce7cb1ee / canary </*>
-<*> Updated Mixplorer to 6.43.1-20020410 </*>
-<*> Updated NewPipe to 0.18.3-830 </*>
-<*> Updated Syslog to 2.3.0-33 </*>
-
-<b><u>JDC AromaInstaller Version 5.11</u></b>
-<*> Bugfix "ready to install" comma issue </*>
-
-<b><u>JDC AromaInstaller Version 5.1</u></b>
-<*> Updated AdAway to 4.3.0-191101 </*>
-<*> Updated BetterBatteryStats to 2.5-341 (98) </*>
-<*> Updated Brave to 1.6.0-390411502 </*>
-<*> Updated Devcheck to 2.41-241 </*>
-<*> Updated Drminfo to 1.1.2.191021 </*>
-<*> Updated Magisk to 11b7076a / canary </*>
-<*> Updated Magisk Manager to 11b7076a / canary </*>
-<*> Updated Magisk Uninstaller to 11b7076a / canary </*>
-<*> Updated Mixplorer to 6.42.3-19121310 </*>
-<*> Updated NewPipe to 0.17.4-790 </*>
-<*> Updated Syslog to 2.2.1-32 </*>
-<*> Updated YTvanced to 14.21.54-1421542300 </*>
-
-<b><u>JDC AromaInstaller Version 5.0</u></b>
-<*> Added Option to Uninstall debug tools </*>
-<*> Added Option to Install Google Camera manually </*>
-<*> Added New OxygenOS bootanimation </*>
-<*> Added OxygenOS McLaren edition bootanimation </*>
-<*> Added Enhanced AOSP Keyboard - v8.1 </*>
-<*> Added Vanced Youtube Dark/Black back - v14.21.54 </*>
-<*> Updated MiXplorer to v6.39.2 </*>
-<*> Updated Brave browser to v1.1.2 </*>
-<*> Updated DRMInfo to v1.1.2.190630-177 </*>
-
-<b><u>JDC AromaInstaller Version 4.1</u></b>
-<*> Updated MiXplorer to v6.39.0 beta </*>
-<*> Updated Magisk Manager to v7.3.2 </*>
-<*> Updated AdAway - v4.2.6-190623 </*>
-<*> Updated Brave to v1.0.99 </*>
-
-<b><u>JDC AromaInstaller Version 4.0</u></b>
-<*> Updated Magisk to v19.3 </*>
-<*> Updated Magisk Manager to v7.2 </*>
-<*> Updated Magisk Uninstaller to latest version </*>
-<*> Updated MiXplorer to v6.36.6 </*>
-<*> Updated Brave to v1.0.97 </*>
-<*> Updated NewPipe to v0.16.2 </*>
-<*> Updated AdAway - v4.2.5-190606 </*>
-<*> Added debug tools: </*>
-<*> Added DRMInfo - v1.1.1.190510-169 </*>
-<*> Added DevCheck - v2.35-235 </*>
-<*> Added Profiler - v1.5.5 </*>
-<*> Added Syslog - v2.2.0-31 </*>
-<*> Added BetterBatteryStats - v2.5-330 </*>
-
-<b><u>JDC AromaInstaller Version 3.0</u></b>
-<*> Added option to remove Camera shutter sounds </*>
-<*> Removed Substratum Key </*>
-<*> Updated Magisk to v19.1 </*>
-<*> Updated Magisk Manager to v7.1.2 </*>
-<*> Updated Magisk Uninstaller to latest version </*>
-<*> Updated MiXplorer to v6.35.2 </*>
-<*> Updated Brave to v1.0.88 </*>
-<*> Updated NewPipe to v0.16.1 </*>
-
-<b><u>JDC AromaInstaller Version 2.0</u></b>
-<*> Prioritize our Red-Black JDC theme </*>
-<*> Added OPTLOS Pie bootaimation </*>
-<*> Added Liquid Remix bootaimation </*>
-<*> Added Resurrection Remix bootaimation </*>
-<*> Added Pixel Experience bootaimation </*>
-<*> Added AOSP Extended bootaimation </*>
-<*> Added Newpipe YouTube Client </*>
-<*> Added option to remove Email App </*>
-<*> Added Changelog section in Aroma </*>
-<*> Added Substratum Key for Liquid Remix </*>
-<*> Removed VancedYT Dark/Black </*>
-<*> Updated AdAway to v4.2.3 </*>
-<*> Updated MiXplorer to v6.33.10 </*>
-<*> Updated Brave to v1.0.84 </*>
-
-<b><u>JDC AromaInstaller Version 1.0</u></b>
-<*> Initial Release </*>
+<*> Update credits for boot animations </*
+<*> Add back in a few select boot animations, removing some not relevant to 10 </*>
+<*> Change adaway to non-system app </*>
+<*> Change betterbatterystats to non-system app - stop failing zygote whitelist </*>
+<*> Change newpipe to non-system app / dont remove youtube app </*>
+<*> Change all apps install / remove paths for android 10 </*>
+<*> Change internal numbering of menu items to solve phantom install / uninstall </*>
+<*> Change main menu button to Q </*>
+<*> Fix Enhanced AOSP keyboard lib path </*>
+<*> Fix error in Brave update </*
+<*> Fix paths used for camera sound replacement </*
+<*> Fix the english </*>
+<*> Remove De-bloat page and associated apps (Live wallpaper picker, Eleven music player, Snap camera, Email) </*>
+<*> Remove non magisk version of JDC toolbox </*>
+<*> Remove Recorder </*>
+<*> Remove VancedYT (now not possible to install from Aroma due to being split Apk) </*>
+<*> Remove Xperia keyboard (only ship one keyboard) </*>
+<*> Rework Magisk to have CLEAN and UPDATE installs  </*>
+<*> Stop manually installing MagiskManager (install from magisk zip works corrctly) </*>
+<*> Update Brave to 1.5.120 </*>
+<*> Update DevCheck  to 2.49  </*>
+<*> Update Magisk canary to ef9d077c </*>
+<*> Update Mixplorer to 6.44.0 </*>
+<*> Update NewPipe to 0.19.2 </*>
+<*> Update Viper4Android to 2.7.1.6 </*>
