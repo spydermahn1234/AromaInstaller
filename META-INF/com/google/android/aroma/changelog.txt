@@ -1,5 +1,8 @@
 <b><u>JDC AromaInstaller Version 10.0</u></b>
 
+<*> Update Brave to 1.5.131 </*>
+
+<b><u>JDC AromaInstaller Version 10.0</u></b>
 <*> Make new branch for 10, update readme and changelist for 10.0 </*>
 <*> Rebrand intro anim to more generic JDC </*>
 <*> Change font to CaviarDreams </*>
