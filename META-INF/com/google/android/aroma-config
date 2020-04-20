@@ -76,7 +76,7 @@ selectbox(
 	"Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 8
 	"Oxygen OS (new)",                             "by Oneplus"                                                                        ,0,    #-- selected.1 = 9
 	"Oxygen OS (Mclaren edition)",                 "by Oneplus"                                                                        ,0,    #-- selected.1 = 10
-	"AOSP Extended (SW edition)",                  "by Androbuddy007                                                                   ,0,    #-- selected.1 = 11
+	"AOSP Extended (SW edition)",                  "by Androbuddy007"                                                                   ,0,    #-- selected.1 = 11
 	"No change",                                   "Keep current"                                                                      ,1     #-- selected.1 = 12
 );
 
