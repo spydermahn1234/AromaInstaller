@@ -1,4 +1,4 @@
-<b><u>JDC AromaInstaller Version 10.0</u></b>
+<b><u>JDC AromaInstaller Version 10.01</u></b>
 
 <*> Update Brave to 1.5.131 </*>
 
@@ -7,7 +7,7 @@
 <*> Rebrand intro anim to more generic JDC </*>
 <*> Change font to CaviarDreams </*>
 <*> Remove Aroma themes, default to RedBlack </*>
-<*> Update credits for boot animations </*
+<*> Update credits for boot animations </*>
 <*> Add back in a few select boot animations, removing some not relevant to 10 </*>
 <*> Change adaway to non-system app </*>
 <*> Change betterbatterystats to non-system app - stop failing zygote whitelist </*>
@@ -16,8 +16,8 @@
 <*> Change internal numbering of menu items to solve phantom install / uninstall </*>
 <*> Change main menu button to Q </*>
 <*> Fix Enhanced AOSP keyboard lib path </*>
-<*> Fix error in Brave update </*
-<*> Fix paths used for camera sound replacement </*
+<*> Fix error in Brave update </*>
+<*> Fix paths used for camera sound replacement </*>
 <*> Fix the english </*>
 <*> Remove De-bloat page and associated apps (Live wallpaper picker, Eleven music player, Snap camera, Email) </*>
 <*> Remove non magisk version of JDC toolbox </*>
