@@ -59,14 +59,14 @@ endif;
 
 ####################################################
 
-# PIXEL BLACK ANIMATION
+# Android 10 BLACK ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "5"
 then
-ui_print("Pixel Black boot animation is installing");
+ui_print("Android 10 Black boot animation is installing");
 package_extract_dir("boot/pixelblack/system/media", "/system/system/product/media");
-ui_print("Pixel Black boot animation successfully installed");
+ui_print("Android 10 Black boot animation successfully installed");
 ui_print("  ");
 endif;
 
@@ -77,20 +77,20 @@ endif;
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "6"
 then
-ui_print("Pixel White boot animation is installing");
+ui_print("Android 10 White boot animation is installing");
 package_extract_dir("boot/pixelwhite/system/media", "/system/system/product/media");
-ui_print("Pixel White boot animation successfully installed");
+ui_print("Android 10 White boot animation successfully installed");
 ui_print("  ");
 endif;
 
 ####################################################
 
-# PIXEL EXPERIENCE ANIMATION
+# Samsung ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "7"
 then
-ui_print("Pixel Experience boot animation is installing");
+ui_print("Samsung boot animation is installing");
 package_extract_dir("boot/pixelexp/system/media", "/system/system/product/media");
 ui_print("Pixel Experience boot animation successfully installed");
 ui_print("  ");
@@ -137,14 +137,14 @@ endif;
 
 ####################################################
 
-# AOSP EXTENDED ANIMATION
+# AEX SW ANIMATION
 
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "11"
 then
-ui_print("AOSP Extended boot animation is installing");
+ui_print("AEX SW edition boot animation is installing");
 package_extract_dir("boot/aex/system/media", "/system/system/product/media");
-ui_print("AOSP Extended boot animation successfully installed");
+ui_print("AEX SW edition boot animation successfully installed");
 ui_print("  ");
 endif;
 
