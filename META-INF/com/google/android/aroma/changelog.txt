@@ -2,7 +2,9 @@
 
 <*> Update Brave to 1.5.131 </*>
 <*> Update DevCheck to 2.51  </*>
-<*> Update DrmInfo to 1.1.4  </*>
+<*> Update Magisk canary to e219867c  </*>
+<*> Update Magisk canary to e219867c  </*>
+<*> Change some boot anims: Android 10 black / white, AEX SW edition, Samsung logo  </*>
 
 <b><u>JDC AromaInstaller Version 10.0</u></b>
 <*> Make new branch for 10, update readme and changelist for 10.0 </*>
