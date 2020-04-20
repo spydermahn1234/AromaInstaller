@@ -175,7 +175,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add DRMInfo",                                 "Displays information on the installed crypto systems"                              ,0,    #-- selected.3 = 1
-	"Remove DRMInfo",                              "1.1.2.191021"                                                                      ,0,    #-- selected.3 = 2
+	"Remove DRMInfo",                              "1.1.4"                                                                      ,0,    #-- selected.3 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
