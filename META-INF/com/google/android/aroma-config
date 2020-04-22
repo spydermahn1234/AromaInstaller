@@ -87,9 +87,9 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Clean install Magisk",                        "Uninstall then install Magisk ef9d077c / canary"                                   ,0,    #-- selected.1 = 1
-	"Update Magisk",                               "Update Magisk e219867c / canary"                                                   ,0,    #-- selected.1 = 2
-	"Remove Magisk",                               ""                                                                                  ,0,    #-- selected.1 = 3
+	"Clean install Magisk",                        "Uninstall then install Magisk canary ef9d077c"                                     ,0,    #-- selected.1 = 1
+	"Update Magisk",                               "Update Magisk canary ef9d077c / 20401 / 28th March"                                ,0,    #-- selected.1 = 2
+	"Remove Magisk",                               "Audio modules broken after 20401 - DO NOT update if you care about Viper etc."     ,0,    #-- selected.1 = 3
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 4
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -120,12 +120,12 @@ selectbox(
 		"add.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Viper4Android",                           "ViPER4Android 2.7.1.6 - Install drivers on first run"                              ,0,    #-- selected.1 = 1
+	"Add Viper4Android",                           "ViPER4Android 2.7.1.6 Install drivers on first run and before other audio mods"    ,0,    #-- selected.1 = 1
 	"Remove Viper4Android",                        "Will Restore AudioFX"                                                              ,0,    #-- selected.1 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Newpipe",                                 "A free YouTube client"                                                             ,0,    #-- selected.2 = 1
+	"Add Newpipe",                                 "A free open source YouTube client"                                                 ,0,    #-- selected.2 = 1
 	"Remove Newpipe",                              "0.19.2"                                                                            ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
