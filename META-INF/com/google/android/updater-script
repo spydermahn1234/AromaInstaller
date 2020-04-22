@@ -599,26 +599,26 @@ endif;
 set_progress(0.75);
 ######################################################
 
-# ADD DEVCHECK
+# ADD Castro
 
 if
 file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "1"
 then
-ui_print("Installing DevCheck...");
-package_extract_dir("jdc/devcheck", "/system/system/app/DevCheck");
-ui_print("DevCheck successfully installed");
+ui_print("Installing Castro...");
+package_extract_dir("jdc/castro", "/system/system/app/Castro");
+ui_print("Castro successfully installed");
 ui_print("  ");
 endif;
 
 
-# REMOVE DEVCHECK
+# REMOVE Castro
 
 if
 file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "2"
 then
-ui_print("Uninstalling DevCheck...");
-delete_recursive("/system/system/app/DevCheck");
-ui_print("DevCheck successfully uninstalled");
+ui_print("Uninstalling Castro...");
+delete_recursive("/system/system/app/Castro");
+ui_print("Castro successfully uninstalled");
 ui_print("  ");
 endif;
 

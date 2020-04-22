@@ -1,10 +1,10 @@
 ﻿ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDC AromaInstaller");
-ini_set("rom_version",          "Aroma v10.01");
+ini_set("rom_version",          "Aroma v10.02");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE and variants");
-ini_set("rom_date",             "10th April 2020");
+ini_set("rom_date",             "22nd April 2020");
 
 anisplash(
 	1,
@@ -76,7 +76,7 @@ selectbox(
 	"Oxygen OS",                                   "by Oneplus"                                                                        ,0,    #-- selected.1 = 8
 	"Oxygen OS (new)",                             "by Oneplus"                                                                        ,0,    #-- selected.1 = 9
 	"Oxygen OS (Mclaren edition)",                 "by Oneplus"                                                                        ,0,    #-- selected.1 = 10
-	"AOSP Extended (SW edition)",                  "by Androbuddy007"                                                                   ,0,    #-- selected.1 = 11
+	"AOSP Extended (SW edition)",                  "by Androbuddy007"                                                                  ,0,    #-- selected.1 = 11
 	"No change",                                   "Keep current"                                                                      ,1     #-- selected.1 = 12
 );
 
@@ -169,13 +169,13 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add DevCheck",                                "Displays lots of helpful debug information including sensors"                      ,0,    #-- selected.2 = 1
-	"Remove DevCheck",                             "2.51"                                                                              ,0,    #-- selected.2 = 2
+	"Add Castro",                                  "Displays lots of helpful debug information including sensors"                      ,0,    #-- selected.2 = 1
+	"Remove Castro",                               "3.6"                                                                               ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add DRMInfo",                                 "Displays information on the installed crypto systems"                              ,0,    #-- selected.3 = 1
-	"Remove DRMInfo",                              "1.1.4"                                                                      ,0,    #-- selected.3 = 2
+	"Remove DRMInfo",                              "1.1.4"                                                                             ,0,    #-- selected.3 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
