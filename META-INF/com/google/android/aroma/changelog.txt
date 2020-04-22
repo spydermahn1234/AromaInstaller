@@ -1,7 +1,7 @@
 <b><u>JDC AromaInstaller Version 10.02</u></b>
 
 <*> Hack JDC Toolbox to be compatible with Android 10 path changes </*>
-<*> Remove DevCheck, replace with Castro </*>
+<*> Remove DevCheck </*>
 <*> Revert Magisk canary to ef9d077c / 20401 / 28th March (Last version where audio modules work correctly) </*>
 <*> Update Magisk Uninstaller to canary 8ca5a048 / 21st April (allow us to correctly uninstall up to latest version) </*>
 
