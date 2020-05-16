@@ -6,6 +6,7 @@
 <*> Introduce SystemUItuner 306 </*>
 <*> Update Magisk canary to 122b4d66  </*>
 <*> Update Mixplorer to 6.45.0-BETA </*>
+<*> Update NewPipe to 0.19.3 </*>
 
 
 <b><u>JDC AromaInstaller Version 10.02</u></b>
