@@ -94,7 +94,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add AdAway",                                  "Host filtering to filter adverts and protect your security"                        ,0,    #-- selected.2 = 1
-	"Remove AdAway",                               "4.3.2-191229"                                                                      ,0,    #-- selected.2 = 2
+	"Remove AdAway",                               "4.3.4"                                                                      ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -131,7 +131,6 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Newpipe",                                 "A free open source YouTube client"                                                 ,0,    #-- selected.2 = 1
-	"Remove Newpipe",                              "0.19.3"                                                                            ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
