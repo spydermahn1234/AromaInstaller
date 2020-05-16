@@ -2,8 +2,8 @@
 
 <*> Change Q menu icon to red to better match redblack theme </*>
 <*> Introduce SystemUItuner 306 </*>
+<*> Remove DRMinfo </*>
 <*> Update Brave to 1.8.93 </*>
-<*> Update DRMinfo to 1.1.4.200425 </*>
 <*> Update Magisk canary to 122b4d66  </*>
 <*> Update Mixplorer to 6.45.0-BETA </*>
 <*> Update NewPipe to 0.19.3 </*>

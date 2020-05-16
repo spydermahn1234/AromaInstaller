@@ -588,28 +588,6 @@ endif;
 set_progress(0.75);
 ######################################################
 
-# ADD DRMINFO
-
-if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "1"
-then
-ui_print("Installing DrmInfo...");
-package_extract_dir("jdc/drminfo", "/system/system/app/DrmInfo");
-ui_print("DrmInfo successfully installed");
-ui_print("  ");
-endif;
-
-# REMOVE DRMINFO
-
-if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "2"
-then
-ui_print("Uninstalling DrmInfo...");
-delete_recursive("/system/system/app/DrmInfo");
-ui_print("DrmInfo successfully uninstalled");
-ui_print("  ");
-endif;
-
 ######################################################
 set_progress(0.80);
 ######################################################
@@ -617,7 +595,7 @@ set_progress(0.80);
 # ADD PROFILER
 
 if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "1"
 then
 ui_print("Installing Profiler...");
 package_extract_dir("jdc/profiler", "/system/system/app/Profiler");
@@ -628,7 +606,7 @@ endif;
 # REMOVE PROFILER
 
 if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.2") == "2"
 then
 ui_print("Uninstalling Profiler...");
 delete_recursive("/system/system/app/Profiler");
@@ -643,7 +621,7 @@ set_progress(0.85);
 # ADD SYSLOG
 
 if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "1"
 then
 ui_print("Installing Syslog...");
 package_extract_dir("jdc/syslog", "/system/system/app/Syslog");
@@ -654,7 +632,7 @@ endif;
 # REMOVE SYSLOG
 
 if
-file_getprop("/tmp/aroma-data/dbg.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/dbg.prop","selected.3") == "2"
 then
 ui_print("Uninstalling Syslog...");
 delete_recursive("/system/system/app/Syslog");
