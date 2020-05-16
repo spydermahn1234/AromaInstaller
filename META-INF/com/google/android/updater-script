@@ -341,6 +341,39 @@ delete_recursive("/tmp/aroma-data/addroot.prop");
 set_progress(0.30);
 ######################################################
 
+
+# ADD SYSTEMUITUNER
+
+if
+file_getprop("/tmp/aroma-data/addroot.prop","selected.6") == "1"
+then
+ui_print("Installing SystemUItuner...");
+delete_recursive("/system/system/app/systemuituner");
+package_extract_dir("jdc/systemuituner", "/system/system/app/systemuituner");
+ui_print("SystemUItuner successfully installed");
+ui_print("  ");
+endif;
+
+
+# REMOVE MIXPLORER
+
+if
+file_getprop("/tmp/aroma-data/addroot.prop","selected.6") == "2"
+then
+ui_print("Uninstalling SystemUItuner...");
+delete_recursive("/system/system/app/systemuituner");
+ui_print("SystemUItuner successfully uninstalled");
+ui_print("  ");
+endif;
+
+delete_recursive("/tmp/aroma-data/addroot.prop");
+
+######################################################
+set_progress(0.33);
+######################################################
+
+
+
 # APPS SECTION
 ######################################################
 
