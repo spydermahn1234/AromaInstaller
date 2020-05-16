@@ -18,8 +18,6 @@ ui_print("Bios boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # Optimized LineageOS Animation
 
 if
@@ -30,8 +28,6 @@ package_extract_dir("boot/optlos/system/media", "/system/system/product/media");
 ui_print("Optimized LineageOS boot animation successfully installed");
 ui_print("  ");
 endif;
-
-####################################################
 
 # Optimized RED LineageOS Animation
 
@@ -44,8 +40,6 @@ ui_print("Optimized LineageOS (RED) boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # Optimized LineageOS PIE Animation
 
 if
@@ -56,8 +50,6 @@ package_extract_dir("boot/optlosP/system/media", "/system/system/product/media")
 ui_print("Optimized LineageOS Pie boot animation successfully installed");
 ui_print("  ");
 endif;
-
-####################################################
 
 # Android 10 BLACK ANIMATION
 
@@ -70,8 +62,6 @@ ui_print("Android 10 Black boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # PIXEL WHITE ANIMATION
 
 if
@@ -82,8 +72,6 @@ package_extract_dir("boot/pixelwhite/system/media", "/system/system/product/medi
 ui_print("Android 10 White boot animation successfully installed");
 ui_print("  ");
 endif;
-
-####################################################
 
 # Samsung ANIMATION
 
@@ -96,8 +84,6 @@ ui_print("Pixel Experience boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # OXYGEN OS ANIMATION
 
 if
@@ -108,8 +94,6 @@ package_extract_dir("boot/oxygen/system/media", "/system/system/product/media");
 ui_print("Oxygen OS boot animation successfully installed");
 ui_print("  ");
 endif;
-
-####################################################
 
 # NEW OXYGEN OS ANIMATION
 
@@ -122,8 +106,6 @@ ui_print("New Oxygen OS boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # OXYGEN OS MCLAREN ANIMATION
 
 if
@@ -135,8 +117,6 @@ ui_print("Oxygen OS McLaren edition boot animation successfully installed");
 ui_print("  ");
 endif;
 
-####################################################
-
 # AEX SW ANIMATION
 
 if
@@ -147,8 +127,6 @@ package_extract_dir("boot/aex/system/media", "/system/system/product/media");
 ui_print("AEX SW edition boot animation successfully installed");
 ui_print("  ");
 endif;
-
-####################################################
 
 # boot animation No Change
 
@@ -189,7 +167,6 @@ ui_print("Magisk successfully installed");
 ui_print("  ");
 endif;
 
-
 # UPDATE MAGISK
 
 if
@@ -205,7 +182,6 @@ run_program("/sbin/busybox", "mount", "/system");
 ui_print("Magisk successfully installed");
 ui_print("  ");
 endif;
-
 
 # REMOVE MAGISK
 
@@ -239,7 +215,6 @@ ui_print("AdAway successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE ADAWAY
 
 if
@@ -266,7 +241,6 @@ package_extract_dir("jdc/toolbox", "/system/system/app/Toolbox");
 ui_print("JDCToolbox - Magisk successfully installed");
 ui_print("  ");
 endif;
-
 
 # REMOVE JDCTOOLBOX
 
@@ -295,7 +269,6 @@ ui_print("Buffcore Adiutor successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE BUFFCORE ADIUTOR
 
 if
@@ -323,7 +296,6 @@ ui_print("Mixplorer successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE MIXPLORER
 
 if
@@ -335,12 +307,9 @@ ui_print("Mixplorer successfully uninstalled");
 ui_print("  ");
 endif;
 
-delete_recursive("/tmp/aroma-data/addroot.prop");
-
 ######################################################
 set_progress(0.30);
 ######################################################
-
 
 # ADD SYSTEMUITUNER
 
@@ -348,12 +317,11 @@ if
 file_getprop("/tmp/aroma-data/addroot.prop","selected.6") == "1"
 then
 ui_print("Installing SystemUItuner...");
-delete_recursive("/system/system/app/systemuituner");
-package_extract_dir("jdc/systemuituner", "/system/system/app/systemuituner");
+delete_recursive("/system/system/app/systemUItuner");
+package_extract_dir("jdc/systemUItuner", "/system/system/app/systemUItuner");
 ui_print("SystemUItuner successfully installed");
 ui_print("  ");
 endif;
-
 
 # REMOVE MIXPLORER
 
@@ -361,7 +329,7 @@ if
 file_getprop("/tmp/aroma-data/addroot.prop","selected.6") == "2"
 then
 ui_print("Uninstalling SystemUItuner...");
-delete_recursive("/system/system/app/systemuituner");
+delete_recursive("/system/system/app/systemUItuner");
 ui_print("SystemUItuner successfully uninstalled");
 ui_print("  ");
 endif;
@@ -369,10 +337,8 @@ endif;
 delete_recursive("/tmp/aroma-data/addroot.prop");
 
 ######################################################
-set_progress(0.33);
+set_progress(0.35);
 ######################################################
-
-
 
 # APPS SECTION
 ######################################################
@@ -389,7 +355,6 @@ ui_print("ViPER4AndroidFX successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE ViPER4AndroidFX
 
 if
@@ -405,7 +370,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.35);
+set_progress(0.40);
 ######################################################
 
 # ADD NEWPIPE
@@ -418,7 +383,6 @@ package_extract_dir("jdc/newpipe", "/system/system/app/newpipe");
 ui_print("Newpipe successfully installed");
 ui_print("  ");
 endif;
-
 
 # REMOVE NEWPIPE
 
@@ -446,7 +410,6 @@ ui_print("Google camera successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE GOOGLE CAMERA SYSTEM
 
 if
@@ -457,7 +420,6 @@ delete_recursive("/system/system/app/GoogleCamera");
 ui_print("Google camera successfully uninstalled");
 ui_print("  ");
 endif;
-
 
 # ADD GOOGLE CAMERA MANUAL
 
@@ -471,7 +433,6 @@ ui_print("---->  PLEASE INSTALL MANUALLY");
 package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
 ui_print("  ");
 endif;
-
 
 # REMOVE GOOGLE CAMERA MANUAL
 
@@ -502,7 +463,6 @@ ui_print("Enhanced AOSP successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE ENHANCED AOSP KEYBOARD
 
 if
@@ -530,7 +490,6 @@ ui_print("Brave successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE BRAVE
 
 if
@@ -557,7 +516,6 @@ ui_print("Oxygen OS fonts successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE OXYGEN OS FONTS
 
 if
@@ -583,7 +541,6 @@ package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/p
 ui_print("Camera shutter sounds removed successfully");
 ui_print("  ");
 endif;
-
 
 # RESTORE CAMERA SHUTTER SOUNDS
 
@@ -616,7 +573,6 @@ ui_print("BetterBatteryStats successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE BETTERYBATTERYSTATS
 
 if
@@ -632,10 +588,6 @@ endif;
 set_progress(0.75);
 ######################################################
 
-######################################################
-set_progress(0.80);
-######################################################
-
 # ADD DRMINFO
 
 if
@@ -646,7 +598,6 @@ package_extract_dir("jdc/drminfo", "/system/system/app/DrmInfo");
 ui_print("DrmInfo successfully installed");
 ui_print("  ");
 endif;
-
 
 # REMOVE DRMINFO
 
@@ -660,7 +611,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.85);
+set_progress(0.80);
 ######################################################
 
 # ADD PROFILER
@@ -674,7 +625,6 @@ ui_print("Profiler successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE PROFILER
 
 if
@@ -687,7 +637,7 @@ ui_print("  ");
 endif;
 
 ######################################################
-set_progress(0.90);
+set_progress(0.85);
 ######################################################
 
 # ADD SYSLOG
@@ -701,7 +651,6 @@ ui_print("Syslog successfully installed");
 ui_print("  ");
 endif;
 
-
 # REMOVE SYSLOG
 
 if
@@ -713,18 +662,19 @@ ui_print("Syslog successfully uninstalled");
 ui_print("  ");
 endif;
 
+######################################################
+set_progress(0.90);
+######################################################
+
 delete_recursive("/tmp/aroma-data/dbg.prop");
 
 ######################################################
 set_progress(0.95);
 ######################################################
 
-
 ui_print("Unmounting  /system");
 ui_print("  ");
-set_progress(0.90);
 ifelse(is_mounted("/system"), unmount("/system"));
-ui_print("Done!");
 ui_print("  ");
 
 ######################################################
