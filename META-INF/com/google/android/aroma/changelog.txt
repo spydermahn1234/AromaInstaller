@@ -5,6 +5,7 @@
 <*> Update DRMinfo to 1.1.4.200425 </*>
 <*> Introduce SystemUItuner 306 </*>
 <*> Update Magisk canary to 122b4d66  </*>
+<*> Update Mixplorer to 6.45.0-BETA </*>
 
 
 <b><u>JDC AromaInstaller Version 10.02</u></b>
