@@ -2,6 +2,7 @@
 
 <*> Change Q menu icon to red to better match redblack theme </*>
 <*> Update Brave to 1.8.93 </*>
+<*> Update DRMinfo to 1.1.4.200425 </*>
 
 
 <b><u>JDC AromaInstaller Version 10.02</u></b>
