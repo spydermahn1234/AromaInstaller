@@ -155,7 +155,7 @@ endif;
 if
 file_getprop("/tmp/aroma/boot.prop","selected.1") == "12"
 then
-ui_print("Boot animation is being skipped");
+ui_print("Boot animation install skipped");
 ui_print("  ");
 endif;
 

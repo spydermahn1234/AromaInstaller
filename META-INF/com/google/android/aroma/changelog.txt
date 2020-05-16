@@ -1,5 +1,10 @@
-<b><u>JDC AromaInstaller Version 10.02</u></b>
+<b><u>JDC AromaInstaller Version 10.03</u></b>
 
+<*> Change Q menu icon to red to better match redblack theme </*>
+<*> Update Brave to 1.8.93 </*>
+
+
+<b><u>JDC AromaInstaller Version 10.02</u></b>
 <*> Hack JDC Toolbox to be compatible with Android 10 path changes </*>
 <*> Remove DevCheck </*>
 <*> Revert Magisk canary to ef9d077c / 20401 / 28th March (Last version where audio modules work correctly) </*>
