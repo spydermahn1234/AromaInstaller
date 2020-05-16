@@ -4,6 +4,7 @@
 <*> Update Brave to 1.8.93 </*>
 <*> Update DRMinfo to 1.1.4.200425 </*>
 <*> Introduce SystemUItuner 306 </*>
+<*> Update Magisk canary to 122b4d66  </*>
 
 
 <b><u>JDC AromaInstaller Version 10.02</u></b>
