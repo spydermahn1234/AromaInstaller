@@ -1,5 +1,6 @@
 <b><u>JDC AromaInstaller Version 10.04</u></b>
 
+<*> Add back MagiskManager specific install </*>
 <*> Update Brave to 1.8.112 </*>
 <*> Update Magisk canary to cd6eca1d </*>
 <*> Update NewPipe to 0.19.5 </*>
