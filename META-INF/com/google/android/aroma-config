@@ -109,7 +109,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Mixplorer",                               "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
-	"Remove Mixplorer",                            "6.45.0-BETA"                                                                       ,0,    #-- selected.5 = 2
+	"Remove Mixplorer",                            "6.45.3"                                                                       ,0,    #-- selected.5 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.5 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
