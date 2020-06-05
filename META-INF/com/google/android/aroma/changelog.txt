@@ -1,5 +1,6 @@
 <b><u>JDC AromaInstaller Version 10.04</u></b>
-
+1.9.79
+<*> Update Brave to 1.8.112 </*>
 <*> Update Magisk canary to cd6eca1d </*>
 <*> Update NewPipe to 0.19.5 </*>
 <*> Update Syslog to 2.4.1 </*>
