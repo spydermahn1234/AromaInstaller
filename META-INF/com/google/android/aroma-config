@@ -114,7 +114,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add SystemUItuner",                           "System UI tweaker"                                                                 ,0,    #-- selected.6 = 1
-	"Remove SystemUItuner",                        "306"                                                                               ,0,    #-- selected.6 = 2
+	"Remove SystemUItuner",                        "309"                                                                               ,0,    #-- selected.6 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.6 = 3
 );
 

@@ -4,7 +4,7 @@
 <*> Update Magisk canary to cd6eca1d </*>
 <*> Update NewPipe to 0.19.5 </*>
 <*> Update Syslog to 2.4.1 </*>
-<*>  </*>
+<*> Update SystemUItuner to 309 </*>
 
 <b><u>JDC AromaInstaller Version 10.03</u></b>
 
