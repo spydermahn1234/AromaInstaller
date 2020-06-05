@@ -1,6 +1,7 @@
 <b><u>JDC AromaInstaller Version 10.04</u></b>
 
 <*> Update Magisk canary to cd6eca1d </*>
+<*> Update NewPipe to 0.19.5 </*>
 <*>  </*>
 <*>  </*>
 
