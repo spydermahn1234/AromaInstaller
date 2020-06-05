@@ -1,5 +1,5 @@
 <b><u>JDC AromaInstaller Version 10.04</u></b>
-1.9.79
+
 <*> Update Brave to 1.8.112 </*>
 <*> Update Magisk canary to cd6eca1d </*>
 <*> Update NewPipe to 0.19.5 </*>
@@ -7,8 +7,8 @@
 <*> Update SystemUItuner to 309 </*>
 <*> Update Mixplorer to 6.45.3 </*>
 
-<b><u>JDC AromaInstaller Version 10.03</u></b>
 
+<b><u>JDC AromaInstaller Version 10.03</u></b>
 <*> Change Q menu icon to red to better match redblack theme </*>
 <*> Introduce SystemUItuner 306 </*>
 <*> Remove DRMinfo </*>
