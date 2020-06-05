@@ -1,3 +1,9 @@
+<b><u>JDC AromaInstaller Version 10.04</u></b>
+
+<*> Update Magisk canary to cd6eca1d </*>
+<*>  </*>
+<*>  </*>
+
 <b><u>JDC AromaInstaller Version 10.03</u></b>
 
 <*> Change Q menu icon to red to better match redblack theme </*>
