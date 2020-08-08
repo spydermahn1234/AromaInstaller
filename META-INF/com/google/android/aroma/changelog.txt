@@ -1,3 +1,8 @@
+<b><u>JDC AromaInstaller Version 10.05</u></b>
+
+
+
+
 <b><u>JDC AromaInstaller Version 10.04</u></b>
 
 <*> Add back MagiskManager specific install </*>
