@@ -3,7 +3,8 @@
 <*> Remove camera shutter sounds </*>
 <*> Remove Google camera </*>
 <*> Remove AOSP keyboard </*>
-<*> Introduce YTVanced manager </*>
+<*> Introduce YTVanced manager 1.2.0 Niko </*>
+<*> Update AdAway to 5.0.6-200820 </*>
 
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>
