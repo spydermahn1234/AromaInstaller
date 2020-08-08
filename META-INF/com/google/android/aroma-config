@@ -135,21 +135,14 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Google camera to system",                 "Panorama features will not work"                                                   ,0,    #-- selected.3 = 1
-	"Remove Google camera from system",            "Will uninstall it from system"                                                     ,0,    #-- selected.3 = 2
-	"Add Google camera as Manual Installation",    "YOU MUST INSTALL THIS MANUALLY -- \nFound in /internal storage/GoogleCamera/"      ,0,    #-- selected.3 = 3
-	"Remove Google camera",                        "YOU MUST UNINSTALL THIS MANUALLY -- \nSettings > Apps > Camera > Uninstall"        ,0,    #-- selected.3 = 4
-	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 5
+	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.3 = 1
+	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.3 = 2
+	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.4 = 1
-	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.4 = 2
+	"Add Brave browser",                           "Security enchanced Chromium with adblock embedded"                                 ,0,    #-- selected.4 = 1
+	"Remove Brave browser",						   "1.9.79 "                                                                           ,0,    #-- selected.4 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.4 = 3
-
-	"",                                            ""                                                                                  ,2,    #--
-	"Add Brave browser",                           "Security enchanced Chromium with adblock embedded"                                 ,0,    #-- selected.5 = 1
-	"Remove Brave browser",						   "1.9.79 "                                                                           ,0,    #-- selected.5 = 2
-	"No change",                                   ""                                                                                  ,1,    #-- selected.5 = 3
 );
 
 selectbox(

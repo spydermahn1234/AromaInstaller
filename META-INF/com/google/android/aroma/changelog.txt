@@ -1,6 +1,7 @@
 <b><u>JDC AromaInstaller Version 10.05</u></b>
 <*> Remove Oxygen OS fonts </*>
 <*> Remove camera shutter sounds </*>
+<*> Remove Google camera </*>
 
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>

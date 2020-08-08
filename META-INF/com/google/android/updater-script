@@ -403,54 +403,6 @@ endif;
 set_progress(0.45);
 ######################################################
 
-# ADD GOOGLE CAMERA SYSTEM
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "1"
-then
-ui_print("Installing Google camera...");
-package_extract_dir("jdc/googlecamera", "/system/system/app/GoogleCamera");
-ui_print("... successfully installed");
-ui_print("  ");
-endif;
-
-# REMOVE GOOGLE CAMERA SYSTEM
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "2"
-then
-ui_print("Uninstalling Google camera...");
-delete_recursive("/system/system/app/GoogleCamera");
-ui_print("... successfully uninstalled");
-ui_print("  ");
-endif;
-
-# ADD GOOGLE CAMERA MANUAL
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "3"
-then
-ui_print("Pasting Google Camera to ");
-ui_print("       '/internal storage/GoogleCamera/'...");
-ui_print("  ");
-ui_print("---->  PLEASE INSTALL MANUALLY");
-package_extract_dir("jdc/googlecamera", "/sdcard/GoogleCamera");
-ui_print("  ");
-endif;
-
-# REMOVE GOOGLE CAMERA MANUAL
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.3") == "4"
-then
-ui_print("Removing Google Camera Paste Folder...");
-ui_print("  ");
-ui_print("---->  PLEASE UNINSTALL MANUALLY");
-ui_print("---->  Settings > Apps > Camera > Uninstall");
-delete_recursive("/sdcard/GoogleCamera");
-ui_print("  ");
-endif;
-
 ######################################################
 set_progress(0.50);
 ######################################################
@@ -458,7 +410,7 @@ set_progress(0.50);
 # ADD ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma-data/add.prop","selected.4") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.3") == "1"
 then
 ui_print("Installing Enhanced AOSP keyboard...");
 package_extract_dir("jdc/EnhancedIME", "/system/system/app/EnhancedIME");
@@ -470,7 +422,7 @@ endif;
 # REMOVE ENHANCED AOSP KEYBOARD
 
 if
-file_getprop("/tmp/aroma-data/add.prop","selected.4") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.3") == "2"
 then
 ui_print("Uninstalling Enhanced AOSP keyboard...");
 delete_recursive("/system/system/app/EnhancedIME");
@@ -485,7 +437,7 @@ set_progress(0.55);
 # ADD BRAVE
 
 if
-file_getprop("/tmp/aroma-data/add.prop","selected.5") == "1"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "1"
 then
 ui_print("Installing Brave...");
 delete_recursive("/system/system/app/Brave");
@@ -497,7 +449,7 @@ endif;
 # REMOVE BRAVE
 
 if
-file_getprop("/tmp/aroma-data/add.prop","selected.5") == "2"
+file_getprop("/tmp/aroma-data/add.prop","selected.4") == "2"
 then
 ui_print("Uninstalling Brave...");
 delete_recursive("/system/system/app/Brave");
