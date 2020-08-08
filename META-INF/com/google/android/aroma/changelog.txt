@@ -7,6 +7,7 @@
 <*> Update AdAway to 5.0.6-200820 </*>
 <*> Update Mixplorer to 6.49.3 </*>
 <*> Update SystemUItuner to 316 </*>
+<*> Update NewPipe to 0.19.8 </*>
 
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>
