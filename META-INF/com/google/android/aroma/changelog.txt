@@ -9,6 +9,7 @@
 <*> Update Mixplorer to 6.49.3 </*>
 <*> Update SystemUItuner to 316 </*>
 <*> Update NewPipe to 0.19.8 </*>
+<*> Update Magisk Uninstaller to canary 97b72a59 / 6th July </*>
 
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>
