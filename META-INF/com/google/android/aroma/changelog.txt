@@ -1,10 +1,9 @@
 <b><u>JDC AromaInstaller Version 10.05</u></b>
-
-
+<*> Remove Oxygen OS fonts </*>
+<*> Remove camera shutter sounds </*>
 
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>
-
 <*> Add back MagiskManager specific install </*>
 <*> Update Brave to 1.8.112 </*>
 <*> Update Magisk canary to cd6eca1d </*>
@@ -12,7 +11,6 @@
 <*> Update Syslog to 2.4.1 </*>
 <*> Update SystemUItuner to 309 </*>
 <*> Update Mixplorer to 6.45.3 </*>
-
 
 <b><u>JDC AromaInstaller Version 10.03</u></b>
 <*> Change Q menu icon to red to better match redblack theme </*>
@@ -23,7 +21,6 @@
 <*> Update Mixplorer to 6.45.0-BETA </*>
 <*> Update NewPipe to 0.19.3 </*>
 <*> Update AdAway to 4.3.4 </*>
-
 
 <b><u>JDC AromaInstaller Version 10.02</u></b>
 <*> Hack JDC Toolbox to be compatible with Android 10 path changes </*>

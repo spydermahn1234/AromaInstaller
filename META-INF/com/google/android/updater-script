@@ -509,55 +509,9 @@ endif;
 set_progress(0.60);
 ######################################################
 
-# ADD OXYGEN OS FONTS
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.6") == "1"
-then
-ui_print("Oxygen OS fonts are installing...");
-package_extract_dir("jdc/fonts/oosfonts", "/system/system/fonts");
-ui_print("... successfully installed");
-ui_print("  ");
-endif;
-
-# REMOVE OXYGEN OS FONTS
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.6") == "2"
-then
-ui_print("Restoring OPTLOS fonts...");
-package_extract_dir("jdc/fonts/optlosfonts", "/system/system/fonts");
-ui_print("... restored successfully");
-ui_print("  ");
-endif;
-
 ######################################################
 set_progress(0.65);
 ######################################################
-
-# REMOVE CAMERA SHUTTER SOUNDS
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.7") == "1"
-then
-ui_print("Removing camera shutter sounds...");
-package_extract_dir("jdc/camerasounds/nosound/system/media/audio/ui", "/system/product/media/audio/ui");
-ui_print("... removed successfully");
-ui_print("  ");
-endif;
-
-# RESTORE CAMERA SHUTTER SOUNDS
-
-if
-file_getprop("/tmp/aroma-data/add.prop","selected.7") == "2"
-then
-ui_print("Restoring camera shutter sounds...");
-package_extract_dir("jdc/camerasounds/optlos/system/media/audio/ui", "/system/product/media/audio/ui");
-ui_print("... restored successfully");
-ui_print("  ");
-endif;
-
-delete_recursive("/tmp/aroma-data/add.prop");
 
 ######################################################
 set_progress(0.70);
