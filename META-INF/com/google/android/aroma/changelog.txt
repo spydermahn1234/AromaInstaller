@@ -5,6 +5,7 @@
 <*> Remove AOSP keyboard </*>
 <*> Introduce YTVanced manager 1.2.0 Niko </*>
 <*> Update AdAway to 5.0.6-200820 </*>
+<*> Update Brave to 1.11.105 </*>
 <*> Update Mixplorer to 6.49.3 </*>
 <*> Update SystemUItuner to 316 </*>
 <*> Update NewPipe to 0.19.8 </*>
