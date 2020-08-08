@@ -109,7 +109,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Mixplorer",                               "Open source file explorer"                                                         ,0,    #-- selected.5 = 1
-	"Remove Mixplorer",                            "6.45.3"                                                                       ,0,    #-- selected.5 = 2
+	"Remove Mixplorer",                            "6.45.3"                                                                            ,0,    #-- selected.5 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.5 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -135,8 +135,8 @@ selectbox(
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Add Enhanced AOSP Keyboard",                  "8.1"                                                                               ,0,    #-- selected.3 = 1
-	"Remove Enhanced AOSP Keyboard", ""                                                                                                ,0,    #-- selected.3 = 2
+	"Add YTVanced manager",                        "YTVanced manager to download client and MicroG as needed"                          ,0,    #-- selected.3 = 1
+	"Remove YTVanced manager",                     "1.2.0 Niko"                                                                        ,0,    #-- selected.3 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.3 = 3
 
 	"",                                            ""                                                                                  ,2,    #--
@@ -163,7 +163,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add Syslog",                                  "Tool to grab and package all system logs to include with bug reports"              ,0,    #-- selected.3 = 1
-	"Remove Syslog",                               "2.4.1"                                                                          ,0,    #-- selected.3 = 2
+	"Remove Syslog",                               "2.4.1"                                                                             ,0,    #-- selected.3 = 2
 	"No change",                                   ""                                                                                  ,1     #-- selected.3 = 3
 );
 

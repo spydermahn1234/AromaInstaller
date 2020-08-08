@@ -407,25 +407,24 @@ set_progress(0.45);
 set_progress(0.50);
 ######################################################
 
-# ADD ENHANCED AOSP KEYBOARD
+# ADD YTVANCED MANAGER
 
 if
 file_getprop("/tmp/aroma-data/add.prop","selected.3") == "1"
 then
-ui_print("Installing Enhanced AOSP keyboard...");
-package_extract_dir("jdc/EnhancedIME", "/system/system/app/EnhancedIME");
-package_extract_dir("jdc/EnhancedIME/lib", "/system/system/lib");
+ui_print("Installing YTVanced manager...");
+package_extract_dir("jdc/YTVanced", "/system/system/app/YTVanced");
 ui_print("... successfully installed");
 ui_print("  ");
 endif;
 
-# REMOVE ENHANCED AOSP KEYBOARD
+# REMOVE YTVANCED MANAGER
 
 if
 file_getprop("/tmp/aroma-data/add.prop","selected.3") == "2"
 then
-ui_print("Uninstalling Enhanced AOSP keyboard...");
-delete_recursive("/system/system/app/EnhancedIME");
+ui_print("Uninstalling YTVanced manager...");
+delete_recursive("/system/system/app/YTVanced");
 ui_print("... successfully uninstalled");
 ui_print("  ");
 endif;
