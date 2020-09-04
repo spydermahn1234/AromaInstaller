@@ -94,7 +94,7 @@ selectbox(
 
 	"",                                            ""                                                                                  ,2,    #--
 	"Add AdAway",                                  "Host filtering to filter adverts and protect your security"                        ,0,    #-- selected.2 = 1
-	"Remove AdAway",                               "5.0.6-200820"                                                                      ,0,    #-- selected.2 = 2
+	"Remove AdAway",                               "5.0.8-208030"                                                                      ,0,    #-- selected.2 = 2
 	"No change",                                   ""                                                                                  ,1,    #-- selected.2 = 3
 
 	"",                                            ""                                                                                  ,2,    #--

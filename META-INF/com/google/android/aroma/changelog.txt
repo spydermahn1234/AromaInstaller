@@ -1,5 +1,6 @@
 <b><u>JDC AromaInstaller Version 10.06</u></b>
 
+<*> Update AdAway to 5.0.8-208030 </*>
 <*> Update Magisk Uninstaller to canary fd5ad91d (20423) / 4th September </*>
 <*> Update Magisk manager to canary fbaf2bde (297) / 31st August </*>
 <*> Update Magisk to canary 6c8fe465 (20420) / 11th August </*>
