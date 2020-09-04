@@ -1,10 +1,10 @@
 ﻿ini_set("force_colorspace","rgba");
 
 ini_set("rom_name",             "JDC AromaInstaller");
-ini_set("rom_version",          "Aroma v10.05");
+ini_set("rom_version",          "Aroma v10.06");
 ini_set("rom_author",           "JDCTeam");
 ini_set("rom_device",           "JFLTE and variants");
-ini_set("rom_date",             "9th August 2020");
+ini_set("rom_date",             "4th September 2020");
 
 anisplash(
 	1,

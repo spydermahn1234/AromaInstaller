@@ -1,5 +1,8 @@
-<b><u>JDC AromaInstaller Version 10.05</u></b>
+<b><u>JDC AromaInstaller Version 10.06</u></b>
 
+
+
+<b><u>JDC AromaInstaller Version 10.05</u></b>
 <*> Remove Oxygen OS fonts </*>
 <*> Remove camera shutter sounds </*>
 <*> Remove Google camera </*>
@@ -13,7 +16,6 @@
 <*> Update Magisk Uninstaller to canary 97b72a59 (20419) / 6th July </*>
 <*> Update Magisk manager to canary 07f712a1 (291) / 17th July </*>
 <*> Update Magisk to canary 97b72a59 (20419) / 6th July </*>
-
 
 <b><u>JDC AromaInstaller Version 10.04</u></b>
 <*> Add back MagiskManager specific install </*>
