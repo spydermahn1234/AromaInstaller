@@ -87,8 +87,8 @@ selectbox(
 		"addroot.prop",
 
 	"",                                            ""                                                                                  ,2,    #--
-	"Clean install Magisk",                        "Uninstall then install Magisk canary 97b72a59 (20419) / 6th July"                  ,0,    #-- selected.1 = 1
-	"Update Magisk",                               "Update Magisk canary 97b72a59 (20419) / 6th July"                                  ,0,    #-- selected.1 = 2
+	"Clean install Magisk",                        "Uninstall then install Magisk canary 6c8fe465 (20420) / 11th August"                  ,0,    #-- selected.1 = 1
+	"Update Magisk",                               "Update Magisk canary 6c8fe465 (20420) / 11th August"                                  ,0,    #-- selected.1 = 2
 	"Remove Magisk",                               ""                                                                                  ,0,    #-- selected.1 = 3
 	"No change",                                   ""                                                                                  ,1,    #-- selected.1 = 4
 
