@@ -1,6 +1,6 @@
-# JDC AromaInstaller
+# TheCandyShop Vendor Installer
 
-Android 10
+ANDROID 11
 
 
 Included applications and links to download.
