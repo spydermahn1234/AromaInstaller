@@ -1,10 +1,10 @@
 ﻿ini_set("force_colorspace","rgba");
 
-ini_set("rom_name",             "JDC AromaInstaller");
+ini_set("rom_name",             "TheCandyShop Vendor Installer");
 ini_set("rom_version",          "Aroma v10.06");
-ini_set("rom_author",           "JDCTeam");
-ini_set("rom_device",           "JFLTE and variants");
-ini_set("rom_date",             "4th September 2020");
+ini_set("rom_author",           "TheCandyShop Edit Of A JDC Team Installer");
+ini_set("rom_device",           "Mi Max 3");
+ini_set("rom_date",             "27th February 2021");
 
 anisplash(
 	1,
@@ -41,7 +41,7 @@ fontresload( "1", "ttf/CaviarDreams-Regular.ttf", "18" );
 
 viewbox(
 	"",
-	"You are about to install <b>JDC AromaInstaller</b>\n\n\n"+
+	"You are about to install <b>TheCandyShop A11 Vendor</b>\n\n\n"+
 	"Information:\n\n"+
 		"  Package\t:  <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
 		"  Version\t:  <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
@@ -54,7 +54,7 @@ viewbox(
 
 textbox(
 		"CHANGELOG",
-		"JDC AromaInstaller - changelog",
+		"TheCandyShop Changelog - changelog",
 		"@update",
 		resread("changelog.txt")
 );
@@ -185,7 +185,7 @@ restotmp("exec_demo/sleep","sleep");
 setvar("retstatus",
   install(
 		"INSTALLING",
-		"<b>JDC AromaInstaller is starting installation</b>\n\n"+
+		"<b>TheCandyShop VendorInstaller is starting installation</b>\n\n"+
 		"<b>Please wait... this may take several minutes</b>",
 		"@install",
 		"Installation has completed\n\n"+
