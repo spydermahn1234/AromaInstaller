@@ -5,7 +5,7 @@ ini_set("rom_version",          "Aroma v10.06");
 ini_set("rom_author",           "TheCandyShop");
 ini_set("rom_device",           "Mi Max 3");
 ini_set("rom_date",             "1st March 2021");
-
+ini_set("dp","5"); #-- XXHDPI ( 1920x1080 / WVGA )
 ##
 # Show Animated Splash
 #
