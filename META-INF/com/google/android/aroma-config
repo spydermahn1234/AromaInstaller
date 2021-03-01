@@ -2,36 +2,28 @@
 
 ini_set("rom_name",             "TheCandyShop Vendor Installer");
 ini_set("rom_version",          "Aroma v10.06");
-ini_set("rom_author",           "TheCandyShop Edit Of A JDC Team Installer");
+ini_set("rom_author",           "TheCandyShop");
 ini_set("rom_device",           "Mi Max 3");
-ini_set("rom_date",             "27th February 2021");
+ini_set("rom_date",             "1st March 2021");
 
+##
+# Show Animated Splash
+#
 anisplash(
-	1,
-	"splash/a0", 5,
-	"splash/a1", 5,
-	"splash/a2", 5,
-	"splash/a3", 5,
-	"splash/a4", 5,
-	"splash/a5", 5,
-	"splash/a6", 5,
-	"splash/a7", 5,
-	"splash/a8", 5,
-	"splash/a9", 5,
-	"splash/a10", 5,
-	"splash/a11", 800,
-	"splash/a12", 800,
-	"splash/a13", 5,
-	"splash/a14", 5,
-	"splash/a15", 5,
-	"splash/a16", 5,
-	"splash/a17", 5,
-	"splash/a18", 5,
-	"splash/a19", 5,
-	"splash/a20", 5,
-	"splash/a21", 5,
-	"splash/a22", 5,
-	"splash/a23", 5
+#  #-- Number of Loop
+    8,
+  
+  #-- Frame  [ Image, duration in millisecond ]
+    "anim/a1", 30,
+    "anim/a2", 30,
+    "anim/a3", 30,
+    "anim/a4", 30,
+    "anim/a5", 30,
+    "anim/a6", 30,
+    "anim/a7", 30,
+    "anim/a8", 30,
+    "anim/a8", 30,
+    "anim/a10", 30
 );
 
 theme("redblack");
